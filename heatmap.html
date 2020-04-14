@@ -527,10 +527,7 @@
                         { "type": "Feature", "properties": { "SITEID": "HAC6", "AGENCY": "U.S. Coast Guard", "SAMPLING": "5", "STATUS": "Decommissioned", "ABBR": "USCG", "GNSS": "GPS", "AVAIL": "Hourly" }, "geometry": { "type": "Point", "coordinates": [-87.8558333333, 34.2805555556] } },
                         { "type": "Feature", "properties": { "SITEID": "WMEL", "AGENCY": "Earl Dudley Associates Incorporated", "SAMPLING": "1", "STATUS": "Decommissioned", "ABBR": "EDA", "GNSS": "GPS", "AVAIL": "Hourly" }, "geometry": { "type": "Point", "coordinates": [-87.0808333333, 34.5233333333] } }
                     ]
-                },
-                "cluster": false,
-                "clusterMaxZoom": 7,
-                "clusterRadius": 110
+                }
             },
             "layout": { "icon-image": ["concat", "square-rgb-", ["get", "color"]], "visibility": "visible" }
         };
@@ -4651,7 +4648,7 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
+            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
         }
 
         // End of UNAVCO stations
@@ -9727,9 +9724,6 @@
                         'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
                     },
             }, 'waterway-label');
-
-            // Disable zoom
-            map.scrollZoom.disable();
         });
     </script>
 </body>
