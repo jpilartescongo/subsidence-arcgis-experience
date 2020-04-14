@@ -4,7 +4,6 @@ Files for subsidence project version on ArcGIS experience
 Author: Pilartes-Congo
 Email: jcongo@islander.tamucc.edu
 Created: October 08, 2019.
----------------------------------------------------------
 
 
 Data downloadble from:
@@ -18,7 +17,6 @@ Data downloadble from:
 
 	More information on NOAA CORS: https://www.ngs.noaa.gov/CORS_Map/
 
-------------------------------------------------------------------------------------------
 
 
 Data conversion software (from csv to GeoJSON): https://www.convertcsv.com/csv-to-geojson.htm
