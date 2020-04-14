@@ -49,7 +49,7 @@
                 const graphicsLayer = new GraphicsLayer();
                 const graphicsLayer2 = new GraphicsLayer();
 
-                // CORS Stations
+                // Layer
                 const featureLayer = new FeatureLayer({
                     url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/ALL_LAYERS/FeatureServer",
                     outFields: ["*"]
@@ -68,13 +68,11 @@
                     zoom: 6,
                     center: [-91, 30]
                 });
-
-
+                
                 // Set up statistics definition for client-side query
                 // Total popultion of age groups by gender in census tracts
-
-                //const statDefinitions = ["HoustonNet", "COCONet", "GulfNet", "TLALOCNet", "Operational", "Decommissioned", "Non-Operational"].map(function (fieldName) {
-                const statDefinitions = ["SAMPLING"].map(function (fieldName) {
+                
+                const statDefinitions = ["CBI_cGPS_Count", "COCONet_Count", "CORS_Stations_Count", "GulfNet_Count", "HoustonNet_Count", "Tide_Gauges_Count", "TLALOCNet_Count", "TxDOT_RRPs_Count"].map(function (fieldName) {
                     return {
                         onStatisticField: fieldName,
                         outStatisticFieldName: fieldName + "_TOTAL",
@@ -140,7 +138,7 @@
                             layerInfos: [
                                 {
                                     layer: featureLayer,
-                                    title: "NOAA/NSRS CORS Stations"
+                                    title: "Displayed Features"
                                 }                                
                             ]
                         });
@@ -291,25 +289,25 @@
                                 if (key.includes("CBI_cGPS_Count")) {
                                     CBI_cGPs_Data.push(attributes[key]);
                                 }
-                                if (key.includes("COCONet_Count")) {
+                                else if (key.includes("COCONet_Count")) {
                                     COCONet_Data.push(attributes[key]);
                                 } 
-                                if (key.includes("CORS_Stations_Count")) {
+                                else if (key.includes("CORS_Stations_Count")) {
                                     CORS_Stations_Data.push(attributes[key]);
                                 }
-                                if (key.includes("GulfNet_Count")) {
+                                else if (key.includes("GulfNet_Count")) {
                                     GulfNet_Data.push(attributes[key]);
                                 } 
-                                if (key.includes("HoustonNet_Count")) {
+                                else if (key.includes("HoustonNet_Count")) {
                                     HoustonNet_Data.push(attributes[key]);
                                 } 
-                                if (key.includes("Tide_Gauges_Count")) {
+                                else if (key.includes("Tide_Gauges_Count")) {
                                     Tide_Gauges_Data.push(attributes[key]);
                                 } 
-                                if (key.includes("TLALOCNet_Count")) {
+                                else if (key.includes("TLALOCNet_Count")) {
                                     TLALOCNet_Data.push(attributes[key]);
                                 } 
-                                if (key.includes("TxDOT_RRPs_Count")) {
+                                else if (key.includes("TxDOT_RRPs_Count")) {
                                     TxDOT_RRPs_Data.push(attributes[key]);
                                 } 
                                 else {
@@ -318,13 +316,13 @@
                                 }
                             }
                             // Return information, seperated by gender                            
-                            return [CBI_cGPs_Data, COCONet_Data, CORS_Stations_Data, GulfNet_Data, HoustonNet_Data, Tide_Gauges_Data, TLALOCNet_Data, TxDOT_RRPs_Data];
+                            return [CBI_cGPs_Data, COCONet_Data, CORS_Stations_Data, GulfNet_Data, HoustonNet_Data, Tide_Gauges_Data, TLALOCNet_Data, TxDOT_RRPs_Data];                            
                         })
                         .catch(function (error) {
                             console.log(error);
                         });
                 }
-                
+                                
 
                 /*******************************************************************************************
                  * Draw the buffer polygon when application loads or when user searches for a new location
@@ -447,8 +445,14 @@
                 function updateChart(newData) {
                     chartExpand.expanded = true;
 
-                    const CORS_Stations_Data = newData[0];
-                    const CBI_cGPS_Data = newData[1];
+                    const CBI_cGPS_Data = newData[0];
+                    const COCONet_Data = newData[1];
+                    const CORS_Stations_Data = newData[2];
+                    const GulfNet_Data = newData[3];
+                    const HoustonNet_Data = newData[4];
+                    const Tide_Gauges_Data = newData[5];
+                    const TLALOCNet_Data = newData[6];
+                    const TxDOT_RRPs_Data = newData[7];                    
 
                     if (!chart) {
                         // Get the canvas element and render the chart in it
@@ -459,28 +463,71 @@
                             data: {
                                 // count
                                 labels: [
-                                    "90+",
-                                    "50-89",
-                                    "40-49",
-                                    "30-39",
-                                    "20-29",
-                                    "10-19",
-                                    "0-9"
+                                    "CBI cGPS",
+                                    "COCONet",
+                                    "CORS/NOAA",
+                                    "GulfNet",
+                                    "HoustonNet",
+                                    "Tide Gauges",
+                                    "TLALONet",
+                                    "TxDOT RRPs"
                                 ],
                                 datasets: [
                                     {
-                                        label: "CORS Stations",
+                                        label: "CBI cGPS",
                                         backgroundColor: "#000000",
-                                        borderColor: "#7F00FF",
+                                        borderColor: "#000000",
+                                        borderWidth: 0.25,
+                                        data: CBI_cGPS_Data
+                                    },
+                                    {
+                                        label: "COCONet",
+                                        backgroundColor: "#999999",
+                                        borderColor: "#999999",
+                                        borderWidth: 0.25,
+                                        data: COCONet_Data
+                                    },
+                                    {
+                                        label: "CORS/NOAA",
+                                        backgroundColor: "#2166AC",
+                                        borderColor: "#2166AC",
                                         borderWidth: 0.25,
                                         data: CORS_Stations_Data
                                     },
                                     {
-                                        label: "CBI cGPS",
-                                        backgroundColor: "#0080FF",
-                                        borderColor: "#004C99",
+                                        label: "GulfNet",
+                                        backgroundColor: "#B75454",
+                                        borderColor: "#B75454",
                                         borderWidth: 0.25,
-                                        data: CBI_cGPS_Data
+                                        data: GulfNet_Data
+                                    },
+                                    {
+                                        label: "HoustonNet",
+                                        backgroundColor: "#7FBF7B",
+                                        borderColor: "#7FBF7B",
+                                        borderWidth: 0.25,
+                                        data: HoustonNet_Data
+                                    },
+                                    {
+                                        label: "Tide Gauges",
+                                        backgroundColor: "#FF2500",
+                                        borderColor: "#FF2500",
+                                        borderWidth: 0.25,
+                                        data: Tide_Gauges_Data
+                                    },
+                                    {
+                                        label: "TLALOCNet",
+                                        backgroundColor: "#FFA500",
+                                        borderColor: "#FFA500",
+                                        borderWidth: 0.25,
+                                        data: TLALOCNet_Data
+                                    },
+                                    {
+                                        label: "TxDOT RRPs",
+                                        backgroundColor: "#0080FF",
+                                        borderColor: "#0080FF",
+                                        borderWidth: 0.25,
+                                        data: TxDOT_RRPs_Data
                                     }
                                 ]
                             },
@@ -496,12 +543,12 @@
                                 scales: {
                                     yAxes: [
                                         {
-                                            categorySpacing: 0,
+                                            categorySpacing: 10,
                                             barThickness: 10,
-                                            stacked: true,
+                                            stacked: false,
                                             scaleLabel: {
-                                                display: true,
-                                                labelString: "Number of Stations"
+                                                display: false,
+                                                labelString: "Category"
                                             }
                                         }
                                     ],
@@ -515,7 +562,7 @@
                                             },
                                             scaleLabel: {
                                                 display: true,
-                                                labelString: "Category"
+                                                labelString: "Number of Stations"
                                             }
                                         }
                                     ]
@@ -535,8 +582,14 @@
                         });
                     }
                     else {
-                        chart.data.datasets[0].data = CORS_Stations_Data;
-                        chart.data.datasets[1].data = CBI_cGPS_Data;
+                        chart.data.datasets[0].data = CBI_cGPS_Data;
+                        chart.data.datasets[1].data = COCONet_Data;
+                        chart.data.datasets[2].data = CORS_Stations_Data;
+                        chart.data.datasets[3].data = GulfNet_Data;
+                        chart.data.datasets[4].data = HoustonNet_Data;
+                        chart.data.datasets[5].data = Tide_Gauges_Data;
+                        chart.data.datasets[6].data = TLALOCNet_Data;
+                        chart.data.datasets[7].data = TxDOT_RRPs_Data;
                         chart.update();
                     }
                 }
