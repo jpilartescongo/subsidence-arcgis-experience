@@ -42,36 +42,23 @@
                 // App 'globals'
                 let sketchViewModel, featureLayerView, pausableWatchHandle, chartExpand, centerGraphic, edgeGraphic, polylineGraphic, bufferGraphic, centerGeometryAtStart, labelGraphic;
 
-                // Units
-                const unit = "miles";
-
-                // CREATE LAYERS
+                // Define miles as standard unit and creating graphic layers.
+                const unit = "miles";                                
                 const graphicsLayer = new GraphicsLayer();
                 const graphicsLayer2 = new GraphicsLayer();
 
-                // Layer
+                // Importing stations feature layer from ArcGIS content
                 const featureLayer = new FeatureLayer({
                     url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/ALL_LAYERS/FeatureServer",
                     outFields: ["*"]
                 });
 
-                // Create map
-                const map = new Map({
-                    basemap: "oceans",                    
-                    layers: [featureLayer, graphicsLayer2, graphicsLayer]
-                });
+                // Set up map and creating view
+                const map = new Map({ basemap: "oceans", layers: [featureLayer, graphicsLayer2, graphicsLayer] });                
+                const view = new MapView({ container: "viewDiv", map: map, zoom: 6, center: [-91, 30] });
 
-                // Create view
-                const view = new MapView({
-                    container: "viewDiv",
-                    map: map,
-                    zoom: 6,
-                    center: [-91, 30]
-                });
-                
-                // Set up statistics definition for client-side query
-                // Total popultion of age groups by gender in census tracts
-                
+
+                // Set up statistics definition for client-side query based on count of each feature            
                 const statDefinitions = ["CBI_cGPS_Count", "COCONet_Count", "CORS_Stations_Count", "GulfNet_Count", "HoustonNet_Count", "Tide_Gauges_Count", "TLALOCNet_Count", "TxDOT_RRPs_Count"].map(function (fieldName) {
                     return {
                         onStatisticField: fieldName,
@@ -114,7 +101,7 @@
                         // Display the chart in an Expand widget
                         chartExpand = new Expand({
                             expandIconClass: "esri-icon-chart",
-                            expandTooltip: "Population pyramid chart",
+                            expandTooltip: "Show chart of stations",
                             expanded: false,
                             view: view,
                             content: document.getElementById("chartPanel")
@@ -138,14 +125,14 @@
                             layerInfos: [
                                 {
                                     layer: featureLayer,
-                                    title: "Displayed Features"
+                                    title: "Features key"
                                 }                                
                             ]
                         });
 
                         // Display the Legend in an Expand widget
                         const legendExpand = new Expand({
-                            expandTooltip: "Show Legend",
+                            expandTooltip: "Show legend",
                             expanded: false,
                             view: view,
                             content: legend
@@ -172,15 +159,14 @@
                         layer: graphicsLayer
                     });
 
-                    // Listen to SketchViewModel's update event so that population pyramid chart is updated as the graphics are updated
+                    // Listen to SketchViewModel's update event so that stations chart is updated as the graphics are updated
                     sketchViewModel.on("update", onMove);
                 }
 
 
-                /*********************************************************************
-                 * Edge or center graphics are being moved. Recalculate the buffer with
-                 * updated geometry information and run the query stats again.
-                 *********************************************************************/
+                /**************************************************************************************************************************************************
+                 * Edge or center graphics are being moved. Recalculate the buffer with updated geometry information and run the query stats again.
+                 **************************************************************************************************************************************************/
                 function onMove(event) {
                     // If the edge graphic is moving, keep the center graphic
                     // at its initial location. Only move edge graphic
@@ -215,10 +201,9 @@
                     }
                 }
 
-                /*********************************************************************
-                 * Edge or center point is being updated. Recalculate the buffer with
-                 * updated geometry information.
-                 *********************************************************************/
+                /**************************************************************************************************************************************************
+                 * Edge or center point is being updated. Recalculate the buffer with updated geometry information.
+                 **************************************************************************************************************************************************/
                 function calculateBuffer(vertices) {
                     // Update the geometry of the polyline based on location of edge and center points
                     polylineGraphic.geometry = new Polyline({
@@ -240,10 +225,7 @@
                     // Update the buffer polygon
                     bufferGraphic.geometry = buffer;
 
-                    // Query female and male age groups of the census tracts that intersect
-                    // the buffer polygon on the client
-                    queryLayerViewStationStats(buffer).then(function (newData) {
-                        // Create a population pyramid chart from the returned result
+                    queryLayerViewStationStats(buffer).then(function (newData) {                        
                         updateChart(newData);
                     });
 
@@ -263,16 +245,14 @@
                     };
                 }
 
-                /*********************************************************************
-                 * Spatial query the census tracts feature layer view for statistics
-                 * using the updated buffer polygon.
-                *********************************************************************/
+                /**************************************************************************************************************************************************
+                 * Spatial query the the feature layer view for statistics using the updated buffer polygon.
+                **************************************************************************************************************************************************/
                 function queryLayerViewStationStats(buffer) {
                     // Data storage for the chart                    
                     let CBI_cGPs_Data = [], COCONet_Data = [], CORS_Stations_Data = [], GulfNet_Data = [], HoustonNet_Data = [], Tide_Gauges_Data = [], TLALOCNet_Data = [], TxDOT_RRPs_Data = [];
 
-                    // Client-side spatial query:
-                    // Get a sum of age groups for census tracts that intersect the polygon buffer
+                    // Client-side spatial query: Get a count of stations 
                     const query = featureLayerView.layer.createQuery();
                     query.outStatistics = statDefinitions;
                     query.geometry = buffer;
@@ -324,9 +304,9 @@
                 }
                                 
 
-                /*******************************************************************************************
+                /**************************************************************************************************************************************************
                  * Draw the buffer polygon when application loads or when user searches for a new location
-                 ******************************************************************************************/
+                 **************************************************************************************************************************************************/
                 function drawBufferPolygon() {
                     // When pause() is called on the watch handle, the callback represented by the
                     // watch is no longer invoked, but is still available for later use
