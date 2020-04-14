@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
@@ -50,47 +50,15 @@
                 const graphicsLayer2 = new GraphicsLayer();
 
                 // CORS Stations
-                const CORS_Stations = new FeatureLayer({
-                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/CORS_Stations/FeatureServer",
-                    outFields: ["*"]
-                });
-
-                /*
-                // Tide Gauges
-                const Tide_Gauges = new FeatureLayer({
-                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/Tide_Gauges/FeatureServer"
-                });
-                // HoustonNet
-                const HoustonNet = new FeatureLayer({
-                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/HoustonNet/FeatureServer"
-                });
-                // COCONet
-                const COCONet = new FeatureLayer({
-                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/COCONet/FeatureServer"
-                });
-                // GulfNet
-                const GulfNet = new FeatureLayer({
-                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/GulfNet/FeatureServer"
-                });
-                //TLALOCNet
-                const TLALOCNet = new FeatureLayer({
-                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/TLALOCNet/FeatureServer"
-                });
-                //TxDOT RRPs
-                const TxDOT_RRPs = new FeatureLayer({
-                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/TxDOT_RRPs/FeatureServer"
-                });*/
-                //CBI cGPS
-                const CBI_cGPS = new FeatureLayer({
-                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/CBI_cGPS/FeatureServer",
+                const featureLayer = new FeatureLayer({
+                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/ALL_LAYERS/FeatureServer",
                     outFields: ["*"]
                 });
 
                 // Create map
                 const map = new Map({
-                    basemap: "oceans",
-                    //layers: [CORS_Stations, Tide_Gauges, HoustonNet, COCONet, GulfNet, TLALOCNet, TxDOT_RRPs, CBI_cGPS, graphicsLayer2, graphicsLayer]
-                    layers: [CORS_Stations, CBI_cGPS, graphicsLayer2, graphicsLayer]
+                    basemap: "oceans",                    
+                    layers: [featureLayer, graphicsLayer2, graphicsLayer]
                 });
 
                 // Create view
@@ -120,7 +88,7 @@
 
                 function setUpAppUI() {
                     // When layer is loaded, create a watcher to trigger drawing of the buffer polygon
-                    view.whenLayerView(CORS_Stations, CBI_cGPS).then(function (layerView) {
+                    view.whenLayerView(featureLayer).then(function (layerView) {
                         featureLayerView = layerView;
                         pausableWatchHandle = watchUtils.pausable(
                             layerView,
@@ -171,13 +139,9 @@
                             view: view,
                             layerInfos: [
                                 {
-                                    layer: CORS_Stations,
+                                    layer: featureLayer,
                                     title: "NOAA/NSRS CORS Stations"
-                                },
-                                {
-                                    layer: CBI_cGPS,
-                                    title: "CBI Continuous GPS"
-                                }
+                                }                                
                             ]
                         });
 
@@ -306,9 +270,8 @@
                  * using the updated buffer polygon.
                 *********************************************************************/
                 function queryLayerViewStationStats(buffer) {
-                    // Data storage for the chart
-                    //let CORS_Stations_Decomissioned = [], Tide_Gauges_Data = [], CORS_Stations_Operational = [], TxDOT_RRPs_Data = [], CBI_cGPS_Data = [];
-                    let CORS_Stations_Data = [], CBI_cGPS_Data = [];
+                    // Data storage for the chart                    
+                    let CBI_cGPs_Data = [], COCONet_Data = [], CORS_Stations_Data = [], GulfNet_Data = [], HoustonNet_Data = [], Tide_Gauges_Data = [], TLALOCNet_Data = [], TxDOT_RRPs_Data = [];
 
                     // Client-side spatial query:
                     // Get a sum of age groups for census tracts that intersect the polygon buffer
@@ -323,29 +286,49 @@
                         .then(function (results) {
                             // Statistics query returns a feature with 'stats' as attributes
                             const attributes = results.features[0].attributes;
-                            // Loop through attributes and save the values for use in the population pyramid.
-                            for (var key in attributes) {
-                                if (key.includes("SAMPLING")) {
+                            // Loop through attributes and save the values for use in each of the stations or tide gauges
+                            for (var key in attributes) {                                
+                                if (key.includes("CBI_cGPS_Count")) {
+                                    CBI_cGPs_Data.push(attributes[key]);
+                                }
+                                if (key.includes("COCONet_Count")) {
+                                    COCONet_Data.push(attributes[key]);
+                                } 
+                                if (key.includes("CORS_Stations_Count")) {
                                     CORS_Stations_Data.push(attributes[key]);
-                                } else {
-                                    // Make 'all male age group population' total negative so that
-                                    // data will be displayed to the left of female age group
-                                    CBI_cGPS_Data.push(-Math.abs(attributes[key]));
+                                }
+                                if (key.includes("GulfNet_Count")) {
+                                    GulfNet_Data.push(attributes[key]);
+                                } 
+                                if (key.includes("HoustonNet_Count")) {
+                                    HoustonNet_Data.push(attributes[key]);
+                                } 
+                                if (key.includes("Tide_Gauges_Count")) {
+                                    Tide_Gauges_Data.push(attributes[key]);
+                                } 
+                                if (key.includes("TLALOCNet_Count")) {
+                                    TLALOCNet_Data.push(attributes[key]);
+                                } 
+                                if (key.includes("TxDOT_RRPs_Count")) {
+                                    TxDOT_RRPs_Data.push(attributes[key]);
+                                } 
+                                else {
+                                    // print nothing
+                                    console.log('invalid input');
                                 }
                             }
-                            // Return information, seperated by gender
-                            //return [CORS_Stations_Decomissioned, Tide_Gauges_Data, CORS_Stations_Operational, TxDOT_RRPs_Data, CBI_cGPS_Data];
-                            return [CORS_Stations_Data, CBI_cGPS_Data];
+                            // Return information, seperated by gender                            
+                            return [CBI_cGPs_Data, COCONet_Data, CORS_Stations_Data, GulfNet_Data, HoustonNet_Data, Tide_Gauges_Data, TLALOCNet_Data, TxDOT_RRPs_Data];
                         })
                         .catch(function (error) {
                             console.log(error);
                         });
                 }
+                
 
-                /***************************************************
-                 * Draw the buffer polygon when application loads or
-                 * when user searches for a new location
-                 **************************************************/
+                /*******************************************************************************************
+                 * Draw the buffer polygon when application loads or when user searches for a new location
+                 ******************************************************************************************/
                 function drawBufferPolygon() {
                     // When pause() is called on the watch handle, the callback represented by the
                     // watch is no longer invoked, but is still available for later use
