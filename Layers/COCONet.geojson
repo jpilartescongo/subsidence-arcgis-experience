@@ -1,0 +1,3007 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5275,
+          16.2623
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "ABMF",
+        "interval": "30.0 sec ",
+        "name": "Aeroport du Raizet -LES ABYMES - Mitio France",
+        "earliest_data": "2009 Dec 25 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, IGS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.3325,
+          18.7297
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "ABVI",
+        "interval": "15.0 sec ",
+        "name": "Anegada",
+        "earliest_data": "2011 Feb 04 15:12",
+        "latest_data": "2017 Mar 30 23:59",
+        "grouping": "COCONet, COCONetPartner, Met Sites, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9499,
+          9.3714
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "ACP1",
+        "interval": "15.0 sec ",
+        "name": "ACP1",
+        "earliest_data": "2008 Oct 24 00:00",
+        "latest_data": "2020 Jan 07 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4078,
+          9.2385
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "ACP6",
+        "interval": "15.0 sec ",
+        "name": "ACP6",
+        "earliest_data": "2008 Oct 14 19:28",
+        "latest_data": "2020 Jan 07 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.1112,
+          18.4675
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "AGPR",
+        "interval": "15.0 sec ",
+        "name": "AGPR_PRSN_US2017",
+        "earliest_data": "2017 Dec 21 00:00",
+        "latest_data": "2020 Jan 06 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.2139,
+          16.7408
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "AIRS",
+        "interval": "15.0 sec ",
+        "name": "AIr Studios",
+        "earliest_data": "2004 Mar 24 23:06",
+        "latest_data": "2019 Oct 01 23:59",
+        "grouping": "CALIPSO, COCONet, COCONetPartner, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9178,
+          11.528
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "ALPA",
+        "interval": "15.0 sec ",
+        "name": "AeroAlmirCOL2009",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 02 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.7541,
+          18.3465
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "AOPR",
+        "interval": "15.0 sec ",
+        "name": "Arecibo Observatory Puerto Rico",
+        "earliest_data": "2008 Sep 16 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, Met Sites, NOTA Partners, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0982,
+          18.2087
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "BARA",
+        "interval": "15.0 sec ",
+        "name": "Barahona",
+        "earliest_data": "2011 Jan 01 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6091,
+          13.088
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "BDOS",
+        "interval": "30.0 sec ",
+        "name": "Barbados",
+        "earliest_data": "2004 Jun 11 00:00",
+        "latest_data": "2013 Dec 10 10:59",
+        "grouping": "COCONet, COCONetPartner, CORS, IGS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.8612,
+          17.0451
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "BGGY",
+        "interval": "15.0 sec ",
+        "name": "BGGY-Antigua",
+        "earliest_data": "2007 Dec 07 20:19",
+        "latest_data": "2019 Jun 06 23:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetRefurb, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.336,
+          4.891
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "BIS0",
+        "interval": "30.0 sec ",
+        "name": "BIS0_NdR_COL2016",
+        "earliest_data": "2017 May 12 18:26",
+        "latest_data": "2017 Aug 07 23:59",
+        "grouping": "COCONet, COCONetPartner, Nevado del Ruiz Volcano RAPID, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0809,
+          4.6401
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "BOGT",
+        "interval": "30.0 sec ",
+        "name": "Bogota",
+        "earliest_data": "1994 Nov 07 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, GGN, IGS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1612,
+          18.4079
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "BYSP",
+        "interval": "15.0 sec ",
+        "name": "Bayamon Science Park",
+        "earliest_data": "2008 May 06 17:58",
+        "latest_data": "2019 Jul 30 23:59",
+        "grouping": "COCONet, COCONetPartner, Met Sites, NOTA Partners, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.4278,
+          5.3514
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CAPI",
+        "interval": "15.0 sec ",
+        "name": "CerroVenaCOL2009",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2018 Apr 01 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.7583,
+          19.738
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CBMD",
+        "interval": "30.0 sec ",
+        "name": "Brac Major Donald",
+        "earliest_data": "2013 Mar 22 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, CORS, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.8331,
+          19.712
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CBSB",
+        "interval": "30.0 sec ",
+        "name": "Cayman Brac Dist",
+        "earliest_data": "2005 Nov 19 00:00",
+        "latest_data": "2014 Apr 04 18:59",
+        "grouping": "COCONet, COCONetPartner, CORS, PBO Analysis Complete, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.2914,
+          15.8123
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CHIS",
+        "interval": "30.0 sec ",
+        "name": "CHIS_IGN_GT_2009",
+        "earliest_data": "2012 Mar 27 00:00",
+        "latest_data": "2015 Dec 04 01:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7856,
+          17.6685
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN00",
+        "interval": "15.0 sec ",
+        "name": "Barbuda__ATG2012",
+        "earliest_data": "2012 Aug 21 14:09",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7654,
+          17.0484
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN01",
+        "interval": "30.0 sec ",
+        "name": "Bethesda_ANT2015",
+        "earliest_data": "2015 Jan 28 11:58",
+        "latest_data": "2019 Jul 17 20:24",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.0541,
+          18.2039
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN02",
+        "interval": "15.0 sec ",
+        "name": "Anguilla_AIA2012",
+        "earliest_data": "2013 Apr 18 04:00",
+        "latest_data": "2017 Sep 05 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.4025,
+          18.4905
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN03",
+        "interval": "15.0 sec ",
+        "name": "VirgGordaBVI2013",
+        "earliest_data": "2013 Feb 23 01:35",
+        "latest_data": "2017 Aug 09 19:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9739,
+          14.0236
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN04",
+        "interval": "15.0 sec ",
+        "name": "Castries_LCA2014",
+        "earliest_data": "2014 Mar 11 18:44",
+        "latest_data": "2019 Aug 03 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.3594,
+          18.5639
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN05",
+        "interval": "15.0 sec ",
+        "name": "PuntaCanaDOM2014",
+        "earliest_data": "2014 Feb 08 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6561,
+          18.7898
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN06",
+        "interval": "15.0 sec ",
+        "name": "ValleNuevDOM2012",
+        "earliest_data": "2012 Aug 15 12:37",
+        "latest_data": "2018 Sep 11 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5659,
+          19.7576
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN07",
+        "interval": "15.0 sec ",
+        "name": "PuertPlt_DOM2012",
+        "earliest_data": "2012 Apr 26 16:37",
+        "latest_data": "2017 Oct 08 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6741,
+          17.9034
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN08",
+        "interval": "15.0 sec ",
+        "name": "CaboRojo_DOM2012",
+        "earliest_data": "2012 Apr 19 20:14",
+        "latest_data": "2017 Jan 09 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.1398,
+          19.6878
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN09",
+        "interval": "15.0 sec ",
+        "name": "CapHaitn_HTI2013",
+        "earliest_data": "2013 Jun 14 14:53",
+        "latest_data": "2018 Jul 27 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.9706,
+          17.4152
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN10",
+        "interval": "30.0 sec ",
+        "name": "MorantCy_JAM2011",
+        "earliest_data": "2011 Sep 18 22:37",
+        "latest_data": "2017 Sep 04 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7841,
+          17.0212
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN11",
+        "interval": "30.0 sec ",
+        "name": "PedroCay_JAM2011",
+        "earliest_data": "2011 Sep 20 21:13",
+        "latest_data": "2019 May 07 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.7491,
+          18.0045
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN12",
+        "interval": "15.0 sec ",
+        "name": "UWI_Mona_JAM2011",
+        "earliest_data": "2012 Feb 27 19:40",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.5338,
+          24.0652
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN13",
+        "interval": "15.0 sec ",
+        "name": "Sansalvadorbaham",
+        "earliest_data": "2014 Jan 27 21:51",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.678,
+          20.9753
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN14",
+        "interval": "15.0 sec ",
+        "name": "greatinaguabaham",
+        "earliest_data": "2014 Jan 31 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6931,
+          26.5567
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN15",
+        "interval": "15.0 sec ",
+        "name": "GrandBah_BHS2011",
+        "earliest_data": "2011 Jun 22 15:38",
+        "latest_data": "2019 Sep 01 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8498,
+          21.4223
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN16",
+        "interval": "15.0 sec ",
+        "name": "Camaguey_CUB2014",
+        "earliest_data": "2014 May 20 14:27",
+        "latest_data": "2019 May 19 22:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.9443,
+          17.4077
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN18",
+        "interval": "30.0 sec ",
+        "name": "SwanIslndHND2014",
+        "earliest_data": "2014 Sep 27 13:55",
+        "latest_data": "2018 Aug 07 12:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.0485,
+          12.6118
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN19",
+        "interval": "15.0 sec ",
+        "name": "ArubaNethARU2013",
+        "earliest_data": "2013 Jun 14 22:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.2563,
+          9.3517
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN20",
+        "interval": "15.0 sec ",
+        "name": "Bocas_island_PAN",
+        "earliest_data": "2013 Mar 10 03:58",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.4271,
+          13.4028
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN21",
+        "interval": "15.0 sec ",
+        "name": "SanLorenzHND2014",
+        "earliest_data": "2014 May 02 17:02",
+        "latest_data": "2018 Apr 25 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.0447,
+          12.3841
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN22",
+        "interval": "15.0 sec ",
+        "name": "Poneloya_NIC2012",
+        "earliest_data": "2012 Feb 09 16:59",
+        "latest_data": "2017 Apr 24 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.7788,
+          17.2606
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN23",
+        "interval": "15.0 sec ",
+        "name": "Belmopan_BLZ2012",
+        "earliest_data": "2012 Jul 25 18:44",
+        "latest_data": "2018 Jun 20 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.0539,
+          19.5756
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN24",
+        "interval": "15.0 sec ",
+        "name": "Felipe_Carrillo_MX_2012",
+        "earliest_data": "2013 Oct 30 17:15",
+        "latest_data": "2018 Sep 03 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.1352,
+          16.232
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN25",
+        "interval": "15.0 sec ",
+        "name": "Comitan_MX_2012",
+        "earliest_data": "2014 Feb 12 21:51",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6824,
+          22.383
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN26",
+        "interval": "15.0 sec ",
+        "name": "ArrecifeAMEX2016",
+        "earliest_data": "2016 Dec 05 02:19",
+        "latest_data": "2018 Mar 01 23:26",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.9398,
+          19.6671
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN27",
+        "interval": "15.0 sec ",
+        "name": "francesvdrcr2012",
+        "earliest_data": "2012 Aug 17 21:19",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0337,
+          8.6251
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN28",
+        "interval": "15.0 sec ",
+        "name": "Conta_Is_PAN2012",
+        "earliest_data": "2013 Mar 14 17:20",
+        "latest_data": "2020 Jan 11 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.3746,
+          14.0488
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN29",
+        "interval": "15.0 sec ",
+        "name": "Puerto_Cabezas_2012",
+        "earliest_data": "2012 Aug 14 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.772,
+          11.9936
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN30",
+        "interval": "15.0 sec ",
+        "name": "BlueFlds_NIC2012",
+        "earliest_data": "2012 Feb 13 00:15",
+        "latest_data": "2018 Sep 21 15:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.3267,
+          8.4872
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN33",
+        "interval": "15.0 sec ",
+        "name": "Penonome_PAN2011",
+        "earliest_data": "2011 Nov 11 17:33",
+        "latest_data": "2018 Apr 04 21:40",
+        "grouping": "COCONet, COCONetCore, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.0148,
+          8.5489
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN34",
+        "interval": "15.0 sec ",
+        "name": "MetetiUniPAN2012",
+        "earliest_data": "2013 Mar 06 21:37",
+        "latest_data": "2017 Oct 20 08:13",
+        "grouping": "COCONet, COCONetCore, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.3629,
+          13.3755
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN35",
+        "interval": "15.0 sec ",
+        "name": "Prvdncia_COL2012",
+        "earliest_data": "2012 Sep 09 14:08",
+        "latest_data": "2020 Jan 02 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8211,
+          8.8197
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN36",
+        "interval": "15.0 sec ",
+        "name": "Monteria_COL2012",
+        "earliest_data": "2012 Aug 19 14:00",
+        "latest_data": "2018 Jul 15 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2632,
+          10.7926
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN37",
+        "interval": "15.0 sec ",
+        "name": "Galerzmb_COL2012",
+        "earliest_data": "2012 Aug 23 22:26",
+        "latest_data": "2020 Jan 06 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.988,
+          12.2218
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN38",
+        "interval": "15.0 sec ",
+        "name": "Cerrejon_COL2012",
+        "earliest_data": "2012 Aug 30 14:26",
+        "latest_data": "2016 Aug 17 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5237,
+          10.2065
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN39",
+        "interval": "15.0 sec ",
+        "name": "QbrdaArbaVEN2015",
+        "earliest_data": "2015 Jan 20 22:20",
+        "latest_data": "2019 Feb 23 21:44",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.958,
+          12.18
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN40",
+        "interval": "15.0 sec ",
+        "name": "Curacao__CUW2011",
+        "earliest_data": "2011 Jul 21 12:48",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.0415,
+          8.9435
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN41",
+        "interval": "30.0 sec ",
+        "name": "El_Baul__VEN2015",
+        "earliest_data": "2015 Jan 18 20:54",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.6823,
+          11.9527
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN42",
+        "interval": "15.0 sec ",
+        "name": "LosRoquesVEN2015",
+        "earliest_data": "2015 Oct 29 22:56",
+        "latest_data": "2019 Oct 25 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.5981,
+          11.8188
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN43",
+        "interval": "15.0 sec ",
+        "name": "LaBlanquVENE2016",
+        "earliest_data": "2016 Aug 07 16:08",
+        "latest_data": "2018 Oct 19 10:59",
+        "grouping": "COCONet, COCONetPartner, Met Sites, NOTA Partners"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.9103,
+          11.0005
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN44",
+        "interval": "15.0 sec ",
+        "name": "MargIslndVEN2016",
+        "earliest_data": "2016 Jun 14 16:11",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9383,
+          10.837
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN45",
+        "interval": "15.0 sec ",
+        "name": "CN45Toco_TTO2013",
+        "earliest_data": "2013 Jun 15 15:50",
+        "latest_data": "2018 Feb 11 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.4271,
+          12.4868
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN46",
+        "interval": "15.0 sec ",
+        "name": "CarriacouGRD2014",
+        "earliest_data": "2014 May 17 00:00",
+        "latest_data": "2017 Oct 31 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9405,
+          13.7108
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN47",
+        "interval": "15.0 sec ",
+        "name": "vieuxfortLCA2014",
+        "earliest_data": "2014 Mar 01 00:00",
+        "latest_data": "2017 Oct 04 09:23",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.4217,
+          15.4389
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN48",
+        "interval": "15.0 sec ",
+        "name": "GrandSvneDMA2014",
+        "earliest_data": "2014 Oct 21 17:39",
+        "latest_data": "2019 Apr 08 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.6182,
+          15.6672
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN49",
+        "interval": "15.0 sec ",
+        "name": "CN49_Ave_VEN2015",
+        "earliest_data": "2016 Apr 13 00:00",
+        "latest_data": "2019 Apr 29 21:43",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.4265,
+          18.5866
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN51",
+        "interval": "30.0 sec ",
+        "name": "Sombrero_AIA2015",
+        "earliest_data": "2015 May 12 18:11",
+        "latest_data": "2017 Sep 05 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.2539,
+          21.7827
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN53",
+        "interval": "15.0 sec ",
+        "name": "CN53_Pro_TCI2015",
+        "earliest_data": "2015 Oct 15 15:19",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.5393,
+          8.2433
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN55",
+        "interval": "15.0 sec ",
+        "name": "CN55_Agu_PAN2018",
+        "earliest_data": "2018 Jun 28 00:00",
+        "latest_data": "2019 Feb 27 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.0148,
+          8.5491
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CN56",
+        "interval": "15.0 sec ",
+        "name": "CN56_Met_PAN2018",
+        "earliest_data": "2018 Jun 08 19:30",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.8209,
+          21.1747
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CNC0",
+        "interval": "15.0 sec ",
+        "name": "Cancun_MX_2007",
+        "earliest_data": "2007 Jun 04 13:54",
+        "latest_data": "2019 Oct 23 23:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetPartner, Met Sites, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2879,
+          9.3281
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CORO",
+        "interval": "15.0 sec ",
+        "name": "Corozal",
+        "earliest_data": "2011 Dec 28 06:00",
+        "latest_data": "2016 Jan 27 16:59",
+        "grouping": "COCONet, COCONetPartner, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.9369,
+          18.4167
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CRLR",
+        "interval": "15.0 sec ",
+        "name": "LaRomana_DOM2015",
+        "earliest_data": "2015 Dec 08 20:53",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.5843,
+          17.7569
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CRO1",
+        "interval": "30.0 sec ",
+        "name": "St. Croix VLBA",
+        "earliest_data": "1995 Oct 13 13:34",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, GGN, IGS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.0437,
+          18.7681
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CRSE",
+        "interval": "15.0 sec ",
+        "name": "El_Seibo_DOM2015",
+        "earliest_data": "2013 Jul 06 19:17",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5128,
+          7.9323
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CUC1",
+        "interval": "15.0 sec ",
+        "name": "AeroCucutCOL2010",
+        "earliest_data": "2015 Jan 03 00:00",
+        "latest_data": "2020 Jan 02 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.2825,
+          18.3074
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "CUPR",
+        "interval": "15.0 sec ",
+        "name": "Culebra Island - Puerto Rico",
+        "earliest_data": "2008 Oct 31 14:52",
+        "latest_data": "2017 Sep 18 22:02",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.3891,
+          15.3063
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "DOMI",
+        "interval": "30.0 sec ",
+        "name": "DomiRose_DMA2011",
+        "earliest_data": "2011 Dec 15 17:42",
+        "latest_data": "2017 Sep 17 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8676,
+          16.9161
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "ELEN",
+        "interval": "30.0 sec ",
+        "name": "Santa Elena",
+        "earliest_data": "2001 Dec 08 00:00",
+        "latest_data": "2016 Feb 18 22:59",
+        "grouping": "COCONet, COCONetRefurb, CORS, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8734,
+          23.564
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "EXU0",
+        "interval": "15.0 sec ",
+        "name": "Exuma International Airport",
+        "earliest_data": "2007 Jun 28 20:00",
+        "latest_data": "2015 Jul 27 23:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetPartner, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.378,
+          19.293
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GCEA",
+        "interval": "30.0 sec ",
+        "name": "GC_Elgin_Ave2011",
+        "earliest_data": "2014 Jul 08 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, CORS, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1835,
+          19.3129
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GCFS",
+        "interval": "30.0 sec ",
+        "name": "G_CAYMAN_CYM2014",
+        "earliest_data": "2014 Oct 04 16:04",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.1943,
+          16.7948
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GERD",
+        "interval": "15.0 sec ",
+        "name": "Geralds Yard",
+        "earliest_data": "2004 Mar 24 23:47",
+        "latest_data": "2019 Sep 08 23:59",
+        "grouping": "CALIPSO, COCONet, COCONetPartner, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.8595,
+          18.4351
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GOA2",
+        "interval": "30.0 sec ",
+        "name": "Petit Goave",
+        "earliest_data": "2013 Jun 21 17:58",
+        "latest_data": "2014 Dec 26 23:00",
+        "grouping": "COCONet, COCONetPartner, Haiti, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.8654,
+          18.4281
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GOAV",
+        "interval": "15.0 sec ",
+        "name": "Petit Goave",
+        "earliest_data": "2010 Mar 15 21:18",
+        "latest_data": "2011 Nov 17 15:47",
+        "grouping": "COCONet, COCONetPartner, Haiti, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6404,
+          12.2218
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GRE0",
+        "interval": "15.0 sec ",
+        "name": "Grenada__GRN2007",
+        "earliest_data": "2007 Jun 26 11:44",
+        "latest_data": "2016 Mar 28 23:21",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetPartner, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6404,
+          12.2218
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GRE1",
+        "interval": "15.0 sec ",
+        "name": "GRE1cGPS_GRN2017",
+        "earliest_data": "2017 Feb 22 21:58",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetPartner, Met Sites, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1446,
+          21.4328
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GTK0",
+        "interval": "30.0 sec ",
+        "name": "GrandTurkTCA2007",
+        "earliest_data": "2007 Jun 27 13:34",
+        "latest_data": "2014 Oct 20 02:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetPartner, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.5202,
+          14.5904
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "GUAT",
+        "interval": "30.0 sec ",
+        "name": "Guatemala",
+        "earliest_data": "2000 Jul 28 00:00",
+        "latest_data": "2019 Jun 23 23:59",
+        "grouping": "COCONet, COCONetRefurb, CORS, IGS, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5022,
+          9.8646
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "IND1",
+        "interval": "15.0 sec ",
+        "name": "Punta Indio",
+        "earliest_data": "2002 Jul 25 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Costa Rica, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.0558,
+          5.5444
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "ISCO",
+        "interval": "15.0 sec ",
+        "name": "CocosIsl_CRI2011",
+        "earliest_data": "2011 May 19 19:41",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Costa Rica, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5384,
+          18.2351
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "JME2",
+        "interval": "15.0 sec ",
+        "name": "Jacmel_2_HTI2013",
+        "earliest_data": "2013 Jun 20 14:06",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Haiti, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5363,
+          18.2347
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "JMEL",
+        "interval": "30.0 sec ",
+        "name": "Jacmel",
+        "earliest_data": "2010 Mar 13 21:20",
+        "latest_data": "2013 Jun 17 23:59",
+        "grouping": "COCONet, COCONetPartner, Haiti, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7538,
+          18.1876
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "LCAY",
+        "interval": "30.0 sec ",
+        "name": "Les Cayes",
+        "earliest_data": "2010 Mar 17 20:03",
+        "latest_data": "2016 Jun 24 12:36",
+        "grouping": "COCONet, COCONetPartner, Haiti, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.0821,
+          19.6676
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "LCSB",
+        "interval": "30.0 sec ",
+        "name": "L_CAYMAN_CYM2014",
+        "earliest_data": "2014 Jul 21 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, CORS, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.6308,
+          18.5075
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "LGNE",
+        "interval": "30.0 sec ",
+        "name": "Leogane",
+        "earliest_data": "2010 Mar 11 21:25",
+        "latest_data": "2014 Apr 03 20:36",
+        "grouping": "COCONet, COCONetPartner, Haiti, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9962,
+          14.5948
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "LMMF",
+        "interval": "30.0 sec ",
+        "name": "Aeroport Aime CESAIRE-LE LAMENTIN-Meteo Fra.",
+        "earliest_data": "2009 Dec 27 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, IGS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5311,
+          19.2227
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "LVEG",
+        "interval": "15.0 sec ",
+        "name": "La Vega",
+        "earliest_data": "2011 Jan 01 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.249,
+          12.1489
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "MANA",
+        "interval": "30.0 sec ",
+        "name": "Managua__NIC2012",
+        "earliest_data": "2000 May 13 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, IGS, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.7578,
+          19.0521
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "MARC",
+        "interval": "15.0 sec ",
+        "name": "St. Marc",
+        "earliest_data": "2010 Mar 12 20:02",
+        "latest_data": "2012 Jun 14 19:28",
+        "grouping": "COCONet, COCONetPartner, Haiti, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.1588,
+          18.2176
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "MAYZ",
+        "interval": "15.0 sec ",
+        "name": "MayaguezTGPR2010",
+        "earliest_data": "2010 Feb 06 16:49",
+        "latest_data": "2017 Sep 19 23:59",
+        "grouping": "COCONet, COCONetPartner, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.712,
+          7.1072
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "MECE",
+        "interval": "15.0 sec ",
+        "name": "BarrancabCOL2008",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2017 Sep 02 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.5267,
+          17.8863
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "MIPR",
+        "interval": "15.0 sec ",
+        "name": "Caja De Muertos Island",
+        "earliest_data": "2008 May 10 00:00",
+        "latest_data": "2017 Sep 18 23:59",
+        "grouping": "COCONet, COCONetPartner, Met Sites, NOTA Partners, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.9312,
+          18.0769
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "MOPR",
+        "interval": "15.0 sec ",
+        "name": "Mona Island - Puerto Rico",
+        "earliest_data": "2008 Oct 27 00:00",
+        "latest_data": "2016 Jul 01 23:59",
+        "grouping": "COCONet, COCONetPartner, Met Sites, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.81,
+          17.2268
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "NARA",
+        "interval": "30.0 sec ",
+        "name": "NARA_IGN_GT_2009",
+        "earliest_data": "2012 Mar 22 08:00",
+        "latest_data": "2016 Feb 16 01:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4623,
+          25.0526
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "NAS0",
+        "interval": "15.0 sec ",
+        "name": "Nassau",
+        "earliest_data": "2007 Jun 25 15:59",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetRefurb, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.2027,
+          16.8204
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "NWBL",
+        "interval": "15.0 sec ",
+        "name": "NW_Bluff_MSR2012",
+        "earliest_data": "2012 Apr 27 21:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "CALIPSO, COCONet, COCONetPartner, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.2277,
+          16.7504
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "OLVN",
+        "interval": "15.0 sec ",
+        "name": "Olveston",
+        "earliest_data": "2004 Mar 05 18:33",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "CALIPSO, COCONet, COCONetPartner, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.5791,
+          18.075
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "P780",
+        "interval": "15.0 sec ",
+        "name": "Cerrillos_PR2008",
+        "earliest_data": "2008 May 27 12:40",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, PBO Core Network"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4105,
+          16.3254
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "POPT",
+        "interval": "30.0 sec ",
+        "name": "POPT_IGN_GT_2009",
+        "earliest_data": "2012 Mar 27 00:00",
+        "latest_data": "2014 Oct 22 06:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.8456,
+          17.9346
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "PRCG",
+        "interval": "15.0 sec ",
+        "name": "PrtRylCG_JAM2014",
+        "earliest_data": "2014 Nov 17 21:45",
+        "latest_data": "2016 Dec 21 21:09",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.843,
+          17.9369
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "PRML",
+        "interval": "15.0 sec ",
+        "name": "PrtRylML_JAM2014",
+        "earliest_data": "2014 Nov 17 14:42",
+        "latest_data": "2017 Feb 21 23:59",
+        "grouping": "COCONet, COCONetCore, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.4513,
+          4.8012
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "PRMO",
+        "interval": "30.0 sec ",
+        "name": "PRMO_NdR_COL2016",
+        "earliest_data": "2017 Aug 04 16:47",
+        "latest_data": "2017 Aug 25 23:59",
+        "grouping": "COCONet, COCONetPartner, Nevado del Ruiz Volcano RAPID, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.9033,
+          3.8512
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "PUIN",
+        "interval": "15.0 sec ",
+        "name": "AeroIniriCOL2010",
+        "earliest_data": "2015 Feb 15 00:00",
+        "latest_data": "2018 May 21 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.3573,
+          9.8404
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "QSEC",
+        "interval": "15.0 sec ",
+        "name": "Quebrada_CRI2006",
+        "earliest_data": "2006 Apr 28 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Costa Rica, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.1532,
+          16.7039
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RCHY",
+        "interval": "15.0 sec ",
+        "name": "RoachYrd_MSR2012",
+        "earliest_data": "2012 Apr 27 20:33",
+        "latest_data": "2019 Jul 21 23:59",
+        "grouping": "CALIPSO, COCONet, COCONetPartner, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7161,
+          18.4455
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDAZ",
+        "interval": "15.0 sec ",
+        "name": "Azua_AzuaDOM2017",
+        "earliest_data": "2018 Jul 15 01:57",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.3284,
+          18.2769
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDBA",
+        "interval": "15.0 sec ",
+        "name": "Bani_Per_DOM2017",
+        "earliest_data": "2017 Aug 14 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4049,
+          18.9477
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDBO",
+        "interval": "15.0 sec ",
+        "name": "Bonao_AH_DOM2015",
+        "earliest_data": "2016 Jan 28 00:00",
+        "latest_data": "2019 Mar 22 10:46",
+        "grouping": "COCONet, COCONetPartner, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6802,
+          19.4519
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDF2",
+        "interval": "15.0 sec ",
+        "name": "SntgCbllrDOM2016",
+        "earliest_data": "2015 Jun 08 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.7183,
+          18.598
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDHI",
+        "interval": "15.0 sec ",
+        "name": "Higuey_E_DOM2016",
+        "earliest_data": "2016 Jan 01 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.5467,
+          19.3066
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDLT",
+        "interval": "15.0 sec ",
+        "name": "LasTerrenasDomRe",
+        "earliest_data": "2015 Apr 09 22:24",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, Met Sites, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0772,
+          19.5388
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDMA",
+        "interval": "15.0 sec ",
+        "name": "Mao_RDMA_DOM2016",
+        "earliest_data": "2016 Mar 17 00:00",
+        "latest_data": "2020 Jan 07 02:34",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6389,
+          19.8487
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDMC",
+        "interval": "15.0 sec ",
+        "name": "MntcristiDOM2016",
+        "earliest_data": "2016 Jul 08 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.0492,
+          18.9786
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDMI",
+        "interval": "15.0 sec ",
+        "name": "Miches_N_DR_2015",
+        "earliest_data": "2015 Sep 05 00:00",
+        "latest_data": "2018 Jul 04 12:53",
+        "grouping": "COCONet, COCONetPartner, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.0408,
+          18.9796
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDMS",
+        "interval": "15.0 sec ",
+        "name": "RDMSMicheDOM2018",
+        "earliest_data": "2018 Jul 04 18:56",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4205,
+          18.5008
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDNE",
+        "interval": "15.0 sec ",
+        "name": "Neiba_BahDOM2017",
+        "earliest_data": "2017 Jul 20 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.3463,
+          16.9342
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDON",
+        "interval": "15.0 sec ",
+        "name": "Redonda",
+        "earliest_data": "2012 May 24 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.9113,
+          18.4614
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDSD",
+        "interval": "15.0 sec ",
+        "name": "SantoDom_DOM2004",
+        "earliest_data": "2012 Jun 15 15:17",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, IGS, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2465,
+          19.2857
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDSF",
+        "interval": "15.0 sec ",
+        "name": "San_Fran_DOM2015",
+        "earliest_data": "2016 Feb 08 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.227,
+          18.8195
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "RDSJ",
+        "interval": "15.0 sec ",
+        "name": "SJMaguanaDOM2015",
+        "earliest_data": "2015 Nov 08 00:00",
+        "latest_data": "2020 Jan 13 23:42",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.5268,
+          16.3182
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "ROA0",
+        "interval": "15.0 sec ",
+        "name": "RoatanAP_HND2007",
+        "earliest_data": "2007 May 10 18:11",
+        "latest_data": "2018 Oct 29 23:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetRefurb, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.7157,
+          12.5805
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "SAN0",
+        "interval": "15.0 sec ",
+        "name": "SanAndresCOL2007",
+        "earliest_data": "2007 Dec 07 22:55",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetRefurb, GeoRED, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7623,
+          20.0121
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "SCUB",
+        "interval": "30.0 sec ",
+        "name": "Observatorio Geodinamico - Centro Nacional",
+        "earliest_data": "2002 Mar 19 00:00",
+        "latest_data": "2018 Dec 14 13:59",
+        "grouping": "COCONet, COCONetPartner, IGS, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.1089,
+          18.0423
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "SMRT",
+        "interval": "15.0 sec ",
+        "name": "Saint Marten",
+        "earliest_data": "2007 May 23 15:16",
+        "latest_data": "2016 Sep 09 23:59",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetPartner, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.3056,
+          18.461
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "SPED",
+        "interval": "15.0 sec ",
+        "name": "SanPedMacDOM2011",
+        "earliest_data": "2011 Jan 01 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3412,
+          19.4753
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "SROD",
+        "interval": "15.0 sec ",
+        "name": "Santiago Rodriguez",
+        "earliest_data": "2011 Jan 01 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.1166,
+          13.6971
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "SSIA",
+        "interval": "15.0 sec ",
+        "name": "Ilopang__SLV2007",
+        "earliest_data": "2000 Sep 28 00:00",
+        "latest_data": "2019 Dec 26 23:59",
+        "grouping": "COCONet, COCONetRefurb, IGS, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.9745,
+          18.3401
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "STVI",
+        "interval": "15.0 sec ",
+        "name": "St. Thomas - US Virgin Islands",
+        "earliest_data": "2008 Oct 27 15:05",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetPartner, Met Sites, NOTA Partners, PBO Analysis Complete, Puerto Rico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.2503,
+          13.2746
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "SVGB",
+        "interval": "30.0 sec ",
+        "name": "SVGBStV_2007_SVD",
+        "earliest_data": "2011 Jan 01 00:00",
+        "latest_data": "2019 Aug 23 23:59",
+        "grouping": "COCONet, COCONetPartner, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.4653,
+          14.0348
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TAXI",
+        "interval": "30.0 sec ",
+        "name": "TAXI_IGN_GT_2008",
+        "earliest_data": "2012 Mar 27 00:00",
+        "latest_data": "2015 May 23 22:59",
+        "grouping": "COCONet, COCONetRefurb, Met Sites, NOTA Core, NOTA GPS+GLO, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3825,
+          26.7415
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TCA0",
+        "interval": "15.0 sec ",
+        "name": "Abaco",
+        "earliest_data": "2007 Jun 26 16:42",
+        "latest_data": "2015 Oct 30 13:05",
+        "grouping": "Caribbean Hurricane Prediction and Geodetic Network, COCONet, COCONetPartner, Met Sites, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.2056,
+          14.0901
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TEG2",
+        "interval": "30.0 sec ",
+        "name": "Tegucigalpa",
+        "earliest_data": "2011 Apr 27 21:41",
+        "latest_data": "2018 Mar 16 23:59",
+        "grouping": "COCONet, COCONetRefurb, CORS, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.092,
+          18.2081
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TGDR",
+        "interval": "15.0 sec ",
+        "name": "BarahoTG_DOM2015",
+        "earliest_data": "2015 Jul 08 15:48",
+        "latest_data": "2019 Nov 26 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.8669,
+          20.8681
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TGMX",
+        "interval": "15.0 sec ",
+        "name": "Puerto_Morelos-TG_MX_2015",
+        "earliest_data": "2015 Feb 18 19:36",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.2579,
+          9.3508
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TGPM",
+        "interval": "15.0 sec ",
+        "name": "Bocas_TG_PAN2015",
+        "earliest_data": "2015 Jan 23 16:13",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.1633,
+          16.7643
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TRNT",
+        "interval": "15.0 sec ",
+        "name": "Trants",
+        "earliest_data": "2004 Mar 31 20:01",
+        "latest_data": "2020 Jan 13 20:50",
+        "grouping": "CALIPSO, COCONet, COCONetPartner, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.4655,
+          10.2767
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TTSF",
+        "interval": "15.0 sec ",
+        "name": "SanFernanTTO2015",
+        "earliest_data": "2015 May 10 00:00",
+        "latest_data": "2019 Aug 01 23:59",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.3991,
+          10.6395
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "TTUW",
+        "interval": "15.0 sec ",
+        "name": "UWI_CN45_TTO2014",
+        "earliest_data": "2014 Jan 14 00:00",
+        "latest_data": "2020 Jan 13 23:43",
+        "grouping": "COCONet, COCONetCore, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.8682,
+          20.8685
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "UNPM",
+        "interval": "15.0 sec ",
+        "name": "Puerto_Morelos_MX_2007",
+        "earliest_data": "2007 Aug 07 23:30",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2478,
+          10.4358
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VDPR",
+        "interval": "15.0 sec ",
+        "name": "ValledupaCOL2010",
+        "earliest_data": "2015 Jan 03 00:00",
+        "latest_data": "2019 Oct 27 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.869,
+          10.8536
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VERA",
+        "interval": "15.0 sec ",
+        "name": "VeraCruz_CRI2009",
+        "earliest_data": "2009 Aug 02 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetRefurb, Costa Rica, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.7981,
+          17.7162
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VIKH",
+        "interval": "30.0 sec ",
+        "name": "Kingshill",
+        "earliest_data": "2006 Aug 23 00:00",
+        "latest_data": "2017 Jul 19 19:29",
+        "grouping": "COCONet, COCONetPartner, CORS, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.9692,
+          18.3433
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VITH",
+        "interval": "30.0 sec ",
+        "name": "St. Thomas",
+        "earliest_data": "2006 Aug 18 00:00",
+        "latest_data": "2019 Sep 10 18:48",
+        "grouping": "COCONet, COCONetPartner, CORS, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.8473,
+          9.2867
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VMAG",
+        "interval": "15.0 sec ",
+        "name": "Magangue",
+        "earliest_data": "2012 May 01 00:00",
+        "latest_data": "2020 Jan 04 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.3086,
+          18.5287
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VOIL",
+        "interval": "30.0 sec ",
+        "name": "Voila",
+        "earliest_data": "2010 Feb 24 19:28",
+        "latest_data": "2014 Nov 05 19:56",
+        "grouping": "COCONet, COCONetPartner, Haiti, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.7218,
+          7.8184
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VORA",
+        "interval": "15.0 sec ",
+        "name": "Apartado_COL2010",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 02 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.8608,
+          10.7938
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VPOL",
+        "interval": "15.0 sec ",
+        "name": "PoloNuevoCOL2011",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 06 23:59",
+        "grouping": "COCONet, COCONetPartner, GeoRED, NOTA Partners, PBO Analysis Complete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1906,
+          9.9248
+        ]
+      },
+      "properties": {
+        "COCONet_Count": "1",
+        "code": "VRAI",
+        "interval": "15.0 sec ",
+        "name": "Veragua__CRI2012",
+        "earliest_data": "2012 Oct 19 17:52",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "COCONet, COCONetCore, Costa Rica, Met Sites, NOTA Core, PBO Analysis Complete"
+      }
+    }
+  ]
+}

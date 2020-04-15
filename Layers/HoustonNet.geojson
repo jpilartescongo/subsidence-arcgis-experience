@@ -1,0 +1,1297 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.6351,
+          29.6918
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "ALEF",
+        "interval": "15.0 sec ",
+        "name": "Alief Kerr High School",
+        "earliest_data": "2014 Apr 04 15:43",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7447,
+          29.9978
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "AULT",
+        "interval": "15.0 sec ",
+        "name": "Ault Elementary School",
+        "earliest_data": "2015 Jul 22 12:37",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.6319,
+          29.9192
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "CFHS",
+        "interval": "15.0 sec ",
+        "name": "Cypress Falls High School",
+        "earliest_data": "2015 Aug 05 14:21",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5558,
+          29.8816
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "CFJV",
+        "interval": "15.0 sec ",
+        "name": "Jersey village high school",
+        "earliest_data": "2015 Oct 09 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7288,
+          29.6814
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "CMFB",
+        "interval": "15.0 sec ",
+        "name": "David Crockett Middle School",
+        "earliest_data": "2014 May 29 00:10",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9982,
+          29.3938
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "COTM",
+        "interval": "15.0 sec ",
+        "name": "College of the Mainland",
+        "earliest_data": "2015 Feb 03 19:27",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5116,
+          29.7959
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "CSTA",
+        "interval": "15.0 sec ",
+        "name": "CSTA",
+        "earliest_data": "2013 Feb 21 21:12",
+        "latest_data": "2015 Apr 29 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5107,
+          29.7956
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "CSTE",
+        "interval": "15.0 sec ",
+        "name": "Spring Branch ISD- Virtual High School",
+        "earliest_data": "2015 May 20 16:06",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7404,
+          29.2893
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "DISD",
+        "interval": "30.0 sec ",
+        "name": "DISD",
+        "earliest_data": "2015 Jun 23 16:55",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5837,
+          29.6227
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "DMFB",
+        "interval": "15.0 sec ",
+        "name": "Dulles Middle School",
+        "earliest_data": "2014 Oct 08 17:30",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.6305,
+          29.5562
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "FSFB",
+        "interval": "15.0 sec ",
+        "name": "Fort Settlement Middle School",
+        "earliest_data": "2014 May 14 20:50",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5281,
+          30.1973
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "GSEC",
+        "interval": "15.0 sec ",
+        "name": "Galatas elementary school",
+        "earliest_data": "2015 Oct 02 18:44",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5612,
+          29.7879
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "HCC1",
+        "interval": "15.0 sec ",
+        "name": "Houston Community College spring branch campus",
+        "earliest_data": "2012 Nov 28 22:41",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.562,
+          29.7884
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "HCC2",
+        "interval": "15.0 sec ",
+        "name": "Houston Community College Spring Branch Campus",
+        "earliest_data": "2013 Feb 18 18:08",
+        "latest_data": "2019 Nov 01 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7157,
+          29.7549
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "HPEK",
+        "interval": "15.0 sec ",
+        "name": "Hazel S. Pattison Elementary School",
+        "earliest_data": "2014 May 24 17:52",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4696,
+          29.8004
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "HSMN",
+        "interval": "15.0 sec ",
+        "name": "HSMN",
+        "earliest_data": "2013 Apr 17 23:22",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5949,
+          29.8503
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "KKES",
+        "interval": "15.0 sec ",
+        "name": "Kirk Elementary School",
+        "earliest_data": "2015 Aug 06 13:21",
+        "latest_data": "2020 Jan 02 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.924,
+          29.926
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "KPCD",
+        "interval": "15.0 sec ",
+        "name": "Katy Prairie Conservancy-deep",
+        "earliest_data": "2016 Jun 08 21:04",
+        "latest_data": "2019 Nov 01 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.924,
+          29.926
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "KPCS",
+        "interval": "15.0 sec ",
+        "name": "Katy Prairie Conservancy-shallow",
+        "earliest_data": "2016 Jun 08 21:01",
+        "latest_data": "2019 Oct 31 08:57",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4425,
+          29.8075
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "LCI1",
+        "interval": "30.0 sec ",
+        "name": "LCI1",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.0745,
+          30.0446
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "LGC1",
+        "interval": "15.0 sec ",
+        "name": "LGC1",
+        "earliest_data": "2013 Jul 12 15:53",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5952,
+          29.7714
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "MDWD",
+        "interval": "15.0 sec ",
+        "name": "MDWD",
+        "earliest_data": "2013 Apr 19 18:01",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2756,
+          29.6075
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "ME01",
+        "interval": "30.0 sec ",
+        "name": "ME01",
+        "earliest_data": "2015 Jun 18 18:31",
+        "latest_data": "2017 Aug 31 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2396,
+          29.6581
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "MEPD",
+        "interval": "15.0 sec ",
+        "name": "mathyselementary",
+        "earliest_data": "2014 Jan 14 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7451,
+          29.8041
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "MRHK",
+        "interval": "15.0 sec ",
+        "name": "Morton Ranch High School",
+        "earliest_data": "2014 May 23 23:43",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0962,
+          29.552
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "NASA",
+        "interval": "15.0 sec ",
+        "name": "Space Center Houston",
+        "earliest_data": "2014 Mar 13 23:40",
+        "latest_data": "2019 Nov 21 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.8033,
+          29.725
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "OKEK",
+        "interval": "15.0 sec ",
+        "name": "Odessa Kilpatric Elementary School",
+        "earliest_data": "2014 Jul 28 22:01",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.1522,
+          29.5386
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "PA00",
+        "interval": "30.0 sec ",
+        "name": "PAM 00",
+        "earliest_data": "1996 Jan 01 01:00",
+        "latest_data": "2018 Dec 10 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5106,
+          30.199
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "PWES",
+        "interval": "15.0 sec ",
+        "name": "Powell Elementary School",
+        "earliest_data": "2015 Mar 20 19:14",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4947,
+          29.8104
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "RDCT",
+        "interval": "15.0 sec ",
+        "name": "RDCT",
+        "earliest_data": "2013 Jul 22 20:51",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5137,
+          29.4842
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "RPFB",
+        "interval": "15.0 sec ",
+        "name": "Ridge Point High school",
+        "earliest_data": "2014 Oct 08 19:36",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4296,
+          29.9875
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "SESG",
+        "interval": "15.0 sec ",
+        "name": "Eickenroht Elementary School",
+        "earliest_data": "2014 Sep 03 18:51",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4301,
+          30.0536
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "SHSG",
+        "interval": "15.0 sec ",
+        "name": "Spring High School",
+        "earliest_data": "2014 Sep 19 21:04",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.1739,
+          29.7622
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "SISD",
+        "interval": "15.0 sec ",
+        "name": "Sealy High School",
+        "earliest_data": "2015 Mar 04 20:30",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.515,
+          29.8019
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "SPBH",
+        "interval": "15.0 sec ",
+        "name": "SPBH",
+        "earliest_data": "2013 Apr 19 20:47",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.817,
+          29.3141
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "TDAM",
+        "interval": "15.0 sec ",
+        "name": "TDAM",
+        "earliest_data": "2013 Jun 07 17:38",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3399,
+          29.714
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "THSU",
+        "interval": "15.0 sec ",
+        "name": "THSU",
+        "earliest_data": "2012 Dec 13 16:56",
+        "latest_data": "2020 Jan 12 17:27",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.48,
+          29.8063
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "TSFT",
+        "interval": "15.0 sec ",
+        "name": "TSFT",
+        "earliest_data": "2013 May 17 18:36",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.5723,
+          29.7037
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "TXCF",
+        "interval": "30.0 sec ",
+        "name": "TXCF",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5555,
+          29.7161
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "TXHS",
+        "interval": "30.0 sec ",
+        "name": "TXHS",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9528,
+          29.358
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "TXLQ",
+        "interval": "30.0 sec ",
+        "name": "TXLQ",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.9635,
+          28.9829
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "TXMG",
+        "interval": "30.0 sec ",
+        "name": "TXMG",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2974,
+          29.8975
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "TXTG",
+        "interval": "30.0 sec ",
+        "name": "TXTG",
+        "earliest_data": "2015 Jun 18 22:55",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.092,
+          29.3288
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "TXWN",
+        "interval": "30.0 sec ",
+        "name": "TXWN",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3454,
+          29.7225
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UH01",
+        "interval": "15.0 sec ",
+        "name": "UH01",
+        "earliest_data": "2012 Sep 27 22:55",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4571,
+          30.3152
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UH02",
+        "interval": "30.0 sec ",
+        "name": "UH02",
+        "earliest_data": "2015 Jan 01 00:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0439,
+          29.3904
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHC0",
+        "interval": "15.0 sec ",
+        "name": "UH Coastal Center station 0",
+        "earliest_data": "2014 Feb 18 22:09",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet, Met Sites"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.044,
+          29.3904
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHC1",
+        "interval": "15.0 sec ",
+        "name": "UH Coastal Center station 1",
+        "earliest_data": "2014 Feb 18 22:00",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0439,
+          29.3904
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHC2",
+        "interval": "15.0 sec ",
+        "name": "UH Coastal Center station 2",
+        "earliest_data": "2014 Feb 18 22:03",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0439,
+          29.3904
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHC3",
+        "interval": "15.0 sec ",
+        "name": "UH Coastal Center station 3",
+        "earliest_data": "2014 Feb 18 22:07",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.1042,
+          29.5777
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHCL",
+        "interval": "15.0 sec ",
+        "name": "University of Houston-Clear Lake",
+        "earliest_data": "2014 Mar 29 00:39",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7568,
+          29.7281
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHCR",
+        "interval": "15.0 sec ",
+        "name": "University of Houston-Cinco Ranch",
+        "earliest_data": "2014 Feb 13 18:34",
+        "latest_data": "2019 Nov 08 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3594,
+          29.766
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHDT",
+        "interval": "15.0 sec ",
+        "name": "UHDT",
+        "earliest_data": "2013 Jul 23 18:18",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.066,
+          29.5263
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHEB",
+        "interval": "15.0 sec ",
+        "name": "East Bernard High School",
+        "earliest_data": "2014 Aug 04 19:57",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3271,
+          29.7195
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHEP",
+        "interval": "15.0 sec ",
+        "name": "University of Houston-NCALM",
+        "earliest_data": "2014 May 12 19:36",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4831,
+          30.2363
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHF1",
+        "interval": "15.0 sec ",
+        "name": "Jones State Forest-shallow",
+        "earliest_data": "2014 May 21 23:53",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4831,
+          30.2363
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHJF",
+        "interval": "15.0 sec ",
+        "name": "Jones State Forest-deep",
+        "earliest_data": "2014 May 22 00:08",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7481,
+          29.7242
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHKD",
+        "interval": "15.0 sec ",
+        "name": "University of Houston Katy deep",
+        "earliest_data": "2018 Dec 20 17:04",
+        "latest_data": "2019 Nov 08 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7481,
+          29.7243
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHKS",
+        "interval": "15.0 sec ",
+        "name": "University of Houston Katy shallow",
+        "earliest_data": "2018 May 29 20:04",
+        "latest_data": "2019 Nov 08 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9785,
+          30.0577
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHL1",
+        "interval": "15.0 sec ",
+        "name": "West Liberty Airport",
+        "earliest_data": "2014 May 09 20:12",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4025,
+          29.7192
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHRI",
+        "interval": "15.0 sec ",
+        "name": "Rice University",
+        "earliest_data": "2014 Apr 29 23:09",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.6515,
+          29.5747
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHSL",
+        "interval": "15.0 sec ",
+        "name": "SugarLandUSA2014",
+        "earliest_data": "2014 Mar 07 23:10",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9784,
+          30.0576
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UHWL",
+        "interval": "15.0 sec ",
+        "name": "West Liberty Airport(Deep)",
+        "earliest_data": "2014 May 09 19:36",
+        "latest_data": "2020 Jan 07 10:20",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5678,
+          29.7859
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "UTEX",
+        "interval": "15.0 sec ",
+        "name": "UTEX industries inc",
+        "earliest_data": "2012 Jun 28 18:42",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5814,
+          29.7828
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "WCHT",
+        "interval": "15.0 sec ",
+        "name": "WCHT",
+        "earliest_data": "2013 Apr 17 16:32",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5331,
+          29.7904
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "WDVW",
+        "interval": "15.0 sec ",
+        "name": "WDVW",
+        "earliest_data": "2013 Apr 25 22:17",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2287,
+          29.6877
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "WEPD",
+        "interval": "15.0 sec ",
+        "name": "willmselementary",
+        "earliest_data": "2014 Jan 27 00:00",
+        "latest_data": "2019 Oct 31 23:59",
+        "grouping": "HoustonNet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5054,
+          30.1943
+        ]
+      },
+      "properties": {
+        "HoustonNet_Count": "1",
+        "code": "WHCR",
+        "interval": "15.0 sec ",
+        "name": "Woodlands High School",
+        "earliest_data": "2014 Oct 10 21:34",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "HoustonNet, Met Sites"
+      }
+    }
+  ]
+}

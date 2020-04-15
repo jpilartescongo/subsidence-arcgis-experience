@@ -1,0 +1,385 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1803,
+          30.4074
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "1LSU",
+        "interval": "30.0 sec ",
+        "name": "Louisiana State University",
+        "earliest_data": "2003 Apr 23 00:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.0976,
+          31.7508
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "1NSU",
+        "interval": "30.0 sec ",
+        "name": "Northwestern State University",
+        "earliest_data": "2004 Jan 16 01:49",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0759,
+          32.529
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "1ULM",
+        "interval": "30.0 sec ",
+        "name": "U of Louisiana-Monroe",
+        "earliest_data": "2003 Jun 13 14:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4064,
+          29.3368
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "BVHS",
+        "interval": "30.0 sec ",
+        "name": "Boothville-Venice High School",
+        "earliest_data": "2002 Aug 20 21:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0955,
+          30.4759
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "COVG",
+        "interval": "30.0 sec ",
+        "name": "Covington",
+        "earliest_data": "2004 Jul 17 00:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9573,
+          29.2655
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "GRIS",
+        "interval": "30.0 sec ",
+        "name": "Grand Isle",
+        "earliest_data": "2005 Sep 03 00:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.4676,
+          30.5131
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "HAMM",
+        "interval": "30.0 sec ",
+        "name": "Hammond",
+        "earliest_data": "2001 Feb 12 21:18",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.7236,
+          29.5923
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "HOUM",
+        "interval": "30.0 sec ",
+        "name": "Houma",
+        "earliest_data": "2003 Nov 21 14:48",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.4054,
+          29.8902
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "HVHS",
+        "interval": "15.0 sec ",
+        "name": "HahnvilleHigh School",
+        "earliest_data": "2004 Jan 29 19:17",
+        "latest_data": "2004 Jul 08 17:59",
+        "grouping": "CORS, GULFNET"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0451,
+          30.2214
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "KJUN",
+        "interval": "30.0 sec ",
+        "name": "Lafayette",
+        "earliest_data": "2001 Sep 14 15:13",
+        "latest_data": "2008 Sep 01 15:59",
+        "grouping": "CORS, GULFNET, PBO Analysis Complete, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.269,
+          31.1425
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "LESV",
+        "interval": "30.0 sec ",
+        "name": "Leesville",
+        "earliest_data": "2003 May 23 00:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.6613,
+          29.255
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "LMCN",
+        "interval": "30.0 sec ",
+        "name": "Louisiana University Marine Consortium",
+        "earliest_data": "2003 Apr 24 00:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1803,
+          30.4074
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "LST1",
+        "interval": "15.0 sec ",
+        "name": "LSU_Test1_LA2006",
+        "earliest_data": "2006 Aug 11 16:35",
+        "latest_data": "2006 Nov 10 17:59",
+        "grouping": "GULFNET"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.4123,
+          31.1788
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "LSUA",
+        "interval": "30.0 sec ",
+        "name": "LSU Alexandria",
+        "earliest_data": "2003 Aug 31 00:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.6611,
+          29.2545
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "LUMC",
+        "interval": "30.0 sec ",
+        "name": "Lumcon",
+        "earliest_data": "2001 May 29 00:00",
+        "latest_data": "2003 Jun 13 23:59",
+        "grouping": "CORS, GULFNET"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2177,
+          30.1806
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "MCNE",
+        "interval": "30.0 sec ",
+        "name": "McNeese State University",
+        "earliest_data": "2002 Aug 21 00:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.657,
+          30.8155
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "OAKH",
+        "interval": "30.0 sec ",
+        "name": "Oakdale High School",
+        "earliest_data": "2004 Apr 06 21:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.7046,
+          32.4277
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "SHRV",
+        "interval": "30.0 sec ",
+        "name": "Shreveport",
+        "earliest_data": "2004 Aug 17 23:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.6554,
+          31.8434
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "SIHS",
+        "interval": "30.0 sec ",
+        "name": "Sicily Island",
+        "earliest_data": "2003 Jun 11 21:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.183,
+          32.4003
+        ]
+      },
+      "properties": {
+        "GulfNet_Count": "1",
+        "code": "TALL",
+        "interval": "30.0 sec ",
+        "name": "Tallulah",
+        "earliest_data": "2004 Jan 16 14:00",
+        "latest_data": "2019 Jun 02 23:59",
+        "grouping": "CORS, GULFNET, PBO Expanded Analysis"
+      }
+    }
+  ]
+}

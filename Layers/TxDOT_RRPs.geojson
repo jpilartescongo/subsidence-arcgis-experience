@@ -1,0 +1,1229 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.6692026,
+          30.38014553
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Alpine",
+        "State": "Texas",
+        "Code": "TXAL",
+        "Elevation": "1340.8811"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.5843184,
+          31.98201022
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Anthony TIC",
+        "State": "Texas",
+        "Code": "TXAT",
+        "Elevation": "1171.1442"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.81672715,
+          32.2260225
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Athens",
+        "State": "Texas",
+        "Code": "TXAH",
+        "Elevation": "154.8304"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.15347813,
+          33.11355965
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Atlanta",
+        "State": "Texas",
+        "Code": "TXAA",
+        "Elevation": "61.2988"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.18088555,
+          30.16138959
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Beaumont",
+        "State": "Texas",
+        "Code": "TXB1",
+        "Elevation": "-14.021"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.4736708,
+          31.19273184
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Big Lake",
+        "State": "Texas",
+        "Code": "TXBL",
+        "Elevation": "804.756"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.4758117,
+          32.26755893
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Big Spring",
+        "State": "Texas",
+        "Code": "TXBG",
+        "Elevation": "737.772"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.8934675,
+          34.50875527
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Bovina",
+        "State": "Texas",
+        "Code": "TXB4",
+        "Elevation": "1216.2454"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.87637147,
+          32.75447346
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Breckenridge",
+        "State": "Texas",
+        "Code": "TXB2",
+        "Elevation": "355.9484"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.2828305,
+          33.16528938
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Brownfield",
+        "State": "Texas",
+        "Code": "TXBF",
+        "Elevation": "991.4607"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.96665274,
+          31.73749794
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Brownwood",
+        "State": "Texas",
+        "Code": "TXBD",
+        "Elevation": "391.8184"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.04606297,
+          31.47217672
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Buffalo",
+        "State": "Texas",
+        "Code": "TXB5",
+        "Elevation": "90.6538"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.33235257,
+          32.13450593
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Carthage",
+        "State": "Texas",
+        "Code": "TXCA",
+        "Elevation": "68.4806"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.59721483,
+          31.91037931
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Comanche",
+        "State": "Texas",
+        "Code": "TXC4",
+        "Elevation": "394.0612"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.70181243,
+          33.37554542
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Cooper",
+        "State": "Texas",
+        "Code": "TXCP",
+        "Elevation": "123.8047"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.72388336,
+          33.99715271
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Crowell",
+        "State": "Texas",
+        "Code": "TXCW",
+        "Elevation": "430.1543"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.72583988,
+          33.05028406
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Daingerfield",
+        "State": "Texas",
+        "Code": "TXDI",
+        "Elevation": "98.4167"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.8302049,
+          33.62366204
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Dickens",
+        "State": "Texas",
+        "Code": "TXDK",
+        "Elevation": "763.8972"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.3030656,
+          34.53011924
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Dimmitt",
+        "State": "Texas",
+        "Code": "TXDM",
+        "Elevation": "1154.0519"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.963935,
+          35.89372229
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Dumas",
+        "State": "Texas",
+        "Code": "TXDU",
+        "Elevation": "1093.4824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.78426738,
+          32.88930959
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Emory",
+        "State": "Texas",
+        "Code": "TXEM",
+        "Elevation": "128.9871"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.17092913,
+          31.72310204
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Fairfield",
+        "State": "Texas",
+        "Code": "TXFD",
+        "Elevation": "118.229"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.15449933,
+          27.22844943
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Falfurrias",
+        "State": "Texas",
+        "Code": "TXFF",
+        "Elevation": "16.276"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.14154629,
+          29.16082135
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Floresville",
+        "State": "Texas",
+        "Code": "TXFL",
+        "Elevation": "119.9631"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.3415431,
+          33.99285819
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Floydada",
+        "State": "Texas",
+        "Code": "TXFY",
+        "Elevation": "949.6902"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.8495402,
+          31.29585915
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Fort Hancock",
+        "State": "Texas",
+        "Code": "TXFA",
+        "Elevation": "1068.4606"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.84678557,
+          30.2459713
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Fredericksburg",
+        "State": "Texas",
+        "Code": "TXFR",
+        "Elevation": "474.6319"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.17652421,
+          33.64190768
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Gainesville",
+        "State": "Texas",
+        "Code": "TXGI",
+        "Elevation": "212.6717"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.70801795,
+          31.4325705
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Gatesville",
+        "State": "Texas",
+        "Code": "TXGT",
+        "Elevation": "249.1101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.05861579,
+          28.33268528
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "George West",
+        "State": "Texas",
+        "Code": "TXGW",
+        "Elevation": "19.7542"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.00537305,
+          30.23602738
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Giddings",
+        "State": "Texas",
+        "Code": "TXGG",
+        "Elevation": "110.3669"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.74469173,
+          32.31576542
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Glen Rose",
+        "State": "Texas",
+        "Code": "TXGS",
+        "Elevation": "224.876"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.40207006,
+          28.66728416
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Goliad",
+        "State": "Texas",
+        "Code": "TXGO",
+        "Elevation": "33.679"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.13566554,
+          31.06097396
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Groveton",
+        "State": "Texas",
+        "Code": "TXGN",
+        "Elevation": "79.4794"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.3230815,
+          33.61693465
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Guthrie",
+        "State": "Texas",
+        "Code": "TXGH",
+        "Elevation": "505.8524"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.6017152,
+          30.8925275
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Hearne",
+        "State": "Texas",
+        "Code": "TXH1",
+        "Elevation": "79.1938"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.67407781,
+          27.30036181
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Hebbronville",
+        "State": "Texas",
+        "Code": "TXHB",
+        "Elevation": "143.9043"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.81083379,
+          32.12031077
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Henderson",
+        "State": "Texas",
+        "Code": "TXHD",
+        "Elevation": "97.505"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.42922219,
+          29.77901219
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Houston",
+        "State": "Texas",
+        "Code": "TXHS",
+        "Elevation": "-4.6289"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.0424387,
+          31.92651621
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Hueco Tanks",
+        "State": "Texas",
+        "Code": "TXHT",
+        "Elevation": "1360.5658"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.59615101,
+          30.74237459
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Huntsville",
+        "State": "Texas",
+        "Code": "TXHN",
+        "Elevation": "89.9857"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.70681377,
+          32.64444802
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Hutchins",
+        "State": "Texas",
+        "Code": "TXHC",
+        "Elevation": "122.0235"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.77693476,
+          30.49992899
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Junction",
+        "State": "Texas",
+        "Code": "TXJN",
+        "Elevation": "504.174"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.79286142,
+          27.13373416
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Kenedy County Safety Rest Area",
+        "State": "Texas",
+        "Code": "txkn",
+        "Elevation": "-6.7966"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.85542272,
+          27.5348448
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Kingsville",
+        "State": "Texas",
+        "Code": "TXKI",
+        "Elevation": "-3.244"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.84829463,
+          29.91674396
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "La Grange",
+        "State": "Texas",
+        "Code": "TXLG",
+        "Elevation": "72.5912"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.18766043,
+          31.07963432
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Lampasas",
+        "State": "Texas",
+        "Code": "TXLS",
+        "Elevation": "302.9694"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.3458111,
+          33.5943363
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Levelland",
+        "State": "Texas",
+        "Code": "TXLD",
+        "Elevation": "1053.2399"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.76947071,
+          32.48342916
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Longview",
+        "State": "Texas",
+        "Code": "TXLO",
+        "Elevation": "82.9858"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.91520665,
+          30.96001962
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Madisonville",
+        "State": "Texas",
+        "Code": "TXMD",
+        "Elevation": "66.1351"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.86396293,
+          31.30586844
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Marlin",
+        "State": "Texas",
+        "Code": "TXMR",
+        "Elevation": "98.875"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.19861802,
+          30.74796944
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Mason",
+        "State": "Texas",
+        "Code": "TXMS",
+        "Elevation": "449.211"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.47695672,
+          32.68926714
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Mineola",
+        "State": "Texas",
+        "Code": "TXMI",
+        "Elevation": "120.2276"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9916904,
+          33.16256158
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Mount Pleasant",
+        "State": "Texas",
+        "Code": "TXMO",
+        "Elevation": "100.5461"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.7535488,
+          34.23978204
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Muleshoe",
+        "State": "Texas",
+        "Code": "TXML",
+        "Elevation": "1140.0691"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.64514996,
+          33.44929599
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Munday",
+        "State": "Texas",
+        "Code": "TXMU",
+        "Elevation": "431.2573"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.40959191,
+          33.45405103
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "New Boston",
+        "State": "Texas",
+        "Code": "TXNB",
+        "Elevation": "80.5971"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.77519582,
+          30.84769338
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Newton",
+        "State": "Texas",
+        "Code": "TXNE",
+        "Elevation": "53.207"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.5153818,
+          31.39723017
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Pecos",
+        "State": "Texas",
+        "Code": "TXP3",
+        "Elevation": "772.677"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.7232349,
+          34.15001071
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Plainview",
+        "State": "Texas",
+        "Code": "TXPW",
+        "Elevation": "1007.1549"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.3873329,
+          33.6721851
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Ralls",
+        "State": "Texas",
+        "Code": "TXRA",
+        "Elevation": "925.2998"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.27139967,
+          28.31668639
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Refugio",
+        "State": "Texas",
+        "Code": "TXRF",
+        "Elevation": "-9.402"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.80916889,
+          27.28860149
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Riviera",
+        "State": "Texas",
+        "Code": "TXRI",
+        "Elevation": "-11.242"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.04883728,
+          28.06284597
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Rockport",
+        "State": "Texas",
+        "Code": "TXRT",
+        "Elevation": "-18.733"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.7457089,
+          31.19807943
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "San Saba",
+        "State": "Texas",
+        "Code": "TXSB",
+        "Elevation": "354.948"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.2185833,
+          35.22592937
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Shamrock",
+        "State": "Texas",
+        "Code": "TXSH",
+        "Elevation": "683.0138"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.46984548,
+          28.0166319
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Sinton",
+        "State": "Texas",
+        "Code": "TXS2",
+        "Elevation": "-8.1891"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.7950719,
+          33.18054475
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Tahoka",
+        "State": "Texas",
+        "Code": "TXTO",
+        "Elevation": "921.3759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.05663436,
+          33.47103267
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Texarkana",
+        "State": "Texas",
+        "Code": "TXTE",
+        "Elevation": "96.787"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.4243657,
+          35.24387462
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Vega",
+        "State": "Texas",
+        "Code": "TXVG",
+        "Elevation": "1211.521"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.04479254,
+          32.46359741
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Waskom",
+        "State": "Texas",
+        "Code": "TXWS",
+        "Elevation": "60.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.42363248,
+          30.78198476
+        ]
+      },
+      "properties": {
+        "TxDOT_RRPs_Count": "1",
+        "Title": "Woodville",
+        "State": "Texas",
+        "Code": "TXWO",
+        "Elevation": "72.7716"
+      }
+    }
+  ]
+}
