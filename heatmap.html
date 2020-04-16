@@ -37,6 +37,54 @@
             padding: 10px;
             font-size: 15px;
         }
+
+        /* ---------------- Properties for layer symbology within map ---------------- */
+        #myLayers {
+            background: #fff;
+            position: absolute;
+            z-index: 1;
+            border-radius: 3px;
+            width: 120px;
+            margin-left: -6.8px;
+            margin-top: -6.7px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #myLayers a {
+            font-size: 12px;
+            color: #000000;
+            display: block;
+            margin: 0;
+            padding: 0;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #9FBFDF;
+            border-bottom: 1px solid rgba(0,0,0,0.25);
+            text-align: center;
+        }
+
+        /* Properties for map layers*/
+        
+        #myLayers a.active {
+            background-color: #3887be;
+            color: #ffffff;
+            font-weight: 200;
+        }
+
+        #myLayers a.inactive {
+            background-color: #9FBFDF;
+            color: #000000;
+            font-weight: 200;
+        }
+
+        #myLayers a:hover {
+            background-color: rgba(22,54,76, 0.5);
+            color: #E7EAED;
+            font-weight: 200;
+            font-style: italic;
+            cursor: pointer;
+        }
+        /*------------------------------------------------*/
     </style>
 </head>
 <body>
@@ -53,7 +101,7 @@
             <div class="key" style="background-color:rgb(170,1,20); color: white;">TxDOT RRPs</div>
         </div>
     </div>
-
+    <nav id='myLayers'></nav>
     <!-- INITIALIZING FEATURES LAYERS AS VARIABLES -->
     <script>
 
@@ -80,7 +128,7 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "cbi-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": "cbi-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
         }
 
         // COCONet
@@ -2465,7 +2513,7 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
         }
 
         // CORS/NOAA Stations
@@ -2940,7 +2988,7 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "cors-stations", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": "cors-stations", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
         };
 
         // HoustonNet
@@ -3499,7 +3547,7 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
         }
 
         // GulfNet
@@ -3814,7 +3862,7 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
         }
 
         // Tide Gauges
@@ -5889,7 +5937,7 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "tide-gauges", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": "tide-gauges", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
         };
 
         // TLALOCNet
@@ -6504,7 +6552,7 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
         }
 
         // TxDOT RRPs
@@ -6591,14 +6639,14 @@
                     ]
                 }
             },
-            "layout": { "icon-image": "txdot-rrps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": "txdot-rrps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
         }
 
     </script>
 
     <!-- MAIN SCRIPT -->
     <script>
-        
+
         // ********************************************************************************* MAP INITIALIZATION *********************************************************************************
         mapboxgl.accessToken = 'pk.eyJ1IjoiamNvbmdvIiwiYSI6ImNrMHFwdGx0ajBiNWEzYm80bGI3dTNwbGUifQ.KNC-Uv_lns14pda2jSRC1A';
         var map = new mapboxgl.Map({
@@ -6611,7 +6659,7 @@
             zoom: 2
         });
 
-        // ***************************************************************************** POPULATING MAP WITH LAYERS *****************************************************************************        
+        // ***************************************************************************** POPULATING MAP WITH LAYERS *****************************************************************************
         map.on('load', function () {
 
             // ------------------------------------------------------------------------------ Styling for features  ------------------------------------------------------------------------------
@@ -7132,7 +7180,7 @@
                         ]
                     }
                 },
-                maxzoom: 8,
+                maxzoom: 15,
                 paint: {
                     // Increase the heatmap weight based on frequency and property.
                     'heatmap-weight': ['interpolate', ['linear'], ['get', 'sideID'], 0, 0, 1, 1],
@@ -7144,7 +7192,7 @@
                     // adjust the heatmap radius by zoom level.
                     'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 0, 0, 3, 30],
                     // transition from heatmap to circle layer by zoom layer.
-                    'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
+                    //'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
                 },
             }, 'waterway-label');
 
@@ -12689,7 +12737,7 @@
                         ]
                     }
                 },
-                maxzoom: 8,
+                maxzoom: 15,
                 paint: {
                     // Increase the heatmap weight based on frequency and property.
                     'heatmap-weight': ['interpolate', ['linear'], ['get', 'sideID'], 0, 0, 1, 1],
@@ -12701,7 +12749,7 @@
                     // adjust the heatmap radius by zoom level.
                     'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 0, 0, 3, 30],
                     // transition from heatmap to circle layer by zoom layer.
-                    'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
+                    //'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
                 },
             }, 'waterway-label');
 
@@ -12728,7 +12776,7 @@
                         ]
                     }
                 },
-                maxzoom: 8,
+                maxzoom: 15,
                 paint: {
                     // Increase the heatmap weight based on frequency and property.
                     'heatmap-weight': ['interpolate', ['linear'], ['get', 'sideID'], 0, 0, 1, 1],
@@ -12740,7 +12788,7 @@
                     // adjust the heatmap radius by zoom level.
                     'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 0, 0, 3, 30],
                     // transition from heatmap to circle layer by zoom layer.
-                    'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
+                    //'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
                 },
             }, 'waterway-label');
 
@@ -12829,7 +12877,7 @@
                         ]
                     }
                 },
-                maxzoom: 8,
+                maxzoom: 15,
                 paint: {
                     // Increase the heatmap weight based on frequency and property.
                     'heatmap-weight': ['interpolate', ['linear'], ['get', 'sideID'], 0, 0, 1, 1],
@@ -12841,7 +12889,7 @@
                     // adjust the heatmap radius by zoom level.
                     'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 0, 0, 3, 30],
                     // transition from heatmap to circle layer by zoom layer.
-                    'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
+                    //'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
                 },
             }, 'waterway-label');
 
@@ -12910,7 +12958,7 @@
                 map.getCanvas().style.cursor = '';
             });
             */
-            
+
 
             // Event handling for TxDOT RRPs and UNAVCO Stations
             // coconet
@@ -12967,7 +13015,7 @@
                 map.getCanvas().style.cursor = '';
             });
 
-            // houstonet
+            // houstonnet
             map.on('click', 'HoustonNet', function (HoustonNet) {
                 map.getCanvas().style.cursor = 'pointer';
                 var coordinates = HoustonNet.features[0].geometry.coordinates.slice();
@@ -13071,20 +13119,61 @@
             map.on('mouseleave', 'CBI cGPS', function () {
                 map.getCanvas().style.cursor = '';
             });
-            
+
             // ------------------------------------------------------------------------------ Additional map control ------------------------------------------------------------------------------
+            /*
             // Full screen control
             map.addControl(new mapboxgl.FullscreenControl({ container: document.querySelector('map') }), 'top-left');
 
             // Navigation control
             map.addControl(new mapboxgl.NavigationControl(), 'top-left');
-
+            */
             // scale bar
             map.addControl(new mapboxgl.ScaleControl({ unit: 'imperial', position: 'bottom-right' }));
 
             // Float map on start, and set back to due north once clicked on
-            map.panTo([-93, 30.6], { duration: 5000, zoom: 4.9});
+            map.panTo([-93, 30.6], { duration: 5000, zoom: 4.9 });
         });
     </script>
+
+    <!-- Functionalities script-->
+    <script>
+        // ****************************************************************** TOGGLE BUTTONS  ******************************************************************
+        var toogleButton = ['CORS Stations', 'CBI cGPS', 'COCONet', 'GulfNet', 'HoustonNet', 'TLALOCNet', 'TxDOT RRPs'];
+
+        for (var i = 0; i < toogleButton.length; i++) {
+            var id = toogleButton[i];
+
+            var link = document.createElement('a');
+            link.href = '#';
+            link.className = 'inactive';
+            link.textContent = id;
+
+            // turn clicked toggle button on/off
+            link.onclick = function (g) {
+                var clickedLayer = this.textContent;
+                g.preventDefault();
+                g.stopPropagation();
+
+                // Turn visibility on and off.
+                var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+                // triggers when a map layer is turned on
+                if (visibility === 'none') {
+                    map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                    this.className = 'active';
+                }
+                // triggers when a map layer is turned off
+                else {
+                    this.className = 'inactive';
+                    map.setLayoutProperty(clickedLayer, 'visibility', 'none');                    
+                }
+            };
+
+            var layers = document.getElementById('myLayers');
+            layers.appendChild(link);
+        }
+    </script>
+
 </body>
 </html>
