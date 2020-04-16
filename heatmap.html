@@ -54,10 +54,8 @@
         </div>
     </div>
 
-    <!-- Features -->
+    <!-- INITIALIZING FEATURES LAYERS AS VARIABLES -->
     <script>
-
-        // **************************************************************************** ADDING EACH OF THE STATIONS AS FEATURE LAYERS CORS STATIONS ****************************************************************************
 
         // CBI cGPS
         var CBI_cGPS = {
@@ -83,7 +81,7 @@
                 }
             },
             "layout": { "icon-image": "cbi-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
-        }  
+        }
 
         // COCONet
         var COCONet = {
@@ -2468,7 +2466,7 @@
                 }
             },
             "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
-        }        
+        }
 
         // CORS/NOAA Stations
         var CORS_Stations = {
@@ -2945,7 +2943,7 @@
             "layout": { "icon-image": "cors-stations", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
         };
 
-        // HoustonNet       
+        // HoustonNet
         var HoustonNet = {
             "id": "HoustonNet",
             "type": "symbol",
@@ -6596,12 +6594,12 @@
             "layout": { "icon-image": "txdot-rrps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
         }
 
-        
     </script>
 
-    <!-- Main script -->
+    <!-- MAIN SCRIPT -->
     <script>
-        // ********************************************************** Map properties for NOAA CORS Stations **********************************************************
+        
+        // ********************************************************************************* MAP INITIALIZATION *********************************************************************************
         mapboxgl.accessToken = 'pk.eyJ1IjoiamNvbmdvIiwiYSI6ImNrMHFwdGx0ajBiNWEzYm80bGI3dTNwbGUifQ.KNC-Uv_lns14pda2jSRC1A';
         var map = new mapboxgl.Map({
             container: 'map',
@@ -6610,21 +6608,21 @@
             interactive: true,
             style: 'mapbox://styles/mapbox/dark-v10',
             center: [-93, 30.6],
-            zoom: 4.9
+            zoom: 3
         });
 
-        // **************************************************************************************************************************************************************/
-        // ADDING NSRS CORS-NETWORK HEATMAP LAYER
+        // ***************************************************************************** POPULATING MAP WITH LAYERS *****************************************************************************        
         map.on('load', function () {
 
+            // ------------------------------------------------------------------------------ Styling for features  ------------------------------------------------------------------------------
             // Styling for CBI cGPS Stations
             map.loadImage('https://img.icons8.com/windows/540/000000/gps-receiving.png', function (error, image) {
                 if (error) throw error;
-                map.addImage('cbi-cgps', image);                
-                map.addLayer(CBI_cGPS);                
+                map.addImage('cbi-cgps', image);
+                map.addLayer(CBI_cGPS);
             }
             );
-                                   
+
             // Styling for NOAA/CORS Stations
             map.loadImage('https://img.icons8.com/material/200/000000/filled-circle.png', function (error, image) {
                 if (error) throw error;
@@ -6660,8 +6658,9 @@
                 map.addLayer(TxDOT_RRPs);
             }
             );
-            
-            
+
+            // --------------------------------------------------------------------------------- Creating heatmap ---------------------------------------------------------------------------------
+            // CORS/NOAA Stations heatmap
             map.addLayer({
                 id: 'CORS-Station-heat',
                 type: 'heatmap',
@@ -7149,7 +7148,7 @@
                 },
             }, 'waterway-label');
 
-            // ADDING UNAVCO NETWORK HEATMAP LAYER
+            // UNAVCO Stations heatmap
             map.addLayer({
                 id: 'UNAVCO-Station-heat',
                 type: 'heatmap',
@@ -12706,7 +12705,7 @@
                 },
             }, 'waterway-label');
 
-            // Adding CBI cGPS NETWORK HEATMAP LAYER
+            // CBI cGPS heatmap
             map.addLayer({
                 id: 'CBI-cGPS-heat',
                 type: 'heatmap',
@@ -12746,7 +12745,7 @@
             }, 'waterway-label');
 
 
-            // ADDING TxDOT RRPs NETWORK HEATMAP LAYER
+            // TxDOT RRPs heatmap
             map.addLayer({
                 id: 'TxDOT-RRPs-heat',
                 type: 'heatmap',
@@ -12845,6 +12844,246 @@
                     'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 3, 1, 9, 0],
                 },
             }, 'waterway-label');
+
+
+            // ------------------------------------------------------------------------------ Popup box for feature layers ------------------------------------------------------------------------------
+            // Creating popup boxes with option to close
+            var popup = new mapboxgl.Popup({
+                closeButton: true,
+                closeOnClick: true
+            });
+
+            // Event handling for CORS/NOAA Stations
+            map.on('click', 'CORS Stations', function (e) {
+                map.getCanvas().style.cursor = 'pointer';
+                var coordinates = e.features[0].geometry.coordinates.slice();
+                var siteID = e.features[0].properties.SITEID;
+                var sampling = e.features[0].properties.SAMPLING;
+                var gnss = e.features[0].properties.GNSS;
+                var status = e.features[0].properties.STATUS;
+                var agency = e.features[0].properties.AGENCY;
+
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                // display popup box for clicked point
+                popup.setLngLat(coordinates)
+                    .setHTML('</p> Site ID: ' + siteID + '</p> Sampling Rate: ' + sampling + ' sec(s) </p> GNSS: ' + gnss + '</p> Status: ' + status + '</p> Agency: ' + agency +
+                        '</p> Metadata: <a target="blank" href="https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=' + siteID + '&option=Logfile">Click to open </a>' +
+                        '</p> More Information: <a target="blank" href="https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=' + siteID + '">Click here</a>')
+                    .addTo(map);
+            });
+            map.on('mouseenter', 'CORS Stations', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'CORS Stations', function () {
+                map.getCanvas().style.cursor = '';
+                popup.close()
+            });
+
+            /*
+            // Event handling for Tide Gauges
+            map.on('click', 'Tide Gauges', function (f) {
+                map.getCanvas().style.cursor = 'pointer';
+                var coordinates = f.features[0].geometry.coordinates.slice();
+                var title = f.features[0].properties.Title;
+                var state = f.features[0].properties.State;
+                var id = f.features[0].properties.ID;
+                var established = f.features[0].properties.Established;
+                var presentInstallation = f.features[0].properties.Installed;
+                var information = f.features[0].properties.Information;
+
+                while (Math.abs(f.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += f.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                popup.setLngLat(coordinates)
+                    .setHTML('<p style="font-weight: bold; font-size: 15px; text-align: center;"> Tide Gauge: ID ' + id + '</p> Name: ' + title + '</p> State: ' + state + '</p> Established: ' + established +
+                        '</p> Present Installation: ' + presentInstallation + '</p> More Information: <a target="blank" href="' + information + '">Click here</a>')
+                    .addTo(map);
+            });
+            map.on('mouseenter', 'Tide Gauges', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'Tide Gauges', function () {
+                map.getCanvas().style.cursor = '';
+            });
+            */
+            
+
+            // Event handling for TxDOT RRPs and UNAVCO Stations
+            // coconet
+            map.on('click', 'COCONet', function (COCONet) {
+                map.getCanvas().style.cursor = 'pointer';
+                var coordinates = COCONet.features[0].geometry.coordinates.slice();
+                var name = COCONet.features[0].properties.name;
+                var code = COCONet.features[0].properties.code;
+                var interval = COCONet.features[0].properties.interval;
+                var earliestData = COCONet.features[0].properties.earliest_data;
+                var latestData = COCONet.features[0].properties.latest_data;
+
+                while (Math.abs(COCONet.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += COCONet.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+
+                popup.setLngLat(coordinates)
+                    .setHTML('<p style="font-weight: bold; font-size: 15px; text-align: center; text-decoration: underline; "> COCONet (UNAVCO)' + '<p> Station Name: ' + name + '</p> Site ID: ' + code + '</p> Interval: ' + interval +
+                        '</p> Earliest Data: ' + earliestData.slice(5, 11) + ', ' + earliestData.slice(0, 4) + ' (' + earliestData.slice(12) + ')' + '</p> Latest Data: ' + latestData.slice(5, 11) + ', ' + latestData.slice(0, 4) + ' (' + latestData.slice(12) + ')')
+                    .addTo(map);
+            });
+            map.on('mouseenter', 'COCONet', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'COCONet', function () {
+                map.getCanvas().style.cursor = '';
+            });
+
+            // gulfnet
+            map.on('click', 'GulfNet', function (GulfNet) {
+                map.getCanvas().style.cursor = 'pointer';
+                var coordinates = GulfNet.features[0].geometry.coordinates.slice();
+                var name = GulfNet.features[0].properties.name;
+                var code = GulfNet.features[0].properties.code;
+                var interval = GulfNet.features[0].properties.interval;
+                var earliestData = GulfNet.features[0].properties.earliest_data;
+                var latestData = GulfNet.features[0].properties.latest_data;
+
+                while (Math.abs(GulfNet.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += GulfNet.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+
+                popup.setLngLat(coordinates)
+                    .setHTML('<p style="font-weight: bold; font-size: 15px; text-align: center; text-decoration: underline; "> GulfNet (UNAVCO)' + '<p> Station Name: ' + name + '</p> Site ID: ' + code + '</p> Interval: ' + interval +
+                        '</p> Earliest Data: ' + earliestData.slice(5, 11) + ', ' + earliestData.slice(0, 4) + ' (' + earliestData.slice(12) + ')' + '</p> Latest Data: ' + latestData.slice(5, 11) + ', ' + latestData.slice(0, 4) + ' (' + latestData.slice(12) + ')')
+                    .addTo(map);
+            });
+            map.on('mouseenter', 'GulfNet', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'GulfNet', function () {
+                map.getCanvas().style.cursor = '';
+            });
+
+            // houstonet
+            map.on('click', 'HoustonNet', function (HoustonNet) {
+                map.getCanvas().style.cursor = 'pointer';
+                var coordinates = HoustonNet.features[0].geometry.coordinates.slice();
+                var name = HoustonNet.features[0].properties.name;
+                var code = HoustonNet.features[0].properties.code;
+                var interval = HoustonNet.features[0].properties.interval;
+                var earliestData = HoustonNet.features[0].properties.earliest_data;
+                var latestData = HoustonNet.features[0].properties.latest_data;
+
+                while (Math.abs(HoustonNet.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += HoustonNet.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+
+                popup.setLngLat(coordinates)
+                    .setHTML('<p style="font-weight: bold; font-size: 15px; text-align: center; text-decoration: underline; "> HoustonNet (UNAVCO)' + '<p> Station Name: ' + name + '</p> Site ID: ' + code + '</p> State: ' + 'Texas' + '</p> Interval: ' + interval +
+                        '</p> Earliest Data: ' + earliestData.slice(5, 11) + ', ' + earliestData.slice(0, 4) + ' (' + earliestData.slice(12) + ')' + '</p> Latest Data: ' + latestData.slice(5, 11) + ', ' + latestData.slice(0, 4) + ' (' + latestData.slice(12) + ')')
+                    .addTo(map);
+            });
+            map.on('mouseenter', 'HoustonNet', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'HoustonNet', function () {
+                map.getCanvas().style.cursor = '';
+            });
+
+            // tlalocnet
+            map.on('click', 'TLALOCNet', function (TLALOCNet) {
+                map.getCanvas().style.cursor = 'pointer';
+                var coordinates = TLALOCNet.features[0].geometry.coordinates.slice();
+                var name = TLALOCNet.features[0].properties.name;
+                var code = TLALOCNet.features[0].properties.code;
+                var interval = TLALOCNet.features[0].properties.interval;
+                var earliestData = TLALOCNet.features[0].properties.earliest_data;
+                var latestData = TLALOCNet.features[0].properties.latest_data;
+
+                while (Math.abs(TLALOCNet.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += TLALOCNet.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                popup.setLngLat(coordinates)
+                    .setHTML('<p style="font-weight: bold; font-size: 15px; text-align: center; text-decoration: underline; "> TLALOCNet (UNAVCO)' + '<p> Station Name: ' + name + '</p> Site ID: ' + code + '</p> Interval: ' + interval +
+                        '</p> Earliest Data: ' + earliestData.slice(5, 11) + ', ' + earliestData.slice(0, 4) + ' (' + earliestData.slice(12) + ')' + '</p> Latest Data: ' + latestData.slice(5, 11) + ', ' + latestData.slice(0, 4) + ' (' + latestData.slice(12) + ')')
+                    .addTo(map);
+            });
+            map.on('mouseenter', 'HoustonNet', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'HoustonNet', function () {
+                map.getCanvas().style.cursor = '';
+            });
+
+            // txdot rrps
+            map.on('click', 'TxDOT RRPs', function (TxDOT) {
+                map.getCanvas().style.cursor = 'pointer';
+                var coordinates = TxDOT.features[0].geometry.coordinates.slice();
+                var title = TxDOT.features[0].properties.Title;
+                var state = TxDOT.features[0].properties.State;
+                var code = TxDOT.features[0].properties.Code;
+                var elevation = TxDOT.features[0].properties.Elevation;
+
+                while (Math.abs(TxDOT.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += TxDOT.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                popup.setLngLat(coordinates)
+                    .setHTML('<p style="font-weight: bold; font-size: 15px; text-align: center; text-decoration: underline; "> TxDOT RRPs (UNAVCO)' + '<p> Station Name: ' + title + '</p> Site ID: ' + code + '</p> State: ' + state +
+                        '</p> Elevation (m): ' + elevation)
+                    .addTo(map);
+            });
+            map.on('mouseenter', 'TxDOT RRPs', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'TxDOT RRPs', function () {
+                map.getCanvas().style.cursor = '';
+            });
+
+
+            // Event handling for CBI cGPS
+            map.on('click', 'CBI cGPS', function (h) {
+                map.getCanvas().style.cursor = 'pointer';
+                var coordinates = h.features[0].geometry.coordinates.slice();
+                var title = h.features[0].properties.Title;
+                var state = h.features[0].properties.State;
+                var code = h.features[0].properties.Code;
+                var elevation = h.features[0].properties.Elevation;
+                var established = h.features[0].properties.Established;
+
+                while (Math.abs(h.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += h.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                popup.setLngLat(coordinates)
+                    .setHTML('<p style="font-weight: bold; font-size: 15px; text-align: center; text-decoration: underline;"> CBI cGPS' + '<p>Station Name: ' + title + '</p> Site ID: ' + code + '</p> State: ' + state +
+                        '</p> Elevation (m): ' + elevation + '</p> Established: ' + established)
+                    .addTo(map);
+            });
+            map.on('mouseenter', 'CBI cGPS', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'CBI cGPS', function () {
+                map.getCanvas().style.cursor = '';
+            });
+            
+            // ------------------------------------------------------------------------------ Additional map control ------------------------------------------------------------------------------
+            // Full screen control
+            map.addControl(new mapboxgl.FullscreenControl({ container: document.querySelector('map') }));
+
+            // Navigation control
+            map.addControl(new mapboxgl.NavigationControl());
+
+            // scale bar
+            map.addControl(new mapboxgl.ScaleControl({ unit: 'imperial', position: 'bottom-right' }));
+
+            // Float map on start, and set back to due north once clicked on
+            map.panTo([-93, 30.6], { duration: 5000, zoom: 4.9});
         });
     </script>
 </body>
