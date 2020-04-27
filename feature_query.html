@@ -305,7 +305,7 @@
                                 
 
                 /**************************************************************************************************************************************************
-                 * Draw the buffer polygon when application loads or when user searches for a new location
+                 * Draw the buffer polygon when application loads or when user searches for a new location and update interactive chart with query results
                  **************************************************************************************************************************************************/
                 function drawBufferPolygon() {
                     // When pause() is called on the watch handle, the callback represented by the
@@ -419,6 +419,7 @@
                     calculateBuffer(vertices);
                 }
 
+
                 let chart;
 
                 // ORIGINAL CHART
@@ -439,25 +440,21 @@
                         const canvasElement = document.getElementById("chart");
 
                         chart = new Chart(canvasElement.getContext("2d"), {
-                            type: "horizontalBar",                            
+                            type: "horizontalBar",
+                            //type: "bar", 
                             data: {
                                 // count
-                                labels: [
-                                    "CBI cGPS",
-                                    "COCONet",
-                                    "CORS/NOAA",
-                                    "GulfNet",
-                                    "HoustonNet",
-                                    "Tide Gauges",
-                                    "TLALONet",
-                                    "TxDOT RRPs"
-                                ],
-                                datasets: [
+                                labels: ["CBI cGPS", "COCONet", "CORS/NOAA", "GulfNet", "HoustonNet", "Tide Gauges", "TLALONet", "TxDOT RRPs"],
+                                backgroundColor: [ "#000000", "#999999", "#2166AC", "#B75454", "#7FBF7B", "#FF2500", "#FFA500", "#0080FF"]
+
+
+                                /*datasets: [
                                     {
                                         label: "CBI cGPS",
                                         backgroundColor: "#000000",
                                         borderColor: "#000000",
                                         borderWidth: 0.25,
+                                        barthickness: 70, //added
                                         data: CBI_cGPS_Data
                                     },
                                     {
@@ -465,6 +462,7 @@
                                         backgroundColor: "#999999",
                                         borderColor: "#999999",
                                         borderWidth: 0.25,
+                                        barthickness: 70, //added
                                         data: COCONet_Data
                                     },
                                     {
@@ -499,7 +497,7 @@
                                         label: "TLALOCNet",
                                         backgroundColor: "#FFA500",
                                         borderColor: "#FFA500",
-                                        borderWidth: 0.25,
+                                        borderWidth: 0.25,                                        
                                         data: TLALOCNet_Data
                                     },
                                     {
@@ -509,7 +507,7 @@
                                         borderWidth: 0.25,
                                         data: TxDOT_RRPs_Data
                                     }
-                                ]
+                                ]*/
                             },
                             options: {
                                 responsive: false,
@@ -525,7 +523,7 @@
                                         {
                                             categorySpacing: 10,
                                             barThickness: 10,
-                                            stacked: false,
+                                            stacked: true,
                                             scaleLabel: {
                                                 display: false,
                                                 labelString: "# of Stations"
@@ -534,12 +532,6 @@
                                     ],
                                     xAxes: [
                                         {
-                                            ticks: {
-                                                callback: function (value) {
-                                                    const val = Math.abs(parseInt(value));
-                                                    return numberWithCommas(val);
-                                                }
-                                            },
                                             scaleLabel: {
                                                 display: false,
                                                 labelString: "Category"
