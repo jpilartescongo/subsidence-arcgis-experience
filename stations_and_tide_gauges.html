@@ -8,107 +8,22 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='stylesheet' />
-    <link href='Appearance.css' rel='stylesheet' />
-    <script type="text/javascript" src='CORS_Tide_Gauges_GPS_Points.js'></script>
-    <script type="text/javascript" src='./Other/State_Boundaries.js'></script>
-    <script type="text/javascript" src='Querying.js'></script>
-
     <style>
-        body {
-            background-image: url("./Images/Background.jpg");
-        }
-
-        html {
+        html, body {
             overflow-x: hidden;
-        }
-
-        #clusterButtonOn {
-            margin-left: 15px;
-        }
-
-        #clusterButtonOff {
-            margin-left: 7px;
+            overflow-y: hidden;
+            height: 99%;
+            width: 100%;
         }
 
         #map {
-            border-style: solid;
-            position: absolute;
+            
             display: inherit;
             float: left;
-            height: 77%;
-            width: 60%;
-            margin-right: 10px;
+            height: 91.8%;
+            width: 98.5%;
+            margin-right:-3px;
             margin-top: -10px;
-        }
-
-        #contact_us_map {
-            border-style: double;
-            position: absolute;
-            height: 77%;
-            width: 30%;
-            margin-right: 10px;
-        }
-
-        #text {
-            text-align: justify;
-            font-size: 16px;
-            float: right;
-            width: 36%;
-            margin-top: -10px;
-        }
-
-        h1 {
-            text-align: center;
-            font-family: Verdana, Geneva, Arial, Helvetica, sans-seriff;
-            font-size: 25px;
-            color: white;
-            width: 101.7%;
-            background-color: #0067C5;
-            padding: 14px 16px;
-            border: 1px solid black;
-            margin-top: -2px;
-        }
-
-        h2 {
-            text-align: center;
-            font-family: Verdana, Geneva, Arial, Helvetica, sans-seriff;
-            font-size: 20px;
-            color: white;
-            width: 103.05%;
-            background-color: #00783B;
-            margin-top: 2px;
-            margin-left: -11px;
-        }
-
-        h6 {
-            text-align: center;
-            font-family: Verdana, Geneva, Arial, Helvetica, sans-seriff;
-            font-size: 15px;
-            color: white;
-            width: 103.05%;
-            background-color: #00783B;
-            margin-top: 2px;
-            margin-left: -11px;
-        }
-
-        h5 {
-            font-size: 13px;
-            font-weight: 100;
-            margin-bottom: 10px;
-        }
-
-        html, body {
-            height: 98.5%;
-            width: 98.7%;
-        }
-
-        #mapText {
-            font-family: Verdana, Geneva, Arial, Helvetica, sans-seriff;
-            font-size: 15px;
-            margin-left: 10px;
         }
 
         #panel {
@@ -131,8 +46,8 @@
             z-index: 1;
             border-radius: 3px;
             width: 120px;
-            margin-left: 3px;
-            margin-top: -7px;
+            margin-left: 0px;
+            margin-top: -10px;
             font-family: 'Open Sans', sans-serif;
         }
 
@@ -184,188 +99,8 @@
 
         /*------------------------------------------------*/
 
-        /* Properties for navigation buttons or tabs */
-        .tab {
-            text-align: center;
-            overflow: hidden;
-            border: 1px solid black;
-            width: 101.7%;
-            background-color: #f1f1f1;
-            margin-top: -10px;
-        }
-
-        .tab button {
-            background-color: inherit;
-            font-family: Verdana, Geneva, Arial, Helvetica, sans-seriff;
-            border: none;
-            cursor: pointer;
-            outline: none;
-            padding: 14px 16px;
-            width: 15%;
-            transition: 0.3s;
-            font-size: 14px;
-        }
-
-        .tab button.active {
-            background-color: rgba(255, 0, 0, 0.3);
-        }
-
-        .tab button:hover {
-            background-color: rgba(255, 0, 0, 0.1);
-            transition: width 2s;
-        }
-
-        .tabcontent {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-        /*------------------------------------------------*/
-
-        .mapboxgl-popup {
-            max-width: 400px;
-            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        }
-
-        iframe {
-            width: 1850px;
-            height: 700px;
-            border: none;
-        }
-
-        #satellite_map_frame {
-            position: absolute;
-        }
-
-        #about_us_frame {
-            text-align: right;
-            margin-top: 50px;
-            margin-left: 250px;
-        }
-
-        #about_us_text {
-            position: absolute;
-            text-align: center;
-            margin-top: -650px;
-            margin-left: 900px;
-        }
-
         .mapboxgl-popup clusterPopup mapboxgl-popup-anchor-bottom {
             background-color: gray;
-        }
-
-        /*-------------- Social Media Icons ------------------*/
-        .fa {
-            padding: 20px;
-            font-size: 30px;
-            width: 50px;
-            text-align: center;
-            text-decoration: none;
-            margin: 5px 2px;
-        }
-
-        .fa:hover {
-            opacity: 0.7;
-        }
-
-        .fa-facebook {
-            background: #3B5998;
-            color: white;
-            width: 300px;
-        }
-
-        .fa-twitter {
-            background: #55ACEE;
-            color: white;
-        }
-
-        .fa-linkedin {
-            background: #007bb5;
-            color: white;
-        }
-
-        .fa-youtube {
-            background: #bb0000;
-            color: white;
-        }
-
-        .fa-instagram {
-            background: #125688;
-            color: white;
-        }
-
-        /* Column/row settings for related graphics page*/
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Create five equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 20%;
-            padding: 10px;
-            text-align: center;
-            height: 300px; /* Should be removed. Only for demonstration */
-            margin-top: -15px;
-            margin-bottom: 100px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /*-------------- Sidebar for Legend ------------------*/
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-            .sidenav a:hover {
-                color: #f1f1f1;
-            }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        #main {
-            transition: margin-left .5s;
-            padding: 16px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-
-                .sidenav a {
-                    font-size: 18px;
-                }
         }
     </style>
 </head>
@@ -390,19 +125,6 @@
             <option value="Planimetric">Planimetric</option>
             <option value="Angled">Angled</option>
         </select><br />
-
-        Heatmap:
-        <input type="radio" id="heatmapButtonOn" name="heatmapValue" value="heatmapOn" checked>
-        <label for="heatmapOn">On</label>
-        <input type="radio" id="heatmapButtonOff" name="heatmapValue" value="heatmapOff">
-        <label for="heatmapOff">Off</label><br />
-
-        Cluster:
-        <input type="radio" id="clusterButtonOn" name="clusterValue" value="clusterOn">
-        <label for="clusterOn">On</label>
-        <input type="radio" id="clusterButtonOff" name="clusterValue" value="clusterOff" checked>
-        <label for="clusterOff">Off</label>
-
         <p></p>
         <nav id='myLayers'></nav>
 
@@ -434,7 +156,7 @@
                 }
             },
             "layout": { "icon-image": "cbi-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
-        }
+        };
 
         // COCONet
         var COCONet = {
@@ -2819,7 +2541,7 @@
                 }
             },
             "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
-        }
+        };
 
         // CORS/NOAA Stations
         var CORS_Stations = {
@@ -3292,7 +3014,7 @@
                         { "type": "Feature", "properties": { "SITEID": "WMEL", "AGENCY": "Earl Dudley Associates Incorporated", "SAMPLING": "1", "STATUS": "Decommissioned", "ABBR": "EDA", "GNSS": "GPS", "AVAIL": "Hourly" }, "geometry": { "type": "Point", "coordinates": [-87.0808333333, 34.5233333333] } }
                     ]
                 },
-                "cluster": true,
+                "cluster": false,
                 "clusterMaxZoom": 7,
                 "clusterRadius": 110
             },
@@ -3856,7 +3578,7 @@
                 }
             },
             "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
-        }
+        };
 
         // GulfNet
         var GulfNet = {
@@ -4171,7 +3893,7 @@
                 }
             },
             "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
-        }
+        };
 
         // Tide Gauges
         var Tide_Gauges = {
@@ -6861,7 +6583,7 @@
                 }
             },
             "layout": { "icon-image": "unavco-cgps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
-        }
+        };
 
         // TxDOT RRPs
         var TxDOT_RRPs = {
@@ -6948,7 +6670,7 @@
                 }
             },
             "layout": { "icon-image": "txdot-rrps", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "none" }
-        }
+        };
 
     </script>
 
@@ -7034,7 +6756,7 @@
 
                 // ***********************************************************************************************************************************************************
 
-                // Creating popup boxes with option to close
+                // Creating popup boxes
                 var popup = new mapboxgl.Popup({
                     closeButton: true,
                     closeOnClick: true
@@ -7265,22 +6987,25 @@
 
                 // ************************************************************** Cluster layer and properties **************************************************************
                 map.addLayer({
-                    id: "clusters", type: "circle", source: "CORS Stations", filter: ["has", "point_count"],
+                    id: 'clusters',
+                    type: 'circle',
+                    source: 'CORS Stations',
+                    filter: ['has', 'point_count'],
                     paint: {
-                        "circle-color": [
-                            "step",
-                            ["get", "point_count"],
-                            "rgba(30,144,255,95%)",
+                        'circle-color': [
+                            'step',
+                            ['get', 'point_count'],
+                            'rgba(30,144,255,95%)',
                             30,
-                            "rgba(65,105,205,95%)",
+                            'rgba(65,105,205,95%)',
                             100,
-                            "rgba(255,165,0,95%)",
+                            'rgba(255,165,0,95%)',
                             150,
-                            "rgba(255,69,0,90%)"
+                            'rgba(255,69,0,90%)'
                         ],
-                        "circle-radius": [
-                            "step",
-                            ["get", "point_count"],
+                        'circle-radius': [
+                            'step'
+                            ['get', 'point_count'],
                             30,
                             40,
                             54,
@@ -7291,15 +7016,30 @@
                 });
 
                 map.addLayer({
-                    id: "cluster-count", type: "symbol", source: "CORS Stations", filter: ["has", "point_count"],
-                    layout: { "text-field": "{point_count_abbreviated}", "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"], "text-size": 12 }
+                    id: 'custer-count',
+                    type: 'symbol',
+                    source: 'CORS Stations',
+                    filter: ['has', 'point_count'],
+                    layout: {
+                        'text-field': '{point_count_abbreviated}',
+                        'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+                        'text-size': 12
+                    }
                 });
 
                 map.addLayer({
-                    id: "unclustered-point", type: "circle", source: "CORS Stations", filter: ["!", ["has", "point_count"]],
-                    paint: { "circle-color": "#000000 ", "circle-radius": 4, "circle-stroke-width": 1, "circle-stroke-color": "#000000  " }
+                    id: 'unclustered-point',
+                    type: 'circle',
+                    source: 'CORS Stations',
+                    filter: ['!', ['has', 'point_count']],
+                    paint: {
+                        'circle-color': '#000000',
+                        'circle-radius': 4,
+                        'circle-stroke-width': 1,
+                        'circle-stroke-color': '#000000'
+                    }
                 });
-
+                
                 // CORS Clusters
                 map.on('click', 'clusters', function (e) {
                     var features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
@@ -7376,7 +7116,7 @@
                             map.panTo([-77, 16], { duration: 1500, zoom: 4 });
                         }
                         else {
-                            map.panTo(initialCenter, { duration: 1500, zoom: 4.9 });
+                            console.log('No map readjustment needed');
                         }
                     }
                     // triggers when a map layer is turned off
@@ -7391,18 +7131,13 @@
                             map.panTo(initialCenter, { duration: 1500, zoom: 4.9 });
                         }
                         else {
-                            console.log('No need to readjust map');
+                            console.log('No map readjustment needed');
                         }
                     }
                 };
 
                 var layers = document.getElementById('myLayers');
-                layers.appendChild(link);
-
-
-                //console.log(id[1]);
-                //console.log(link.text);
-
+                layers.appendChild(link);                
             }
 
             // ************************************************************** ZOOM EXTENT PROPERTIES **************************************************************
