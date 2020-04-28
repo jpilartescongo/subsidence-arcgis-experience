@@ -13,7 +13,7 @@ Data downloadble from:
 	Tide Gauges Data: http://gulfsubsidence.org/
 	UNAVCO Stations Data: https://www.unavco.org/data/gps-gnss/data-access-methods/dai2/app/dai2.html#Grouping=COCONet;scope=Station;sampleRate=normal;GroupingMod=contains;GroupingMod=contains
 		UNAVCO includes: COCONet, GulfNet, HoustonNet, TLALOCNet
-		TxDOT RRPs was also retrieved from UNAVCO related sources. However, not directly from their website.
+	TxDOT RRPs Data: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/TxDOT_RTN_RRP_Coordinates_rev_03-17-2019.pdf
 
 
 
