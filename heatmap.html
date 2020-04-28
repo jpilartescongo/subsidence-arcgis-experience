@@ -95,13 +95,33 @@
 
         <!-- Legend div -->
         <div id="legend">
-            <div class="key" style="background-color:rgb(0,100,0); color: white;">NOAA/NSRS Stations</div>
-            <div class="key" style="background-color:rgb(255,255,0);">UNAVCO Stations</div>
+            <div class="key" style="background-color:rgb(0,100,0); color: white;">CORS (NOAA/NSRS)</div>
+            <div class="key" style="background-color:rgb(255,255,0);">UNAVCO</div>
             <div class="key" style="background-color:rgb(0,0,139); color: white;">CBI cGPS</div>
             <div class="key" style="background-color:rgb(170,1,20); color: white;">TxDOT RRPs</div>
         </div>
     </div>
     <nav id='myLayers'></nav>
+
+
+    <!-- ************************************************* Legend/symbology ************************************************* -->
+    <!-- CBI cGPS -->
+    <p style="position: absolute; z-index: 1; top: 26px; left: 3px;">
+        <img src="https://img.icons8.com/windows/20/000000/gps-receiving.png" />
+    </p>
+    <!-- NSRS/NOAA CORS Stations-->
+    <p style="position: absolute; z-index: 1; top: -7px; left: 3px;">
+        <img src="https://img.icons8.com/material-sharp/12/000000/filled-circle.png" />
+    </p>
+    <!-- TxDOT RPPs-->
+    <p style="position: absolute; z-index: 1; top: 204px; left: 3px;">
+        <img src="https://img.icons8.com/ios-filled/15/000000/texas.png" />
+    </p>
+    <!-- UNAVCO Stations -->
+    <p style="position: absolute; z-index: 1; top: 62px; left: 3px;"><img src="https://img.icons8.com/ios/17/000000/circled-u.png" /></p><!-- COCONet-->
+    <p style="position: absolute; z-index: 1; top: 97px; left: 3px;"><img src="https://img.icons8.com/ios/17/000000/circled-u.png" /></p><!-- GulfNet-->
+    <p style="position: absolute; z-index: 1; top: 132px; left: 3px;"><img src="https://img.icons8.com/ios/17/000000/circled-u.png" /></p><!-- HoustonNet-->
+    <p style="position: absolute; z-index: 1; top: 167px; left: 3px;"><img src="https://img.icons8.com/ios/17/000000/circled-u.png" /></p><!-- TLALOCNet-->
     <!-- INITIALIZING FEATURES LAYERS AS VARIABLES -->
     <script>
 
@@ -13166,7 +13186,7 @@
                 // triggers when a map layer is turned off
                 else {
                     this.className = 'inactive';
-                    map.setLayoutProperty(clickedLayer, 'visibility', 'none');                    
+                    map.setLayoutProperty(clickedLayer, 'visibility', 'none');
                 }
             };
 

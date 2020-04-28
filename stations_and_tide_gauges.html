@@ -8,7 +8,98 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        html, body {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            height: 99%;
+            width: 100%;
+        }
 
+        #map {
+            display: inherit;
+            float: left;
+            height: 97.8%;
+            width: 99%;
+            margin-top: -10px;
+        }
+
+        #panel {
+            width: 100%;
+            height: 400px;
+        }
+
+        #extentSelection {
+            position: absolute;
+            z-index: 1;
+            left: 14px;
+            top: 61px;
+            background-color: rgb(63,133,190);
+        }
+        /* ---------------- Properties for layer symbology within map ---------------- */
+        #myLayers {
+            background: #fff;
+            position: absolute;
+            z-index: 1;
+            border-radius: 3px;
+            width: 120px;
+            margin-left: 0px;
+            margin-top: -10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+            #myLayers a {
+                font-size: 12px;
+                color: #000000;
+                display: block;
+                margin: 0;
+                padding: 0;
+                padding: 10px;
+                text-decoration: none;
+                background-color: #9FBFDF;
+                border-bottom: 1px solid rgba(0,0,0,0.25);
+                text-align: center;
+            }
+
+                /* Properties for map layers*/
+
+                #myLayers a.inactive:first-child {
+                    background-color: #A8A8A8;
+                    cursor: default;
+                }
+
+                #myLayers a.inactive:first-child {
+                    color: black;
+                    font-style: normal;
+                    cursor: default;
+                }
+
+                #myLayers a.active {
+                    background-color: #3887be;
+                    color: #ffffff;
+                    font-weight: 200;
+                }
+
+                #myLayers a.inactive {
+                    background-color: #9FBFDF;
+                    color: #000000;
+                    font-weight: 200;
+                }
+
+                #myLayers a:hover {
+                    background-color: rgba(22,54,76, 0.5);
+                    color: #E7EAED;
+                    font-weight: 200;
+                    font-style: italic;
+                    cursor: pointer;
+                }
+
+        /*------------------------------------------------*/
+
+        .mapboxgl-popup clusterPopup mapboxgl-popup-anchor-bottom {
+            background-color: gray;
+        }
+    </style>
     <script>
 
         // CBI cGPS
@@ -2896,7 +2987,7 @@
                 "cluster": true,
                 "clusterMaxZoom": 7,
                 "clusterRadius": 110
-            },            
+            },
             "layout": { "icon-image": ["concat", "square-rgb-", ["get", "color"]], "visibility": "visible" }
         };
 
@@ -6553,99 +6644,7 @@
 
     </script>
 
-    <style>
-        html, body {
-            overflow-x: hidden;
-            overflow-y: hidden;
-            height: 99%;
-            width: 100%;
-        }
 
-        #map {
-            display: inherit;
-            float: left;
-            height: 97.8%;
-            width: 99%;            
-            margin-top: -10px;
-        }
-
-        #panel {
-            width: 100%;
-            height: 400px;
-        }
-
-        #extentSelection {
-            position: absolute;
-            z-index: 1;
-            left: 14px;
-            top: 61px;
-            background-color: rgb(63,133,190);
-        }
-
-        /* ---------------- Properties for layer symbology within map ---------------- */
-        #myLayers {
-            background: #fff;
-            position: absolute;
-            z-index: 1;
-            border-radius: 3px;
-            width: 120px;
-            margin-left: 0px;
-            margin-top: -10px;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-            #myLayers a {
-                font-size: 12px;
-                color: #000000;
-                display: block;
-                margin: 0;
-                padding: 0;
-                padding: 10px;
-                text-decoration: none;
-                background-color: #9FBFDF;
-                border-bottom: 1px solid rgba(0,0,0,0.25);
-                text-align: center;
-            }
-
-                /* Properties for map layers*/
-
-                #myLayers a.inactive:first-child {
-                    background-color: #A8A8A8;
-                    cursor: default;
-                }
-
-                #myLayers a.inactive:first-child {
-                    color: black;
-                    font-style: normal;
-                    cursor: default;
-                }
-
-                #myLayers a.active {
-                    background-color: #3887be;
-                    color: #ffffff;
-                    font-weight: 200;
-                }
-
-                #myLayers a.inactive {
-                    background-color: #9FBFDF;
-                    color: #000000;
-                    font-weight: 200;
-                }
-
-                #myLayers a:hover {
-                    background-color: rgba(22,54,76, 0.5);
-                    color: #E7EAED;
-                    font-weight: 200;
-                    font-style: italic;
-                    cursor: pointer;
-                }
-
-        /*------------------------------------------------*/
-
-        .mapboxgl-popup clusterPopup mapboxgl-popup-anchor-bottom {
-            background-color: gray;
-        }
-    </style>
 </head>
 
 <!-- Body properties of document -->
@@ -6670,10 +6669,11 @@
         </select><br />
         <p></p>
         <nav id='myLayers'></nav>
-
     </div>
 
-    <!-- Main Map Script -->
+
+
+    <!-- **************************************************** Main Script *************************************************** -->
     <div id='map'>
         <script>
             // ********************************************************************* Initializing map *********************************************************************
@@ -6694,7 +6694,7 @@
             });
 
             // ******************************************************************** CORS layer styling ********************************************************************
-            
+
             map.on('styleimagemissing', function (styling) {
                 var id = styling.id; // id of the missing image
 
@@ -6723,7 +6723,7 @@
 
             // *********************************************************** Loading map and adding initial layers ***********************************************************
             map.on('load', function () {
-                
+
                 // ------------------------------------------------------------------------------ Styling for features  ------------------------------------------------------------------------------
                 // Styling for CBI cGPS Stations
                 map.loadImage('https://img.icons8.com/windows/540/000000/gps-receiving.png', function (error, image) {
@@ -6742,7 +6742,7 @@
                 }
                 );
                 */
-                
+
                 map.addLayer(CORS_Stations);
 
                 // Styling for UNAVCO Stations
@@ -6771,7 +6771,7 @@
                     map.addLayer(TxDOT_RRPs);
                 }
                 );
-                                
+
 
                 // ********************************************************************** State Boundaries ******************************************************************
                 // State boundaries outline
@@ -7069,7 +7069,7 @@
                         'circle-stroke-color': '#000000'
                     }
                 });
-                
+
                 // CORS Clusters
                 map.on('click', 'clusters', function (e) {
                     var features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
@@ -7167,7 +7167,7 @@
                 };
 
                 var layers = document.getElementById('myLayers');
-                layers.appendChild(link);                
+                layers.appendChild(link);
             }
 
             // ************************************************************** ZOOM EXTENT PROPERTIES **************************************************************
@@ -7213,5 +7213,39 @@
 
 
     </div>
+
+    <!-- ************************************************* Legend/symbology ************************************************* -->
+    <!-- CBI cGPS -->
+    <p style="position: absolute; z-index: 1; top: 62px; left: 12px;">
+        <img src="https://img.icons8.com/windows/20/000000/gps-receiving.png" />
+    </p>
+    <!-- NSRS Stations-->
+    <p style="position: absolute; z-index: 1; top: 28px; left: 12px;">
+        <img src="https://img.icons8.com/material-sharp/12/000000/filled-circle.png" />
+    </p>
+    <!-- Tide Gauges-->
+    <p style="position: absolute; z-index: 1; top: 218px; left: 12px;">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 172 172" style=" fill:#000000;">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#e74c3c">
+                    <path d="M35.088,167.184c-0.688,0 -1.376,-0.344 -2.064,-0.688c-1.032,-0.688 -1.72,-2.408 -1.376,-3.784l15.136,-56.416l-45.408,
+            -36.808c-1.376,-0.688 -1.72,-2.408 -1.376,-3.784c0.344,-1.376 1.72,-2.408 3.096,-2.408l58.48,-3.096l20.984,-54.696c0.688,-1.032 2.064,-2.064 3.44,-2.064c1.376,0 2.752,1.032 3.096,2.064l20.984,54.696l58.48,
+            3.096c1.376,0 2.752,1.032 3.096,2.408c0.344,1.376 0,2.752 -1.032,3.784l-45.408,36.808l15.136,56.416c0.344,1.376 0,2.752 -1.376,3.784c-1.032,0.688 -2.752,1.032 -3.784,0l-49.192,-31.648l-49.192,31.648c-0.688,
+            0.688 -1.032,0.688 -1.72,0.688z"></path>
+                </g>
+            </g>
+        </svg>
+    </p>
+    <!-- TxDOT RPPs-->
+    <p style="position: absolute; z-index: 1; top: 293px; left: 12px;">
+        <img src="https://img.icons8.com/ios-filled/15/000000/texas.png" />
+    </p>
+    <!-- UNAVCO Stations -->
+    <p style="position: absolute; z-index: 1; top: 102px; left: 12px;"><img src="https://img.icons8.com/ios/17/000000/circled-u.png" /></p><!-- COCONet-->
+    <p style="position: absolute; z-index: 1; top: 140px; left: 12px;"><img src="https://img.icons8.com/ios/17/000000/circled-u.png" /></p><!-- GulfNet-->
+    <p style="position: absolute; z-index: 1; top: 178px; left: 12px;"><img src="https://img.icons8.com/ios/17/000000/circled-u.png" /></p><!-- HoustonNet-->
+    <p style="position: absolute; z-index: 1; top: 255px; left: 12px;"><img src="https://img.icons8.com/ios/17/000000/circled-u.png" /></p><!-- TLALOCNet-->
 </body>
 </html>
