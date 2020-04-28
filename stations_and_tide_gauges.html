@@ -3,132 +3,11 @@
 <!-- Head properties of document -->
 <head>
     <meta charset='utf-8' />
-    <title>NGS Project</title>
+    <title>Stations and Tide Gauges</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <style>
-        html, body {
-            overflow-x: hidden;
-            overflow-y: hidden;
-            height: 99%;
-            width: 100%;
-        }
-
-        #map {
-            
-            display: inherit;
-            float: left;
-            height: 91.8%;
-            width: 98.5%;
-            margin-right:-3px;
-            margin-top: -10px;
-        }
-
-        #panel {
-            width: 100%;
-            height: 400px;
-        }
-
-        #extentSelection {
-            position: absolute;
-            z-index: 1;
-            left: 14px;
-            top: 61px;
-            background-color: rgb(63,133,190);
-        }
-
-        /* ---------------- Properties for layer symbology within map ---------------- */
-        #myLayers {
-            background: #fff;
-            position: absolute;
-            z-index: 1;
-            border-radius: 3px;
-            width: 120px;
-            margin-left: 0px;
-            margin-top: -10px;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        #myLayers a {
-            font-size: 12px;
-            color: #000000;
-            display: block;
-            margin: 0;
-            padding: 0;
-            padding: 10px;
-            text-decoration: none;
-            background-color: #9FBFDF;
-            border-bottom: 1px solid rgba(0,0,0,0.25);
-            text-align: center;
-        }
-
-        /* Properties for map layers*/
-
-        #myLayers a.inactive:first-child {
-            background-color: #A8A8A8;
-            cursor: default;
-        }
-
-        #myLayers a.inactive:first-child {
-            color: black;
-            font-style: normal;
-            cursor: default;
-        }
-
-        #myLayers a.active {
-            background-color: #3887be;
-            color: #ffffff;
-            font-weight: 200;
-        }
-
-        #myLayers a.inactive {
-            background-color: #9FBFDF;
-            color: #000000;
-            font-weight: 200;
-        }
-
-        #myLayers a:hover {
-            background-color: rgba(22,54,76, 0.5);
-            color: #E7EAED;
-            font-weight: 200;
-            font-style: italic;
-            cursor: pointer;
-        }
-
-        /*------------------------------------------------*/
-
-        .mapboxgl-popup clusterPopup mapboxgl-popup-anchor-bottom {
-            background-color: gray;
-        }
-    </style>
-</head>
-
-<!-- Body properties of document -->
-<body>
-    <!-- CORS and Tide Gauges navigation page -->
-    <!-- Select Extent Options and turning layers on/off-->
-    <div>
-        <p>
-        </p> Map Extent:
-        <select id="extent" onchange="zoomExtent()">
-            <option value="Gulf of Mexico">Gulf of Mexico</option>
-            <option value="Texas">Texas</option>
-            <option value="Louisiana">Louisiana</option>
-            <option value="Mississippi/Alabama">Mississippi/Alabama</option>
-            <option value="Florida">Florida</option>
-        </select>
-
-        Orientation:
-        <select id="pitch" onchange="changePitch()">
-            <option value="Planimetric">Planimetric</option>
-            <option value="Angled">Angled</option>
-        </select><br />
-        <p></p>
-        <nav id='myLayers'></nav>
-
-    </div>
 
     <script>
 
@@ -3014,11 +2893,12 @@
                         { "type": "Feature", "properties": { "SITEID": "WMEL", "AGENCY": "Earl Dudley Associates Incorporated", "SAMPLING": "1", "STATUS": "Decommissioned", "ABBR": "EDA", "GNSS": "GPS", "AVAIL": "Hourly" }, "geometry": { "type": "Point", "coordinates": [-87.0808333333, 34.5233333333] } }
                     ]
                 },
-                "cluster": false,
+                "cluster": true,
                 "clusterMaxZoom": 7,
                 "clusterRadius": 110
             },
-            "layout": { "icon-image": "cors-stations", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            //"layout": { "icon-image": "cors-stations", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            "layout": { "icon-image": ["concat", "square-rgb-", ["get", "color"]], "visibility": "visible" }
         };
 
         // HoustonNet
@@ -6674,6 +6554,127 @@
 
     </script>
 
+    <style>
+        html, body {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            height: 99%;
+            width: 100%;
+        }
+
+        #map {
+            display: inherit;
+            float: left;
+            height: 91.8%;
+            width: 98.5%;
+            margin-right: -3px;
+            margin-top: -10px;
+        }
+
+        #panel {
+            width: 100%;
+            height: 400px;
+        }
+
+        #extentSelection {
+            position: absolute;
+            z-index: 1;
+            left: 14px;
+            top: 61px;
+            background-color: rgb(63,133,190);
+        }
+
+        /* ---------------- Properties for layer symbology within map ---------------- */
+        #myLayers {
+            background: #fff;
+            position: absolute;
+            z-index: 1;
+            border-radius: 3px;
+            width: 120px;
+            margin-left: 0px;
+            margin-top: -10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+            #myLayers a {
+                font-size: 12px;
+                color: #000000;
+                display: block;
+                margin: 0;
+                padding: 0;
+                padding: 10px;
+                text-decoration: none;
+                background-color: #9FBFDF;
+                border-bottom: 1px solid rgba(0,0,0,0.25);
+                text-align: center;
+            }
+
+                /* Properties for map layers*/
+
+                #myLayers a.inactive:first-child {
+                    background-color: #A8A8A8;
+                    cursor: default;
+                }
+
+                #myLayers a.inactive:first-child {
+                    color: black;
+                    font-style: normal;
+                    cursor: default;
+                }
+
+                #myLayers a.active {
+                    background-color: #3887be;
+                    color: #ffffff;
+                    font-weight: 200;
+                }
+
+                #myLayers a.inactive {
+                    background-color: #9FBFDF;
+                    color: #000000;
+                    font-weight: 200;
+                }
+
+                #myLayers a:hover {
+                    background-color: rgba(22,54,76, 0.5);
+                    color: #E7EAED;
+                    font-weight: 200;
+                    font-style: italic;
+                    cursor: pointer;
+                }
+
+        /*------------------------------------------------*/
+
+        .mapboxgl-popup clusterPopup mapboxgl-popup-anchor-bottom {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<!-- Body properties of document -->
+<body>
+    <!-- CORS and Tide Gauges navigation page -->
+    <!-- Select Extent Options and turning layers on/off-->
+    <div>
+        <p>
+        </p> Map Extent:
+        <select id="extent" onchange="zoomExtent()">
+            <option value="Gulf of Mexico">Gulf of Mexico</option>
+            <option value="Texas">Texas</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Mississippi/Alabama">Mississippi/Alabama</option>
+            <option value="Florida">Florida</option>
+        </select>
+
+        Orientation:
+        <select id="pitch" onchange="changePitch()">
+            <option value="Planimetric">Planimetric</option>
+            <option value="Angled">Angled</option>
+        </select><br />
+        <p></p>
+        <nav id='myLayers'></nav>
+
+    </div>
+
     <!-- Main Map Script -->
     <div id='map'>
         <script>
@@ -6694,7 +6695,35 @@
                 zoom: initialZoom
             });
 
-           
+
+
+
+            map.on('styleimagemissing', function (styling) {
+                var id = styling.id; // id of the missing image
+
+                // check if this missing icon is one this function can generate
+                var prefix = 'square-rgb-';
+                if (id.indexOf(prefix) !== 0) return;
+
+                // extract the color from the id
+                var rgb = id.replace(prefix, '').split(',').map(Number);
+
+                var width = 7; // The image will be 64 pixels square
+                var bytesPerPixel = 4; // Each pixel is represented by 4 bytes: red, green, blue, and alpha.
+                var data = new Uint8Array(width * width * bytesPerPixel);
+
+                for (var x = 0; x < width; x++) {
+                    for (var y = 0; y < width; y++) {
+                        var offset = (y * width + x) * bytesPerPixel;
+                        data[offset + 0] = rgb[0]; // red
+                        data[offset + 1] = rgb[1]; // green
+                        data[offset + 2] = rgb[2]; // blue
+                        data[offset + 3] = 255;    // alpha
+                    }
+                }
+                map.addImage(id, { width: width, height: width, data: data });
+            });
+
             // *********************************************************** Loading map and adding initial layers ***********************************************************
             map.on('load', function () {
                 
@@ -6707,6 +6736,7 @@
                 }
                 );
 
+                /*
                 // Styling for NOAA/CORS Stations
                 map.loadImage('https://img.icons8.com/material/200/000000/filled-circle.png', function (error, image) {
                     if (error) throw error;
@@ -6714,6 +6744,9 @@
                     map.addLayer(CORS_Stations);
                 }
                 );
+                */
+                
+                map.addLayer(CORS_Stations);
 
                 // Styling for UNAVCO Stations
                 map.loadImage('https://img.icons8.com/small/500/000000/circled-u.png', function (error, image) {
@@ -6744,7 +6777,7 @@
                                 
 
                 // ********************************************************************** State Boundaries ******************************************************************
-                // Dark state boundaries
+                // State boundaries outline
                 /*
                 map.addLayer(texas_state_boundary);
                 map.addLayer(louisiana_state_boundary);
@@ -7004,7 +7037,7 @@
                             'rgba(255,69,0,90%)'
                         ],
                         'circle-radius': [
-                            'step'
+                            'step',
                             ['get', 'point_count'],
                             30,
                             40,
@@ -7016,7 +7049,7 @@
                 });
 
                 map.addLayer({
-                    id: 'custer-count',
+                    id: 'cluster-count',
                     type: 'symbol',
                     source: 'CORS Stations',
                     filter: ['has', 'point_count'],
