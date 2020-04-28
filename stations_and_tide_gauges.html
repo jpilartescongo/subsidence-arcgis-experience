@@ -2896,8 +2896,7 @@
                 "cluster": true,
                 "clusterMaxZoom": 7,
                 "clusterRadius": 110
-            },
-            //"layout": { "icon-image": "cors-stations", "icon-size": 0.04, "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"], "text-size": 12, "text-offset": [0, 0.6], "text-anchor": "top", "visibility": "visible" }
+            },            
             "layout": { "icon-image": ["concat", "square-rgb-", ["get", "color"]], "visibility": "visible" }
         };
 
@@ -6565,9 +6564,8 @@
         #map {
             display: inherit;
             float: left;
-            height: 91.8%;
-            width: 98.5%;
-            margin-right: -3px;
+            height: 97.8%;
+            width: 99%;            
             margin-top: -10px;
         }
 
@@ -6654,7 +6652,7 @@
 <body>
     <!-- CORS and Tide Gauges navigation page -->
     <!-- Select Extent Options and turning layers on/off-->
-    <div>
+    <div style="margin-top:-16px;">
         <p>
         </p> Map Extent:
         <select id="extent" onchange="zoomExtent()">
@@ -6695,9 +6693,8 @@
                 zoom: initialZoom
             });
 
-
-
-
+            // ******************************************************************** CORS layer styling ********************************************************************
+            
             map.on('styleimagemissing', function (styling) {
                 var id = styling.id; // id of the missing image
 
