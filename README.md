@@ -16,9 +16,11 @@ Data downloadble from:
 	TxDOT RRPs Data: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/TxDOT_RTN_RRP_Coordinates_rev_03-17-2019.pdf
 		Additional information: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/
 
-
-
+		
 Data conversion software (from csv to GeoJSON): https://www.convertcsv.com/csv-to-geojson.htm
 	This tool was used to convert UNAVCO stations data into GeoJSON. There might exist other 
 	tools that can be used for the same purpose. One can also use the JSON beautify tools 
 	found online to make the code look consistent.	
+
+
+Geojson beautifier: https://codebeautify.org/jsonviewer
