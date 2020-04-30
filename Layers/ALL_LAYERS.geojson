@@ -37,26 +37,7 @@
         "Established": "Sep 16, 2019"
       }
     },
-	{
-		"type": "Feature",
-		"properties": { 
-			"SITEID": "KVTX",
-			"AGENCY": "UNAVCO-PBO",
-			"SAMPLING": "15",
-			"STATUS": "Operational",
-			"ABBR": "UNAVPB",
-			"GNSS": "GPS",
-			"AVAIL": "Daily" 
-		}, 
-		"geometry": {
-			"type": "Point",
-			"coordinates": [
-				-97.8927777778,
-				27.5458333333
-			] 
-		} 
-	},
-	{
+    {
       "type": "Feature",
       "geometry": {
         "type": "Point",
@@ -3237,6 +3218,26 @@
         "coordinates": [
           -100.8994444444,
           29.3641666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "CORS_Stations_Count": "1",
+        "SITEID": "KVTX",
+        "AGENCY": "UNAVCO-PBO",
+        "SAMPLING": "15",
+        "STATUS": "Operational",
+        "ABBR": "UNAVPB",
+        "GNSS": "GPS",
+        "AVAIL": "Daily"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8927777778,
+          27.5458333333
         ]
       }
     },

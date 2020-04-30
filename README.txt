@@ -24,3 +24,5 @@ Data conversion software (from csv to GeoJSON): https://www.convertcsv.com/csv-t
 
 
 Geojson beautifier: https://codebeautify.org/jsonviewer
+
+Coverter to Geojson>SHP>CSV: https://mapshaper.org/

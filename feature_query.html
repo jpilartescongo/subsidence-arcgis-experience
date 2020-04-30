@@ -1,4 +1,5 @@
-﻿<html>
+﻿﻿
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
@@ -8,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="https://js.arcgis.com/4.14/"></script>
     <style>
+
         html,
         body,
         #viewDiv {
@@ -21,7 +23,7 @@
         #chartPanel {
             background: #fff;
             font: "Avenir Next W00";
-            line-height: 1.5em;            
+            line-height: 1.5em;
             overflow: visible;
             padding: 10px;
             width: 580px;
@@ -43,7 +45,7 @@
                 let sketchViewModel, featureLayerView, pausableWatchHandle, chartExpand, centerGraphic, edgeGraphic, polylineGraphic, bufferGraphic, centerGeometryAtStart, labelGraphic;
 
                 // Define miles as standard unit and creating graphic layers.
-                const unit = "miles";                                
+                const unit = "miles";
                 const graphicsLayer = new GraphicsLayer();
                 const graphicsLayer2 = new GraphicsLayer();
 
@@ -54,11 +56,11 @@
                 });
 
                 // Set up map and creating view
-                const map = new Map({ basemap: "oceans", layers: [featureLayer, graphicsLayer2, graphicsLayer] });                
+                const map = new Map({ basemap: "oceans", layers: [featureLayer, graphicsLayer2, graphicsLayer] });
                 const view = new MapView({ container: "viewDiv", map: map, zoom: 6, center: [-97, 31] });
 
 
-                // Set up statistics definition for client-side query based on count of each feature            
+                // Set up statistics definition for client-side query based on count of each feature
                 const statDefinitions = ["CBI_cGPS_Count", "COCONet_Count", "CORS_Stations_Count", "GulfNet_Count", "HoustonNet_Count", "Tide_Gauges_Count", "TLALOCNet_Count", "TxDOT_RRPs_Count"].map(function (fieldName) {
                     return {
                         onStatisticField: fieldName,
@@ -126,7 +128,7 @@
                                 {
                                     layer: featureLayer,
                                     title: "Features key"
-                                }                                
+                                }
                             ]
                         });
 
@@ -139,7 +141,7 @@
                         });
 
                         // Add our components to the UI
-                        view.ui.add(chartExpand, "bottom-left");                        
+                        view.ui.add(chartExpand, "bottom-left");
                         view.ui.add(search, "top-right");
                         view.ui.add(legendExpand, "bottom-right");
                     });
@@ -225,7 +227,7 @@
                     // Update the buffer polygon
                     bufferGraphic.geometry = buffer;
 
-                    queryLayerViewStationStats(buffer).then(function (newData) {                        
+                    queryLayerViewStationStats(buffer).then(function (newData) {
                         updateChart(newData);
                     });
 
@@ -249,10 +251,10 @@
                  * Spatial query the the feature layer view for statistics using the updated buffer polygon.
                 **************************************************************************************************************************************************/
                 function queryLayerViewStationStats(buffer) {
-                    // Data storage for the chart                    
+                    // Data storage for the chart
                     let CBI_cGPs_Data = [], COCONet_Data = [], CORS_Stations_Data = [], GulfNet_Data = [], HoustonNet_Data = [], Tide_Gauges_Data = [], TLALOCNet_Data = [], TxDOT_RRPs_Data = [];
 
-                    // Client-side spatial query: Get a count of stations 
+                    // Client-side spatial query: Get a count of stations
                     const query = featureLayerView.layer.createQuery();
                     query.outStatistics = statDefinitions;
                     query.geometry = buffer;
@@ -265,44 +267,44 @@
                             // Statistics query returns a feature with 'stats' as attributes
                             const attributes = results.features[0].attributes;
                             // Loop through attributes and save the values for use in each of the stations or tide gauges
-                            for (var key in attributes) {                                
+                            for (var key in attributes) {
                                 if (key.includes("CBI_cGPS_Count")) {
                                     CBI_cGPs_Data.push(attributes[key]);
                                 }
                                 else if (key.includes("COCONet_Count")) {
                                     COCONet_Data.push(attributes[key]);
-                                } 
+                                }
                                 else if (key.includes("CORS_Stations_Count")) {
                                     CORS_Stations_Data.push(attributes[key]);
                                 }
                                 else if (key.includes("GulfNet_Count")) {
                                     GulfNet_Data.push(attributes[key]);
-                                } 
+                                }
                                 else if (key.includes("HoustonNet_Count")) {
                                     HoustonNet_Data.push(attributes[key]);
-                                } 
+                                }
                                 else if (key.includes("Tide_Gauges_Count")) {
                                     Tide_Gauges_Data.push(attributes[key]);
-                                } 
+                                }
                                 else if (key.includes("TLALOCNet_Count")) {
                                     TLALOCNet_Data.push(attributes[key]);
-                                } 
+                                }
                                 else if (key.includes("TxDOT_RRPs_Count")) {
                                     TxDOT_RRPs_Data.push(attributes[key]);
-                                } 
+                                }
                                 else {
                                     // print nothing
                                     console.log('invalid input');
                                 }
                             }
-                            // Return information, seperated by gender                            
-                            return [CBI_cGPs_Data, COCONet_Data, CORS_Stations_Data, GulfNet_Data, HoustonNet_Data, Tide_Gauges_Data, TLALOCNet_Data, TxDOT_RRPs_Data];                            
+                            // Return information, seperated by gender
+                            return [CBI_cGPs_Data, COCONet_Data, CORS_Stations_Data, GulfNet_Data, HoustonNet_Data, Tide_Gauges_Data, TLALOCNet_Data, TxDOT_RRPs_Data];
                         })
                         .catch(function (error) {
                             console.log(error);
                         });
                 }
-                                
+
 
                 /**************************************************************************************************************************************************
                  * Draw the buffer polygon when application loads or when user searches for a new location and update interactive chart with query results
@@ -433,7 +435,7 @@
                     const HoustonNet_Data = newData[4];
                     const Tide_Gauges_Data = newData[5];
                     const TLALOCNet_Data = newData[6];
-                    const TxDOT_RRPs_Data = newData[7];                    
+                    const TxDOT_RRPs_Data = newData[7];
 
                     if (!chart) {
                         // Get the canvas element and render the chart in it
@@ -441,11 +443,11 @@
 
                         chart = new Chart(canvasElement.getContext("2d"), {
                             type: "horizontalBar",
-                            //type: "bar", 
+                            //type: "bar",
                             data: {
                                 // count
                                 labels: ["CBI cGPS", "COCONet", "CORS/NOAA", "GulfNet", "HoustonNet", "Tide Gauges", "TLALONet", "TxDOT RRPs"],
-                                backgroundColor: [ "#000000", "#999999", "#2166AC", "#B75454", "#7FBF7B", "#FF2500", "#FFA500", "#0080FF"]
+                                backgroundColor: ["#000000", "#999999", "#2166AC", "#B75454", "#7FBF7B", "#FF2500", "#FFA500", "#0080FF"]
 
 
                                 /*datasets: [
@@ -497,7 +499,7 @@
                                         label: "TLALOCNet",
                                         backgroundColor: "#FFA500",
                                         borderColor: "#FFA500",
-                                        borderWidth: 0.25,                                        
+                                        borderWidth: 0.25,
                                         data: TLALOCNet_Data
                                     },
                                     {
