@@ -1,5 +1,4 @@
-﻿﻿
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
@@ -9,7 +8,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="https://js.arcgis.com/4.14/"></script>
     <style>
-
         html,
         body,
         #viewDiv {
@@ -127,7 +125,7 @@
                             layerInfos: [
                                 {
                                     layer: featureLayer,
-                                    title: "Features key"
+                                    title: "Displayed Features"
                                 }
                             ]
                         });
@@ -135,7 +133,7 @@
                         // Display the Legend in an Expand widget
                         const legendExpand = new Expand({
                             expandTooltip: "Show legend",
-                            expanded: false,
+                            expanded: true,
                             view: view,
                             content: legend
                         });
@@ -307,7 +305,7 @@
 
 
                 /**************************************************************************************************************************************************
-                 * Draw the buffer polygon when application loads or when user searches for a new location and update interactive chart with query results
+                 * Draw the buffer polygon when application loads or when user searches for a new location
                  **************************************************************************************************************************************************/
                 function drawBufferPolygon() {
                     // When pause() is called on the watch handle, the callback represented by the
@@ -421,7 +419,6 @@
                     calculateBuffer(vertices);
                 }
 
-
                 let chart;
 
                 // ORIGINAL CHART
@@ -443,20 +440,24 @@
 
                         chart = new Chart(canvasElement.getContext("2d"), {
                             type: "horizontalBar",
-                            //type: "bar",
                             data: {
                                 // count
-                                labels: ["CBI cGPS", "COCONet", "CORS/NOAA", "GulfNet", "HoustonNet", "Tide Gauges", "TLALONet", "TxDOT RRPs"],
-                                backgroundColor: ["#000000", "#999999", "#2166AC", "#B75454", "#7FBF7B", "#FF2500", "#FFA500", "#0080FF"]
-
-
-                                /*datasets: [
+                                labels: [
+                                    "CBI cGPS",
+                                    "COCONet",
+                                    "CORS/NOAA",
+                                    "GulfNet",
+                                    "HoustonNet",
+                                    "Tide Gauges",
+                                    "TLALONet",
+                                    "TxDOT RRPs"
+                                ],
+                                datasets: [
                                     {
                                         label: "CBI cGPS",
                                         backgroundColor: "#000000",
                                         borderColor: "#000000",
                                         borderWidth: 0.25,
-                                        barthickness: 70, //added
                                         data: CBI_cGPS_Data
                                     },
                                     {
@@ -464,7 +465,6 @@
                                         backgroundColor: "#999999",
                                         borderColor: "#999999",
                                         borderWidth: 0.25,
-                                        barthickness: 70, //added
                                         data: COCONet_Data
                                     },
                                     {
@@ -509,7 +509,7 @@
                                         borderWidth: 0.25,
                                         data: TxDOT_RRPs_Data
                                     }
-                                ]*/
+                                ]
                             },
                             options: {
                                 responsive: false,
@@ -525,7 +525,7 @@
                                         {
                                             categorySpacing: 10,
                                             barThickness: 10,
-                                            stacked: true,
+                                            stacked: false,
                                             scaleLabel: {
                                                 display: false,
                                                 labelString: "# of Stations"
@@ -534,6 +534,12 @@
                                     ],
                                     xAxes: [
                                         {
+                                            ticks: {
+                                                callback: function (value) {
+                                                    const val = Math.abs(parseInt(value));
+                                                    return numberWithCommas(val);
+                                                }
+                                            },
                                             scaleLabel: {
                                                 display: false,
                                                 labelString: "Category"
