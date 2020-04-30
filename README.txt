@@ -10,13 +10,13 @@ Data availability/sources/links
 	- CBI cGPS Data: provided by Jason Louis (Conrad Blucher Institute, December 2019)
 	- CORS Data: https://beta.ngs.noaa.gov/corsmap/#layers
 		More information on NOAA CORS: https://www.ngs.noaa.gov/CORS_Map/
-	- Tide Gauges Data: http://gulfsubsidence.org/
+	- Tide Gauges Data: http://gulfsubsidence.org/ & http://lighthouse.tamucc.edu/
 	- UNAVCO Stations Data: https://www.unavco.org/data/gps-gnss/data-access-methods/dai2/app/dai2.html#Grouping=COCONet;scope=Station;sampleRate=normal;GroupingMod=contains;GroupingMod=contains
 		UNAVCO includes: COCONet, GulfNet, HoustonNet, TLALOCNet
 	- TxDOT RRPs Data: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/TxDOT_RTN_RRP_Coordinates_rev_03-17-2019.pdf
 		Additional information: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/
 
-	- Some of these features are hosted feature layers saved on ArcGIS Online. Erros might occur if the right permissions are not given to the client/viewer. Right now, they are set to only 
+	- Some of these features are hosted feature layers saved on ArcGIS Online. Errors might occur if the right permissions are not given to the client/viewer. Right now, they are set to only 
 		the owner, and the Subsidence Project team. Permissions need to be updated as needed 
 
 	- Data conversion software (from csv to GeoJSON): https://www.convertcsv.com/csv-to-geojson.htm
@@ -25,7 +25,7 @@ Data availability/sources/links
 		found online to make the code look consistent.	
 
 	- Geojson beautifier: https://codebeautify.org/jsonviewer
-	- Coverter to Geojson>SHP>CSV: https://mapshaper.org/
+	- Converter to Geojson>SHP>CSV: https://mapshaper.org/
 	- Legend icons: https://icons8.com/icons/pack/free-icons
 
 ******************************************************************************************************************************************************************************************
@@ -36,7 +36,7 @@ Page information:
 		- uses only Experience Builder and its widgets
 	Page 2 > Stations and Tide Gauges:
 		- uses Mapbox API with information of the various stations and tide gauges as provided earlier in this document
-		- code was written using html, without external links to other javascript or css or even html links
+		- code was written using html, without external links to other JavaScript or CSS or even html links
 		- code embedded copied into an Experience Builder embedded page
 	Page 3 > Heatmaps:
 		- same procedure as Page 2
@@ -53,4 +53,6 @@ Page information:
 		- information about the institute
 		- does not use any API; made using ArcGIS Online
 
-
+******************************************************************************************************************************************************************************************
+Warnings:
+	- there is some lat/lon discrepancy between NOAA tide gauges data and lighthouse; when in doubt, check with team (but generally lighthouse might be more accurate)
