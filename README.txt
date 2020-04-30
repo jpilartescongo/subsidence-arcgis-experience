@@ -16,17 +16,17 @@ Data availability/sources/links
 	- TxDOT RRPs Data: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/TxDOT_RTN_RRP_Coordinates_rev_03-17-2019.pdf
 		Additional information: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/
 
-	** Some of these features are hosted feature layers saved on ArcGIS Online. Erros might occur if the right permissions are not given to the client/viewer. Right now, they are set to only 
-		the owner, and the Subsidence Project team. Permissions need to be updated as needed ** 
+	- Some of these features are hosted feature layers saved on ArcGIS Online. Erros might occur if the right permissions are not given to the client/viewer. Right now, they are set to only 
+		the owner, and the Subsidence Project team. Permissions need to be updated as needed 
 
-	Data conversion software (from csv to GeoJSON): https://www.convertcsv.com/csv-to-geojson.htm
+	- Data conversion software (from csv to GeoJSON): https://www.convertcsv.com/csv-to-geojson.htm
 		This tool was used to convert UNAVCO stations data into GeoJSON. There might exist other 
 		tools that can be used for the same purpose. One can also use the JSON beautify tools 
 		found online to make the code look consistent.	
 
-	Geojson beautifier: https://codebeautify.org/jsonviewer
-	Coverter to Geojson>SHP>CSV: https://mapshaper.org/
-	Legend icons: https://icons8.com/icons/pack/free-icons
+	- Geojson beautifier: https://codebeautify.org/jsonviewer
+	- Coverter to Geojson>SHP>CSV: https://mapshaper.org/
+	- Legend icons: https://icons8.com/icons/pack/free-icons
 
 ******************************************************************************************************************************************************************************************
 
