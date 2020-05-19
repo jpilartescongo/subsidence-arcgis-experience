@@ -10,7 +10,7 @@ Data availability/sources/links
 	- CBI cGPS Data: provided by Jason Louis (Conrad Blucher Institute, December 2019)
 	- CORS Data: https://beta.ngs.noaa.gov/corsmap/#layers
 		More information on NOAA CORS: https://www.ngs.noaa.gov/CORS_Map/
-	- Tide Gauges Data: https://tidesandcurrents.noaa.gov/map/index.shtml?region=Texas under http://lighthouse.tamucc.edu/
+	- Tide Gauges Data: https://tidesandcurrents.noaa.gov/map/index.shtml?region=Texas (through lighthouse: http://lighthouse.tamucc.edu/)
 	- UNAVCO Stations Data: https://www.unavco.org/data/gps-gnss/data-access-methods/dai2/app/dai2.html#Grouping=COCONet;scope=Station;sampleRate=normal;GroupingMod=contains;GroupingMod=contains
 		UNAVCO includes: COCONet, GulfNet, HoustonNet, TLALOCNet
 	- TxDOT RRPs Data: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/TxDOT_RTN_RRP_Coordinates_rev_03-17-2019.pdf
