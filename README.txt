@@ -22,7 +22,7 @@ Data availability/sources/links
 		UNAVCO includes: COCONet, GulfNet, HoustonNet, TLALOCNet
 
 	- TxDOT RRPs Data: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/TxDOT_RTN_RRP_Coordinates_rev_03-17-2019.pdf
-		Additional information: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/
+		Additional information: https://www.txdot.gov/inside-txdot/division/information-technology/gps.html or http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/
 
 	- Some of these features are hosted feature layers saved on ArcGIS Online. Errors might occur if the right permissions are not given to the client/viewer. Right now, they are set to only 
 		the owner, and the Subsidence Project team. Permissions need to be updated as needed 
