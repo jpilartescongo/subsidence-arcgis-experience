@@ -2,7 +2,7 @@
 Files for subsidence project version on ArcGIS experience
 
 Author: Pilartes-Congo
-Email: jcongo@islander.tamucc.edu
+Email: jcongo@islander.tamucc.edu / japcongo@hotmail.co.uk
 Created: October 08, 2019.
 ******************************************************************************************************************************************************************************************
 
