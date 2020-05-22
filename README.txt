@@ -62,3 +62,5 @@ Page information:
 		- does not use any API; made using ArcGIS Online
 
 ******************************************************************************************************************************************************************************************
+
+YouTube instructions link: https://youtu.be/f_ETn4gHbnM
