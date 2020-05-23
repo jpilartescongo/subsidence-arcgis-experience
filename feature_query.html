@@ -53,8 +53,12 @@
                     outFields: ["*"]
                 });
 
+                const gulfStates = new FeatureLayer({
+                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/Gulf_states/FeatureServer"
+                })
+
                 // Set up map and creating view
-                const map = new Map({ basemap: "oceans", layers: [featureLayer, graphicsLayer2, graphicsLayer] });
+                const map = new Map({ basemap: "gray", layers: [gulfStates, featureLayer, graphicsLayer2, graphicsLayer] });
                 const view = new MapView({ container: "viewDiv", map: map, zoom: 6, center: [-97, 31] });
 
 
