@@ -64,3 +64,9 @@ Page information:
 ******************************************************************************************************************************************************************************************
 
 YouTube instructions link: https://youtu.be/f_ETn4gHbnM
+
+Wall warnings on the map are Boostrap (https://www.w3schools.com/bootstrap/bootstrap_alerts.asp)
+
+Key issues:
+	- there seems to be a bug with the stations and tide gauges code, which massively slows down that specific code. However, the code still does work, and can be copied into ArcGIS Experience
+		Builder. The issue is probably in one of the scripts.
