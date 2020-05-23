@@ -19,7 +19,7 @@
         }
 
         #chartPanel {
-            background: #fff;
+            background: rgba(240,240,240, 0.9);
             font: "Avenir Next W00";
             line-height: 1.5em;
             overflow: visible;
@@ -58,7 +58,7 @@
                 })
 
                 // Set up map and creating view
-                const map = new Map({ basemap: "gray", layers: [gulfStates, featureLayer, graphicsLayer2, graphicsLayer] });
+                const map = new Map({ basemap: "dark-gray", transparency: 0.2, layers: [gulfStates, featureLayer, graphicsLayer2, graphicsLayer] });
                 const view = new MapView({ container: "viewDiv", map: map, zoom: 6, center: [-97, 31] });
 
 
@@ -93,8 +93,7 @@
                         watchUtils.whenFalseOnce(layerView, "updating", function () {
                             view.popup.open({
                                 title: "Center point",
-                                content:
-                                    "Drag this point to move the buffer.<br/> " + "Or drag the <b>Edge</b> point to resize the buffer.",
+                                content: "Drag this point to move the buffer.<br/> " + "Or drag the <b>Edge</b> point to resize the buffer.",
                                 location: centerGraphic.geometry
                             });
                             view.popup.alignment = "top-left";
@@ -139,7 +138,7 @@
                             expandTooltip: "Show legend",
                             expanded: false,
                             view: view,
-                            content: legend
+                            content: legend,                            
                         });
 
                         // Add our components to the UI
@@ -166,7 +165,6 @@
                     // Listen to SketchViewModel's update event so that stations chart is updated as the graphics are updated
                     sketchViewModel.on("update", onMove);
                 }
-
 
                 /**************************************************************************************************************************************************
                  * Edge or center graphics are being moved. Recalculate the buffer with updated geometry information and run the query stats again.
@@ -237,7 +235,7 @@
                     labelGraphic.geometry = edgeGraphic.geometry;
                     labelGraphic.symbol = {
                         type: "text",
-                        color: "#000000",
+                        color: "#ffffff",
                         text: length.toFixed(2) + " miles",
                         xoffset: 50,
                         yoffset: 10,
@@ -306,8 +304,7 @@
                             console.log(error);
                         });
                 }
-
-
+                
                 /**************************************************************************************************************************************************
                  * Draw the buffer polygon when application loads or when user searches for a new location
                  **************************************************************************************************************************************************/
