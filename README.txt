@@ -32,6 +32,10 @@ Data availability/sources/links
 		tools that can be used for the same purpose. One can also use the JSON beautify tools 
 		found online to make the code look consistent.	
 
+	- Aquifers:
+		- Texas: Texas Water Board Development >> https://www.twdb.texas.gov/mapping/gisdata.asp
+
+
 	- Geojson beautifier: https://codebeautify.org/jsonviewer
 	- Converter to Geojson>SHP>CSV: https://mapshaper.org/
 	- Legend icons: https://icons8.com/icons/pack/free-icons
