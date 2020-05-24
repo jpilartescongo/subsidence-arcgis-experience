@@ -56,7 +56,7 @@
 
             function (SketchViewModel, Polyline, Point, Graphic, Map, MapView, FeatureLayer, GraphicsLayer, geometryEngine, Expand, Legend, Search, watchUtils) {
 
-                // App 'globals'
+                // App "globals"
                 let sketchViewModel, featureLayerView, pausableWatchHandle, chartExpand, centerGraphic, edgeGraphic, polylineGraphic, bufferGraphic, centerGeometryAtStart, labelGraphic;
 
                 // Define miles as standard unit and creating graphic layers.
@@ -67,7 +67,7 @@
                 // Importing stations feature layer from ArcGIS content
                 const featureLayer = new FeatureLayer({
                     url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/ALL_LAYERS/FeatureServer",
-                    outFields: ["*"]                    
+                    outFields: ["*"]
                 });
 
                 const gulfStates = new FeatureLayer({
@@ -75,7 +75,7 @@
                 })
 
                 // Set up map and creating view
-                const map = new Map({ basemap: "dark-gray", transparency: 0.2, layers: [gulfStates, featureLayer, graphicsLayer2, graphicsLayer] });
+                const map = new Map({ basemap: "topo", transparency: 0.2, layers: [gulfStates, featureLayer, graphicsLayer2, graphicsLayer] });
                 const view = new MapView({ container: "viewDiv", map: map, zoom: 6, center: [-97, 31] });
 
 
@@ -138,7 +138,6 @@
                             pausableWatchHandle.resume();
                         });
 
-
                         // Legend widget
                         const legend = new Legend({
                             view: view,
@@ -153,7 +152,7 @@
                         // Display the Legend in an Expand widget
                         const legendExpand = new Expand({
                             expandTooltip: "Show legend",
-                            expanded: false,
+                            expanded: true,
                             view: view,
                             content: legend,
                         });
@@ -187,8 +186,7 @@
                  * Edge or center graphics are being moved. Recalculate the buffer with updated geometry information and run the query stats again.
                  **************************************************************************************************************************************************/
                 function onMove(event) {
-                    // If the edge graphic is moving, keep the center graphic
-                    // at its initial location. Only move edge graphic
+                    // If the edge graphic is moving, keep the center graphic at its initial location. Only move edge graphic
                     if (
                         event.toolEventInfo &&
                         event.toolEventInfo.mover.attributes.edge
@@ -311,7 +309,7 @@
                                 }
                                 else {
                                     // print nothing
-                                    console.log('invalid input');
+                                    console.log("invalid input");
                                 }
                             }
                             // Return information, seperated by gender
@@ -335,8 +333,8 @@
                     const viewCenter = view.center.clone();
                     const centerScreenPoint = view.toScreen(viewCenter);
                     const centerPoint = view.toMap({
-                        x: centerScreenPoint.x - 100,
-                        y: centerScreenPoint.y - 50
+                        x: centerScreenPoint.x + 140,
+                        y: centerScreenPoint.y - 40
                     });
                     const edgePoint = view.toMap({
                         x: centerScreenPoint.x,
@@ -455,11 +453,12 @@
                     if (!chart) {
                         // Get the canvas element and render the chart in it
                         const canvasElement = document.getElementById("chart");
-
+                                                
                         chart = new Chart(canvasElement.getContext("2d"), {
                             type: "horizontalBar",
                             data: {
-                                // count
+                                /*
+                                // categories, y-axis
                                 labels: [
                                     "CBI cGPS",
                                     "COCONet",
@@ -469,7 +468,8 @@
                                     "Tide Gauges",
                                     "TLALONet",
                                     "TxDOT RRPs"
-                                ],
+                                ],*/
+                                // count of stations, x-axis
                                 datasets: [
                                     {
                                         label: "CBI cGPS",
@@ -527,26 +527,26 @@
                                         borderWidth: 0.25,
                                         data: TxDOT_RRPs_Data
                                     }
-                                ]
+                                ],                                
                             },
                             options: {
-                                responsive: false,
+                                responsive: true,
                                 legend: {
                                     position: "bottom"
                                 },
                                 title: {
                                     display: true,
-                                    text: "Count of Stations"
+                                    text: "Total number of stations within specified radius"
                                 },
                                 scales: {
                                     yAxes: [
                                         {
-                                            categorySpacing: 10,
-                                            barThickness: 10,
+                                            categorySpacing: 5,
+                                            barThickness: 13,
                                             stacked: false,
                                             scaleLabel: {
                                                 display: false,
-                                                labelString: "# of Stations"
+                                                labelString: "Category"
                                             }
                                         }
                                     ],
@@ -559,8 +559,8 @@
                                                 }
                                             },
                                             scaleLabel: {
-                                                display: false,
-                                                labelString: "Category"
+                                                display: true,
+                                                labelString: "Number of Stations"
                                             }
                                         }
                                     ]
@@ -623,7 +623,7 @@
     <div class="alert alert-success alert-dismissible" id="warningText" style="background-color: rgba(159,191,223,0.9); border-color:#000000;">
         <a href="#" class="close" data-dismiss="alert" label="close">&times;</a>
         <p style="color: black; font-size: 18px;">Total number of GPS stations and Tide Gauges within a given radius</p>
-        <p style="color: black; font-size: 18px;">Click on bottom right icon to expand legend</p>
+        <p style="color: black; font-size: 18px;">Click on bottom corner icons to hide chart/legend</p>
         <p style="color: black; font-size: 18px;">Stations with <img src="https://img.icons8.com/ios/20/000000/circled-u.png" /> symbol are UNAVCO stations</p>
     </div>
 
