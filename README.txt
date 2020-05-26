@@ -33,9 +33,10 @@ Data availability/sources/links
 		found online to make the code look consistent.	
 
 	- Aquifers:
-		- United States Geological Survey: https://water.usgs.gov/ogw/aquifer/map.html. The GIS data comes in the format of a tar.gz, which you will have to unpack. There are many tools online
-			for this purpose (i.e. https://extract.me/)
-
+		- United States Geological Survey: https://water.usgs.gov/ogw/aquifer/map.html
+		- The GIS data comes in the format of a tar.gz, which you will have to unpack. There are many tools online for this purpose (i.e. https://extract.me/)
+		- The original dataset contains information for the entire U.S. ArcPro was used to clip this data to cover only the study area. The resulting clipped dataset was then imported into
+			ArcGIS online as a hosted layer, so that it could be used in the "Additional Features" map
 
 	- Geojson beautifier: https://codebeautify.org/jsonviewer
 	- Converter to Geojson>SHP>CSV: https://mapshaper.org/

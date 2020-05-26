@@ -52,9 +52,9 @@
 
     <script>
         require(["esri/widgets/Sketch/SketchViewModel", "esri/geometry/Polyline", "esri/geometry/Point", "esri/Graphic", "esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/layers/GraphicsLayer",
-            "esri/geometry/geometryEngine", "esri/widgets/Expand", "esri/widgets/Legend", "esri/widgets/Search", "esri/core/watchUtils"],
+            "esri/geometry/geometryEngine", "esri/widgets/Expand", "esri/widgets/Legend", "esri/widgets/Search", "esri/core/watchUtils", "esri/widgets/Compass"],
 
-            function (SketchViewModel, Polyline, Point, Graphic, Map, MapView, FeatureLayer, GraphicsLayer, geometryEngine, Expand, Legend, Search, watchUtils) {
+            function (SketchViewModel, Polyline, Point, Graphic, Map, MapView, FeatureLayer, GraphicsLayer, geometryEngine, Expand, Legend, Search, watchUtils, Compass) {
 
                 // App "globals"
                 let sketchViewModel, featureLayerView, pausableWatchHandle, chartExpand, centerGraphic, edgeGraphic, polylineGraphic, bufferGraphic, centerGeometryAtStart, labelGraphic;
@@ -79,6 +79,11 @@
                 const view = new MapView({ container: "viewDiv", map: map, zoom: 6, center: [-97, 31] });
 
 
+                // Compass (North Arrow)
+                var compass = new Compass({
+                    view: view
+                });
+                
                 // Set up statistics definition for client-side query based on count of each feature
                 const statDefinitions = ["CBI_cGPS_Count", "COCONet_Count", "CORS_Stations_Count", "GulfNet_Count", "HoustonNet_Count", "Tide_Gauges_Count", "TLALOCNet_Count", "TxDOT_RRPs_Count"].map(function (fieldName) {
                     return {
@@ -161,6 +166,7 @@
                         view.ui.add(chartExpand, "bottom-left");
                         view.ui.add(search, "top-right");
                         view.ui.add(legendExpand, "bottom-right");
+                        view.ui.add(compass, "top-left");
                     });
 
                     // Close the 'help' popup when view is focused
