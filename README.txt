@@ -33,7 +33,8 @@ Data availability/sources/links
 		found online to make the code look consistent.	
 
 	- Aquifers:
-		- Texas: Texas Water Board Development >> https://www.twdb.texas.gov/mapping/gisdata.asp
+		- United States Geological Survey: https://water.usgs.gov/ogw/aquifer/map.html. The GIS data comes in the format of a tar.gz, which you will have to unpack. There are many tools online
+			for this purpose (i.e. https://extract.me/)
 
 
 	- Geojson beautifier: https://codebeautify.org/jsonviewer
