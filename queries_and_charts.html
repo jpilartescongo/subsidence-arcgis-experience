@@ -1,0 +1,642 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>Queries & Charts</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/themes/light/main.css" />
+    <link rel="stylesheet" href="https://js.arcgis.com/4.14/dijit/themes/claro/claro.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://js.arcgis.com/4.14/"></script>
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #chartPanel {
+            background: rgba(240,240,240, 0.9);
+            font: "Avenir Next W00";
+            line-height: 1.5em;
+            overflow: visible;
+            padding: 10px;
+            width: 580px;
+            height: 300px;
+        }
+
+        .chart {
+            height: 280px;
+        }
+
+        #warningText {
+            position: absolute;
+            left: 650px;
+            text-align: center;
+            font-size: 20px;
+            background-color: #fff;
+            z-index: 1;
+        }
+
+        .close {
+            color: #000000;
+            opacity: 1;
+        }
+    </style>
+
+    <script>
+        require(["esri/widgets/Sketch/SketchViewModel", "esri/geometry/Polyline", "esri/geometry/Point", "esri/Graphic", "esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/layers/GraphicsLayer",
+            "esri/geometry/geometryEngine", "esri/widgets/Expand", "esri/widgets/Legend", "esri/widgets/Search", "esri/core/watchUtils", "esri/widgets/Compass"],
+
+            function (SketchViewModel, Polyline, Point, Graphic, Map, MapView, FeatureLayer, GraphicsLayer, geometryEngine, Expand, Legend, Search, watchUtils, Compass) {
+
+                // App "globals"
+                let sketchViewModel, featureLayerView, pausableWatchHandle, chartExpand, centerGraphic, edgeGraphic, polylineGraphic, bufferGraphic, centerGeometryAtStart, labelGraphic;
+
+                // Define miles as standard unit and creating graphic layers.
+                const unit = "miles";
+                const graphicsLayer = new GraphicsLayer();
+                const graphicsLayer2 = new GraphicsLayer();
+
+                // Importing stations feature layer from ArcGIS content
+                const featureLayer = new FeatureLayer({
+                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/ALL_LAYERS/FeatureServer",
+                    outFields: ["*"]
+                });
+
+                const gulfStates = new FeatureLayer({
+                    url: "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/Gulf_states/FeatureServer"
+                })
+
+                // Set up map and creating view
+                const map = new Map({ basemap: "topo", transparency: 0.2, layers: [gulfStates, featureLayer, graphicsLayer2, graphicsLayer] });
+                const view = new MapView({ container: "viewDiv", map: map, zoom: 6, center: [-97, 31] });
+
+
+                // Compass (North Arrow)
+                var compass = new Compass({
+                    view: view
+                });
+                
+                // Set up statistics definition for client-side query based on count of each feature
+                const statDefinitions = ["CBI_cGPS_Count", "COCONet_Count", "CORS_Stations_Count", "GulfNet_Count", "HoustonNet_Count", "Tide_Gauges_Count", "TLALOCNet_Count", "TxDOT_RRPs_Count"].map(function (fieldName) {
+                    return {
+                        onStatisticField: fieldName,
+                        outStatisticFieldName: fieldName + "_TOTAL",
+                        statisticType: "count"
+                    };
+                });
+
+                // Update User Interface
+                setUpAppUI();
+                setUpSketch();
+
+                function setUpAppUI() {
+                    // When layer is loaded, create a watcher to trigger drawing of the buffer polygon
+                    view.whenLayerView(featureLayer).then(function (layerView) {
+                        featureLayerView = layerView;
+                        pausableWatchHandle = watchUtils.pausable(
+                            layerView,
+                            "updating",
+                            function (val) {
+                                if (!val) {
+                                    drawBufferPolygon();
+                                }
+                            }
+                        );
+
+                        // Display directions when the layerView is loading
+                        watchUtils.whenFalseOnce(layerView, "updating", function () {
+                            view.popup.open({
+                                title: "Center point",
+                                content: "Drag the center point to move the buffer.<br/> " + "Or drag the <b>Edge</b> point to resize the buffer.",
+                                location: centerGraphic.geometry
+                            });
+                            view.popup.alignment = "top-left";
+                        });
+                    });
+
+                    view.when(function () {
+                        // Display the chart in an Expand widget
+                        chartExpand = new Expand({
+                            expandIconClass: "esri-icon-chart",
+                            expandTooltip: "Show chart of stations",
+                            expanded: false,
+                            view: view,
+                            content: document.getElementById("chartPanel")
+                        });
+
+                        const search = new Search({
+                            view: view,
+                            resultGraphicEnabled: false,
+                            popupEnabled: false
+                        });
+
+                        // Resume drawBufferPolygon() function; user searched for a new location. Must update the buffer polygon and re-run the stats query
+                        search.on("search-complete", function () {
+                            pausableWatchHandle.resume();
+                        });
+
+                        // Legend widget
+                        const legend = new Legend({
+                            view: view,
+                            layerInfos: [
+                                {
+                                    layer: featureLayer,
+                                    title: "Displayed Features"
+                                }
+                            ]
+                        });
+
+                        // Display the Legend in an Expand widget
+                        const legendExpand = new Expand({
+                            expandTooltip: "Show legend",
+                            expanded: true,
+                            view: view,
+                            content: legend,
+                        });
+
+                        // Add our components to the UI
+                        view.ui.add(chartExpand, "bottom-left");
+                        view.ui.add(search, "top-right");
+                        view.ui.add(legendExpand, "bottom-right");
+                        view.ui.add(compass, "top-left");
+                    });
+
+                    // Close the 'help' popup when view is focused
+                    view.watch("focused", function (newValue) {
+                        if (newValue) {
+                            view.popup.close();
+                        }
+                    });
+                }
+
+                // CREATE SKETCHVIEWMODEL AND WIRE UP EVENT LISTENERS
+                function setUpSketch() {
+                    sketchViewModel = new SketchViewModel({
+                        view: view,
+                        layer: graphicsLayer
+                    });
+
+                    // Listen to SketchViewModel's update event so that stations chart is updated as the graphics are updated
+                    sketchViewModel.on("update", onMove);
+                }
+
+                /**************************************************************************************************************************************************
+                 * Edge or center graphics are being moved. Recalculate the buffer with updated geometry information and run the query stats again.
+                 **************************************************************************************************************************************************/
+                function onMove(event) {
+                    // If the edge graphic is moving, keep the center graphic at its initial location. Only move edge graphic
+                    if (
+                        event.toolEventInfo &&
+                        event.toolEventInfo.mover.attributes.edge
+                    ) {
+                        const toolType = event.toolEventInfo.type;
+                        if (toolType === "move-start") {
+                            centerGeometryAtStart = centerGraphic.geometry;
+                        }
+                        // keep the center graphic at its initial location when edge point is moving
+                        else if (toolType === "move" || toolType === "move-stop") {
+                            centerGraphic.geometry = centerGeometryAtStart;
+                        }
+                    }
+
+                    // the center or edge graphic is being moved, recalculate the buffer
+                    const vertices = [
+                        [centerGraphic.geometry.x, centerGraphic.geometry.y],
+                        [edgeGraphic.geometry.x, edgeGraphic.geometry.y]
+                    ];
+
+                    // client-side stats query of features that intersect the buffer
+                    calculateBuffer(vertices);
+
+                    // user is clicking on the view... call update method with the center and edge graphics
+                    if (event.state === "cancel" || event.state === "complete") {
+                        sketchViewModel.update([edgeGraphic, centerGraphic], {
+                            tool: "move"
+                        });
+                    }
+                }
+
+                /**************************************************************************************************************************************************
+                 * Edge or center point is being updated. Recalculate the buffer with updated geometry information.
+                 **************************************************************************************************************************************************/
+                function calculateBuffer(vertices) {
+                    // Update the geometry of the polyline based on location of edge and center points
+                    polylineGraphic.geometry = new Polyline({
+                        paths: vertices,
+                        spatialReference: view.spatialReference
+                    });
+
+                    // Recalculate the polyline length and buffer polygon
+                    const length = geometryEngine.geodesicLength(
+                        polylineGraphic.geometry,
+                        unit
+                    );
+                    const buffer = geometryEngine.geodesicBuffer(
+                        centerGraphic.geometry,
+                        length,
+                        unit
+                    );
+
+                    // Update the buffer polygon
+                    bufferGraphic.geometry = buffer;
+
+                    queryLayerViewStationStats(buffer).then(function (newData) {
+                        updateChart(newData);
+                    });
+
+                    // Update label graphic to show the length of the polyline
+                    labelGraphic.geometry = edgeGraphic.geometry;
+                    labelGraphic.symbol = {
+                        type: "text",
+                        color: "#ffffff",
+                        text: length.toFixed(2) + " miles",
+                        xoffset: 50,
+                        yoffset: 10,
+                        font: {
+                            // autocast as Font
+                            size: 14,
+                            family: "sans-serif"
+                        }
+                    };
+                }
+
+                /**************************************************************************************************************************************************
+                 * Spatial query the the feature layer view for statistics using the updated buffer polygon.
+                **************************************************************************************************************************************************/
+                function queryLayerViewStationStats(buffer) {
+                    // Data storage for the chart
+                    let CBI_cGPs_Data = [], COCONet_Data = [], CORS_Stations_Data = [], GulfNet_Data = [], HoustonNet_Data = [], Tide_Gauges_Data = [], TLALOCNet_Data = [], TxDOT_RRPs_Data = [];
+
+                    // Client-side spatial query: Get a count of stations
+                    const query = featureLayerView.layer.createQuery();
+                    query.outStatistics = statDefinitions;
+                    query.geometry = buffer;
+
+
+                    // Query the features on the client using FeatureLayerView.queryFeatures
+                    return featureLayerView
+                        .queryFeatures(query)
+                        .then(function (results) {
+                            // Statistics query returns a feature with 'stats' as attributes
+                            const attributes = results.features[0].attributes;
+                            // Loop through attributes and save the values for use in each of the stations or tide gauges
+                            for (var key in attributes) {
+                                if (key.includes("CBI_cGPS_Count")) {
+                                    CBI_cGPs_Data.push(attributes[key]);
+                                }
+                                else if (key.includes("COCONet_Count")) {
+                                    COCONet_Data.push(attributes[key]);
+                                }
+                                else if (key.includes("CORS_Stations_Count")) {
+                                    CORS_Stations_Data.push(attributes[key]);
+                                }
+                                else if (key.includes("GulfNet_Count")) {
+                                    GulfNet_Data.push(attributes[key]);
+                                }
+                                else if (key.includes("HoustonNet_Count")) {
+                                    HoustonNet_Data.push(attributes[key]);
+                                }
+                                else if (key.includes("Tide_Gauges_Count")) {
+                                    Tide_Gauges_Data.push(attributes[key]);
+                                }
+                                else if (key.includes("TLALOCNet_Count")) {
+                                    TLALOCNet_Data.push(attributes[key]);
+                                }
+                                else if (key.includes("TxDOT_RRPs_Count")) {
+                                    TxDOT_RRPs_Data.push(attributes[key]);
+                                }
+                                else {
+                                    // print nothing
+                                    console.log("invalid input");
+                                }
+                            }
+                            // Return information, seperated by gender
+                            return [CBI_cGPs_Data, COCONet_Data, CORS_Stations_Data, GulfNet_Data, HoustonNet_Data, Tide_Gauges_Data, TLALOCNet_Data, TxDOT_RRPs_Data];
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                }
+
+                /**************************************************************************************************************************************************
+                 * Draw the buffer polygon when application loads or when user searches for a new location
+                 **************************************************************************************************************************************************/
+                function drawBufferPolygon() {
+                    // When pause() is called on the watch handle, the callback represented by the
+                    // watch is no longer invoked, but is still available for later use
+                    // this watch handle will be resumed when user searches for a new location
+                    pausableWatchHandle.pause();
+
+                    // Initial location for the center, edge and polylines on the view
+                    const viewCenter = view.center.clone();
+                    const centerScreenPoint = view.toScreen(viewCenter);
+                    const centerPoint = view.toMap({
+                        x: centerScreenPoint.x + 140,
+                        y: centerScreenPoint.y - 40
+                    });
+                    const edgePoint = view.toMap({
+                        x: centerScreenPoint.x,
+                        y: centerScreenPoint.y
+                    });
+
+                    // Store updated vertices
+                    const vertices = [
+                        [centerPoint.x, centerPoint.y],
+                        [edgePoint.x, edgePoint.y]
+                    ];
+
+                    // Create center, edge, polyline and buffer graphics for the first time
+                    if (!centerGraphic) {
+                        const polyline = new Polyline({
+                            paths: vertices,
+                            spatialReference: view.spatialReference
+                        });
+
+                        // get the length of the initial polyline and create buffer
+                        const length = geometryEngine.geodesicLength(polyline, unit);
+                        const buffer = geometryEngine.geodesicBuffer(
+                            centerPoint,
+                            length,
+                            unit
+                        );
+
+                        // Create the graphics representing the line and buffer
+                        const pointSymbol = {
+                            type: "simple-marker",
+                            style: "circle",
+                            size: 10,
+                            color: [0, 0, 0, 0.5]
+                        };
+                        centerGraphic = new Graphic({
+                            geometry: centerPoint,
+                            symbol: pointSymbol,
+                            attributes: {
+                                center: "center"
+                            }
+                        });
+
+                        edgeGraphic = new Graphic({
+                            geometry: edgePoint,
+                            symbol: pointSymbol,
+                            attributes: {
+                                edge: "edge"
+                            }
+                        });
+
+                        polylineGraphic = new Graphic({
+                            geometry: polyline,
+                            symbol: {
+                                type: "simple-line",
+                                color: [0, 0, 150, 1], // diameter line
+                                width: 2.5
+                            }
+                        });
+
+                        // color properties for buffer circle
+                        bufferGraphic = new Graphic({
+                            geometry: buffer,
+                            symbol: {
+                                type: "simple-fill",
+                                color: [0, 0, 150, 0.3], // interior
+                                outline: {
+                                    color: [0, 0, 150], // exterior
+                                    width: 2
+                                }
+                            }
+                        });
+                        labelGraphic = labelLength(edgePoint, length);
+
+                        // Add graphics to layer
+                        graphicsLayer.addMany([centerGraphic, edgeGraphic]);
+                        // once center and edge point graphics are added to the layer,
+                        // call sketch's update method pass in the graphics so that users
+                        // can just drag these graphics to adjust the buffer
+                        setTimeout(function () {
+                            sketchViewModel.update([edgeGraphic, centerGraphic], {
+                                tool: "move"
+                            });
+                        }, 1000);
+
+                        graphicsLayer2.addMany([
+                            bufferGraphic,
+                            polylineGraphic,
+                            labelGraphic
+                        ]);
+                    }
+                    // Move the center and edge graphics to the new location returned from search
+                    else {
+                        centerGraphic.geometry = centerPoint;
+                        edgeGraphic.geometry = edgePoint;
+                    }
+
+                    // Query features that intersect the buffer
+                    calculateBuffer(vertices);
+                }
+
+                let chart;
+
+                // ORIGINAL CHART
+                function updateChart(newData) {
+                    chartExpand.expanded = true;
+
+                    const CBI_cGPS_Data = newData[0];
+                    const COCONet_Data = newData[1];
+                    const CORS_Stations_Data = newData[2];
+                    const GulfNet_Data = newData[3];
+                    const HoustonNet_Data = newData[4];
+                    const Tide_Gauges_Data = newData[5];
+                    const TLALOCNet_Data = newData[6];
+                    const TxDOT_RRPs_Data = newData[7];
+
+                    if (!chart) {
+                        // Get the canvas element and render the chart in it
+                        const canvasElement = document.getElementById("chart");
+                                                
+                        chart = new Chart(canvasElement.getContext("2d"), {
+                            type: "horizontalBar",
+                            data: {
+                                /*
+                                // categories, y-axis
+                                labels: [
+                                    "CBI cGPS",
+                                    "COCONet",
+                                    "CORS/NOAA",
+                                    "GulfNet",
+                                    "HoustonNet",
+                                    "Tide Gauges",
+                                    "TLALONet",
+                                    "TxDOT RRPs"
+                                ],*/
+                                // count of stations, x-axis
+                                datasets: [
+                                    {
+                                        label: "CBI cGPS",
+                                        backgroundColor: "#000000",
+                                        borderColor: "#000000",
+                                        borderWidth: 0.25,
+                                        data: CBI_cGPS_Data
+                                    },
+                                    {
+                                        label: "COCONet",
+                                        backgroundColor: "#999999",
+                                        borderColor: "#999999",
+                                        borderWidth: 0.25,
+                                        data: COCONet_Data
+                                    },
+                                    {
+                                        label: "CORS/NOAA",
+                                        backgroundColor: "#2166AC",
+                                        borderColor: "#2166AC",
+                                        borderWidth: 0.25,
+                                        data: CORS_Stations_Data
+                                    },
+                                    {
+                                        label: "GulfNet",
+                                        backgroundColor: "#B75454",
+                                        borderColor: "#B75454",
+                                        borderWidth: 0.25,
+                                        data: GulfNet_Data
+                                    },
+                                    {
+                                        label: "HoustonNet",
+                                        backgroundColor: "#7FBF7B",
+                                        borderColor: "#7FBF7B",
+                                        borderWidth: 0.25,
+                                        data: HoustonNet_Data
+                                    },
+                                    {
+                                        label: "Tide Gauges",
+                                        backgroundColor: "#FF2500",
+                                        borderColor: "#FF2500",
+                                        borderWidth: 0.25,
+                                        data: Tide_Gauges_Data
+                                    },
+                                    {
+                                        label: "TLALOCNet",
+                                        backgroundColor: "#FFA500",
+                                        borderColor: "#FFA500",
+                                        borderWidth: 0.25,
+                                        data: TLALOCNet_Data
+                                    },
+                                    {
+                                        label: "TxDOT RRPs",
+                                        backgroundColor: "#0080FF",
+                                        borderColor: "#0080FF",
+                                        borderWidth: 0.25,
+                                        data: TxDOT_RRPs_Data
+                                    }
+                                ],                                
+                            },
+                            options: {
+                                responsive: true,
+                                legend: {
+                                    position: "bottom"
+                                },
+                                title: {
+                                    display: true,
+                                    text: "Total number of stations within specified radius"
+                                },
+                                scales: {
+                                    yAxes: [
+                                        {
+                                            categorySpacing: 5,
+                                            barThickness: 13,
+                                            stacked: false,
+                                            scaleLabel: {
+                                                display: false,
+                                                labelString: "Category"
+                                            }
+                                        }
+                                    ],
+                                    xAxes: [
+                                        {
+                                            ticks: {
+                                                callback: function (value) {
+                                                    const val = Math.abs(parseInt(value));
+                                                    return numberWithCommas(val);
+                                                }
+                                            },
+                                            scaleLabel: {
+                                                display: true,
+                                                labelString: "Number of Stations"
+                                            }
+                                        }
+                                    ]
+                                },
+                                tooltips: {
+                                    callbacks: {
+                                        label: function (tooltipItem, data) {
+                                            return (
+                                                data.datasets[tooltipItem.datasetIndex].label +
+                                                ": " +
+                                                numberWithCommas(Math.abs(tooltipItem.xLabel))
+                                            );
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    }
+                    else {
+                        chart.data.datasets[0].data = CBI_cGPS_Data;
+                        chart.data.datasets[1].data = COCONet_Data;
+                        chart.data.datasets[2].data = CORS_Stations_Data;
+                        chart.data.datasets[3].data = GulfNet_Data;
+                        chart.data.datasets[4].data = HoustonNet_Data;
+                        chart.data.datasets[5].data = Tide_Gauges_Data;
+                        chart.data.datasets[6].data = TLALOCNet_Data;
+                        chart.data.datasets[7].data = TxDOT_RRPs_Data;
+                        chart.update();
+                    }
+                }
+
+                // Helper function for formatting number labels with commas
+                function numberWithCommas(value) {
+                    value = value || 0;
+                    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                }
+
+                // Label polyline with its length
+                function labelLength(geom, length) {
+                    return new Graphic({
+                        geometry: geom,
+                        symbol: {
+                            type: "text",
+                            color: "#FFEB00",
+                            text: length.toFixed(2) + " miles",
+                            xoffset: 50,
+                            yoffset: 10,
+                            font: {
+                                // autocast as Font
+                                size: 14,
+                                family: "sans-serif"
+                            }
+                        }
+                    });
+                }
+            });
+    </script>
+
+    <!-- Warning Text -->
+    <div class="alert alert-success alert-dismissible" id="warningText" style="background-color: rgba(159,191,223,0.9); border-color:#000000;">
+        <a href="#" class="close" data-dismiss="alert" label="close">&times;</a>
+        <p style="color: black; font-size: 18px;">Number of GNSS Stations and Tide Gauges within radius</p>
+        <p style="color: black; font-size: 18px;">Use widgets in bottom corners to expand or contract charts</p>
+        <p style="color: black; font-size: 18px;">Stations with <img src="https://img.icons8.com/ios/20/000000/circled-u.png" /> symbol are UNAVCO stations</p>
+    </div>
+
+</head>
+
+<body>
+    <div id="viewDiv"></div>
+    <div id="chartPanel"><canvas id="chart" class="chart"></canvas></div>
+</body>
+</html>

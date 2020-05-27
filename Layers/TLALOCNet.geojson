@@ -1,0 +1,765 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2897,
+          28.8841
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "GUAX",
+        "interval": "15.0 sec ",
+        "name": "Isla Guadalupe",
+        "earliest_data": "2001 May 17 21:15",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0753,
+          15.8887
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "OXPE",
+        "interval": "15.0 sec ",
+        "name": "Puerto_Escondido_TNET_MX_2002",
+        "earliest_data": "2005 Apr 27 22:40",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2408,
+          16.2863
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "OXTH",
+        "interval": "15.0 sec ",
+        "name": "Tehuantepec_TNET_MX_2007",
+        "earliest_data": "2007 Sep 11 23:57",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, Oaxaca Mexico OXNET, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.499,
+          15.6622
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "OXUM",
+        "interval": "15.0 sec ",
+        "name": "Puerto_Angel-UMAR_TNET_MX_2001",
+        "earliest_data": "2013 Feb 21 22:53",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.1015,
+          19.3905
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "PENA",
+        "interval": "15.0 sec ",
+        "name": "Pena_Colorada_MX_2007",
+        "earliest_data": "2007 Jan 31 02:29",
+        "latest_data": "2020 Jan 12 23:59",
+        "grouping": "Jalisco, Met Sites, NOTA Core, PBO Analysis Complete, PBO Expanded Analysis, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.861,
+          18.9846
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TECO",
+        "interval": "15.0 sec ",
+        "name": "Tecoman_MX_2007",
+        "earliest_data": "2007 Feb 13 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Jalisco, Met Sites, NOTA Core, PBO Analysis Complete, PBO Expanded Analysis, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.6552,
+          19.1187
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNAL",
+        "interval": "15.0 sec ",
+        "name": "Altzomoni_TNET_MX_2013",
+        "earliest_data": "2014 Aug 15 14:30",
+        "latest_data": "2018 Feb 13 23:59",
+        "grouping": "Met Sites, NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.9668,
+          20.5356
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNAM",
+        "interval": "15.0 sec ",
+        "name": "Ameca_TNET_MX_2014",
+        "earliest_data": "2014 Sep 04 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.0411,
+          18.1302
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNAT",
+        "interval": "15.0 sec ",
+        "name": "Acatlan_TNET_MX_2014",
+        "earliest_data": "2014 Nov 14 16:06",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.5473,
+          28.9719
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNBA",
+        "interval": "15.0 sec ",
+        "name": "Bahia_Angeles_TNET_MX_2014",
+        "earliest_data": "2014 Nov 28 20:37",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.173,
+          18.7911
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNCC",
+        "interval": "15.0 sec ",
+        "name": "Coalcoman_TNET_MX_2015",
+        "earliest_data": "2015 Oct 20 21:38",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0448,
+          19.4981
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNCM",
+        "interval": "15.0 sec ",
+        "name": "Chamela_TNET_MX_2014",
+        "earliest_data": "2014 Sep 08 17:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.9708,
+          18.5538
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNCN",
+        "interval": "15.0 sec ",
+        "name": "Ca?as_TNET_MX_2016",
+        "earliest_data": "2016 Feb 21 02:14",
+        "latest_data": "2019 Dec 31 23:59",
+        "grouping": "Met Sites, NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.2588,
+          19.6811
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNCT",
+        "interval": "15.0 sec ",
+        "name": "Chalacatepec__TNET_MX_2017",
+        "earliest_data": "2017 Jan 15 15:56",
+        "latest_data": "2019 Sep 05 23:59",
+        "grouping": "Met Sites, NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.7941,
+          28.4506
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNCU",
+        "interval": "15.0 sec ",
+        "name": "Cuauhtemoc_TNET_MX_2014",
+        "earliest_data": "2014 Jul 18 18:06",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7592,
+          16.0585
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNCY",
+        "interval": "15.0 sec ",
+        "name": "Coyuche_TNET_MX_2015",
+        "earliest_data": "2015 Nov 29 01:08",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.176,
+          19.3269
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNGF",
+        "interval": "15.0 sec ",
+        "name": "Geofisica_TNET_MX_2015",
+        "earliest_data": "2016 Apr 13 19:22",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.9703,
+          29.0813
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNHM",
+        "interval": "15.0 sec ",
+        "name": "Hermosillo_TNET_MX_2014",
+        "earliest_data": "2014 Jul 16 19:14",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.8956,
+          18.2715
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNIF",
+        "interval": "15.0 sec ",
+        "name": "Presa_Infiernillo_TNET_MX_2015",
+        "earliest_data": "2015 Oct 18 23:20",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.5492,
+          19.5061
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNLC",
+        "interval": "15.0 sec ",
+        "name": "La_Concepcion_TNET_MX_2015",
+        "earliest_data": "2015 Oct 25 18:45",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.2278,
+          19.6488
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNMO",
+        "interval": "15.0 sec ",
+        "name": "Morelia_TNET_MX_2008",
+        "earliest_data": "2008 Jun 13 20:41",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.6116,
+          16.7103
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNMQ",
+        "interval": "15.0 sec ",
+        "name": "Marquelia_TNET_MX_2015",
+        "earliest_data": "2015 Nov 25 23:53",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.3455,
+          18.2885
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNMR",
+        "interval": "15.0 sec ",
+        "name": "Maruata_TNET_MX_2014",
+        "earliest_data": "2014 Sep 10 18:04",
+        "latest_data": "2018 Sep 30 23:59",
+        "grouping": "Met Sites, NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7967,
+          20.5348
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNMS",
+        "interval": "15.0 sec ",
+        "name": "Mascota_TNET_MX_2014",
+        "earliest_data": "2014 Sep 06 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.2741,
+          19.5857
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNMT",
+        "interval": "15.0 sec ",
+        "name": "TNMT_TNET_MX2017",
+        "earliest_data": "2017 Oct 20 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.4015,
+          19.1236
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNMZ",
+        "interval": "15.0 sec ",
+        "name": "Manzanilo_TNET_MX_2015",
+        "earliest_data": "2015 Jun 24 00:00",
+        "latest_data": "2018 Oct 17 08:01",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.1419,
+          16.1205
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNNP",
+        "interval": "15.0 sec ",
+        "name": "Nopala_TNET_MX_2015",
+        "earliest_data": "2015 Dec 01 18:07",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2239,
+          17.4076
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNNX",
+        "interval": "15.0 sec ",
+        "name": "Nochixtlan_TNET_MX_2014",
+        "earliest_data": "2014 Nov 15 23:36",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2189,
+          15.7046
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNPJ",
+        "interval": "15.0 sec ",
+        "name": "Pijijiapan_TNET_MX_2014",
+        "earliest_data": "2014 Nov 18 22:12",
+        "latest_data": "2018 Oct 02 03:40",
+        "grouping": "Met Sites, NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.6316,
+          31.3355
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNPP",
+        "interval": "15.0 sec ",
+        "name": "Puerto_Pe?asco_TNET_MX_2015",
+        "earliest_data": "2015 Feb 11 19:05",
+        "latest_data": "2019 Oct 07 23:59",
+        "grouping": "Met Sites, NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.4895,
+          16.1724
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNSJ",
+        "interval": "15.0 sec ",
+        "name": "San_Jose_Pacifico_TNET_MX_2015",
+        "earliest_data": "2016 Mar 05 16:08",
+        "latest_data": "2019 Nov 27 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.0527,
+          25.6059
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNTB",
+        "interval": "15.0 sec ",
+        "name": "Topolobampo_TNET_MX_2014",
+        "earliest_data": "2015 Feb 06 00:32",
+        "latest_data": "2019 Mar 15 13:42",
+        "grouping": "Met Sites, NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7899,
+          19.2391
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "TNTM",
+        "interval": "15.0 sec ",
+        "name": "Tamarindo_TNET_MX_2017",
+        "earliest_data": "2017 Jan 17 21:34",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.315,
+          21.9185
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "UAGU",
+        "interval": "15.0 sec ",
+        "name": "Aguascalientes_TNET_MX_2008",
+        "earliest_data": "2008 Apr 05 00:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.6944,
+          19.8132
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "UCOE",
+        "interval": "15.0 sec ",
+        "name": "Coeneo_TNET_MX_2003",
+        "earliest_data": "2005 Oct 07 14:35",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.3511,
+          20.6938
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "UGEO",
+        "interval": "15.0 sec ",
+        "name": "ugeo_tnet_mx1998",
+        "earliest_data": "2000 Mar 01 00:23",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.6811,
+          29.8217
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "USMX",
+        "interval": "15.0 sec ",
+        "name": "Universidad de la Sierra",
+        "earliest_data": "2004 Jun 12 16:58",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, Northwest Mexico, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.3162,
+          19.0334
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "UTON",
+        "interval": "15.0 sec ",
+        "name": "Tonantzintla_MX_2001",
+        "earliest_data": "2000 Apr 27 00:07",
+        "latest_data": "2019 Nov 17 23:59",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.9248,
+          19.5164
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "UXAL",
+        "interval": "15.0 sec ",
+        "name": "Jalapa_TNET_MX_2005",
+        "earliest_data": "2005 Sep 14 23:00",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "NOTA Core, PBO Analysis Complete, TLALOCNet, TLALOCNet Partner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.9196,
+          28.3783
+        ]
+      },
+      "properties": {
+        "TLALOCNet_Count": "1",
+        "code": "YESX",
+        "interval": "15.0 sec ",
+        "name": "Yecora_MX_2004",
+        "earliest_data": "2004 Jun 13 19:36",
+        "latest_data": "2020 Jan 13 23:59",
+        "grouping": "Met Sites, Northwest Mexico, NOTA Core, NOTA GPS+GLO, NOTA multi-GNSS, PBO Analysis Complete, TLALOCNet, TLALOCNet Core"
+      }
+    }
+  ]
+}

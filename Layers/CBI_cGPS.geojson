@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.3181177897,
+          27.4843655041
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Bird Island, Padre Island",
+        "State": "Texas",
+        "Code": "BIRD",
+        "Elevation": "-20.26",
+        "Established": "May 23, 2014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2200825813,
+          27.5830628878
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Bob Hall Pier, Corpus Christi",
+        "State": "Texas",
+        "Code": "BHPR",
+        "Elevation": "-19.3072",
+        "Established": "Sep 16, 2019"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.9140456933,
+          28.7101100031
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Matagorda City",
+        "State": "Texas",
+        "Code": "MATA",
+        "Elevation": "-15.49",
+        "Established": "May 23, 2014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.7246964197,
+          29.3574385479
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "North Jetty",
+        "State": "Texas",
+        "Code": "TXNJ",
+        "Elevation": "-13.9573",
+        "Established": "Sep 27, 2011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2125063397,
+          26.0639778924
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Port Isabel",
+        "State": "Texas",
+        "Code": "PTIS",
+        "Elevation": "-12.209",
+        "Established": "Mar 29, 2014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.42888889,
+          26.55694444
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Port Mansfield, Brownsville",
+        "State": "Texas",
+        "Code": "PTMS",
+        "Elevation": "-15.183",
+        "Established": "Mar 29, 2014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0465917971,
+          28.0264420003
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Rockport",
+        "State": "Texas",
+        "Code": "RKPT",
+        "Elevation": "-19.4440",
+        "Established": "Jan 19, 2012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5105685128,
+          29.5156881521
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Rollover Pass",
+        "State": "Texas",
+        "Code": "ROPS",
+        "Elevation": "-19.417",
+        "Established": "Oct 01, 2016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.1309611274,
+          29.0807039719
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "San Luis Pass",
+        "State": "Texas",
+        "Code": "SLPS",
+        "Elevation": "-20.828",
+        "Established": "Oct 01, 2016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.841908304,
+          29.6893814392
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Texas Point",
+        "State": "Texas",
+        "Code": "TXSP",
+        "Elevation": "-13.365",
+        "Established": "Sep 28, 2011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.3918434805,
+          27.8141510781
+        ]
+      },
+      "properties": {
+        "CBI_cGPS_Count": "1",
+        "Title": "Texas State Aquarium, Corpus Christi",
+        "State": "Texas",
+        "Code": "TSAQ",
+        "Elevation": "-12.145",
+        "Established": "Jul 12, 2019"
+      }
+    }
+  ]
+}
