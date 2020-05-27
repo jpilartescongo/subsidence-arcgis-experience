@@ -38,6 +38,10 @@ Data availability/sources/links
 		- The original dataset contains information for the entire U.S. ArcPro was used to clip this data to cover only the study area. The resulting clipped dataset was then imported into
 			ArcGIS online as a hosted layer, so that it could be used in the "Additional Features" map
 
+	- Gulf of Mexico states: https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national
+		- Imported into ArcGIS Online as zip file and used only in the query and additional features map. This is a different dataset than that in the "Layers" folder in GIT. This is a
+			shapefile, and not a Geojson. And was not used in any of the other maps on the webpage
+
 	- Geojson beautifier: https://codebeautify.org/jsonviewer
 	- Converter to Geojson>SHP>CSV: https://mapshaper.org/
 	- Legend icons: https://icons8.com/icons/pack/free-icons
@@ -45,33 +49,34 @@ Data availability/sources/links
 ******************************************************************************************************************************************************************************************
 
 Page information:
-	This project has been developed using ArcGIS API and Mapbox API as well as ArcGIS online capabilities. These functionalities were combined into ArcGIS Experience Builder for display.
-	Page 1 > Homepage: 
+	This project has been developed using ArcGIS API and Mapbox API as well as ArcGIS online capabilities. These functionalities were combined into ArcGIS Experience Builder for display
+	Page 1 > Home: 
 		- uses only Experience Builder and its widgets
-	Page 2 > Stations and Tide Gauges:
+	Page 2 > GNSS Stations and Tide Gauges:
 		- uses Mapbox API with information of the various stations and tide gauges as provided earlier in this document
 		- code was written using html, without external links to other JavaScript or CSS or even html links
 		- code embedded copied into an Experience Builder embedded page
-	Page 3 > Heatmaps:
+	Page 3 > Distribution Heatmap:
 		- same procedure as Page 2
-	Page 4 > Feature Query:
+	Page 4 > Queries and Charts:
 		- same procedure as Page 2; except it used ArcGIS API and not Mapbox API
 		- features are not internally referenced like in Pages 2 and 3, they were loaded onto ESRI Online as hosted layers
 		- features were merged into a single "ALL_LAYERS" file, that includes a count attribute column for each of them (i.e. CORS count vs CBI cGPS count, etc)
 		- icons were manually changed to avoid having the same symbology, and keep consistency with previous pages
-	Page 5 > Features of Interest:
+	Page 5 > Additional Features:
 		- features used are online as hosted layers
 		- does not use any API; instead, uses ArcGIS Online capabilities
 		- meant to include additional features such as Corpus Christi Sea Wall, and others as needed
-	Page 6 > About Us:
+	Page 6 > About:
 		- information about the institute
 		- does not use any API; made using ArcGIS Online
+		- includes an embedded page built directly on ArcGIS Experience
 
 ******************************************************************************************************************************************************************************************
 
 YouTube instructions link: https://youtu.be/f_ETn4gHbnM
 
-Wall warnings on the map are Boostrap (https://www.w3schools.com/bootstrap/bootstrap_alerts.asp)
+All warnings on the map are Boostrap (https://www.w3schools.com/bootstrap/bootstrap_alerts.asp)
 
 Key issues:
 	- there seems to be a bug with the stations and tide gauges code, which massively slows down that specific code. However, the code still does work, and can be copied into ArcGIS Experience
