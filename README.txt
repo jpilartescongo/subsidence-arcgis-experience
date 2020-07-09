@@ -4,7 +4,6 @@ Files for subsidence project version on ArcGIS experience
 Author: Pilartes-Congo
 Email: jcongo@islander.tamucc.edu / japcongo@hotmail.co.uk
 Created: October 08, 2019
-** Updated to master **
 
 ******************************************************************************************************************************************************************************************
 
@@ -21,7 +20,9 @@ Data availability/sources/links
 		PTMS used lat/lon because SPCS coordinates were too far off
 
 	- UNAVCO Stations Data: https://www.unavco.org/data/gps-gnss/data-access-methods/dai2/app/dai2.html#Grouping=COCONet;scope=Station;sampleRate=normal;GroupingMod=contains;GroupingMod=contains
-		UNAVCO includes: COCONet, GulfNet, HoustonNet, TLALOCNet
+		UNAVCO includes: COCONet, GulfNet, HoustonNet, TLALOCNet .These four categories were merged using geojson-merge. This layer was used only for static map reasons, and not on the actual website.
+			However, it is saved here in case one needs it in the future. Use syntax (geojson-merge COCONet.geojson GulfNet.geojson HoustonNet.geojson TLALOCNet.geojson > UNAVCO.geojson) to merge different
+			geojsons into one. More information on the following link: https://stackoverflow.com/questions/40102072/how-to-merge-multiple-geojson-in-to-one-geojson-in-one-featurecollection
 
 	- TxDOT RRPs Data: http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/TxDOT_RTN_RRP_Coordinates_rev_03-17-2019.pdf
 		Additional information: https://www.txdot.gov/inside-txdot/division/information-technology/gps.html or http://ftp.dot.state.tx.us/pub/txdot-info/isd/gps/Documents/
