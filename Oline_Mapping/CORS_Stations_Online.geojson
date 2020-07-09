@@ -6215,8 +6215,8 @@
         "ABBR": "GCGC",
         "GNSS": "GPS+GLO",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ARP6&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ARP6"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSOX&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSOX"
       },
       "geometry": {
         "type": "Point",
@@ -6236,7 +6236,9 @@
         "STATUS": "Operational",
         "ABBR": "GCGC",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSEV&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSEV"
       },
       "geometry": {
         "type": "Point",
@@ -6256,7 +6258,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "GCGC",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSPC&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSPC"
       },
       "geometry": {
         "type": "Point",
@@ -6276,7 +6280,9 @@
         "STATUS": "Operational",
         "ABBR": "GCGC",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSPE&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSPE"
       },
       "geometry": {
         "type": "Point",
@@ -6296,7 +6302,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "GCGCMU",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSPH&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSPH"
       },
       "geometry": {
         "type": "Point",
@@ -6316,7 +6324,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "GCGC",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSPK&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSPK"
       },
       "geometry": {
         "type": "Point",
@@ -6336,7 +6346,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "GCGC",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSPO&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSPO"
       },
       "geometry": {
         "type": "Point",
@@ -6356,7 +6368,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "GCGCMU",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSGV&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSGV"
       },
       "geometry": {
         "type": "Point",
@@ -6376,7 +6390,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "GCGC",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSGA&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSGA"
       },
       "geometry": {
         "type": "Point",
@@ -6396,7 +6412,10 @@
         "STATUS": "Operational",
         "ABBR": "GCGC",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSGN&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSGN"
+
       },
       "geometry": {
         "type": "Point",
@@ -6416,7 +6435,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "GCGC",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSMR&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSMR"
       },
       "geometry": {
         "type": "Point",
@@ -6436,7 +6457,9 @@
         "STATUS": "Operational",
         "ABBR": "COHPWD",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=COH2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=COH2"
       },
       "geometry": {
         "type": "Point",
@@ -6456,7 +6479,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "COHPWD",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=COH3&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=COH3"
       },
       "geometry": {
         "type": "Point",
@@ -6476,7 +6501,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "COHPWD",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=COH6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=COH6"
       },
       "geometry": {
         "type": "Point",
@@ -6496,7 +6523,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "COHPWD",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=COH7&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=COH7"
       },
       "geometry": {
         "type": "Point",
@@ -6516,7 +6545,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "COHPWD",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=COH4&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=COH4"
       },
       "geometry": {
         "type": "Point",
@@ -6536,7 +6567,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "COHPWD",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=COH5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=COH5"
       },
       "geometry": {
         "type": "Point",
@@ -6556,7 +6589,9 @@
         "STATUS": "Non-Operational",
         "ABBR": "COHPWD",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=COH1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=COH1"
       },
       "geometry": {
         "type": "Point",
@@ -6576,7 +6611,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ORMD&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ORMD"
       },
       "geometry": {
         "type": "Point",
@@ -6596,7 +6633,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=BRTW&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=BRTW"
       },
       "geometry": {
         "type": "Point",
@@ -6616,7 +6655,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FLBN&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FLBN"
       },
       "geometry": {
         "type": "Point",
@@ -6636,7 +6677,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FL75&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FL75"
       },
       "geometry": {
         "type": "Point",
@@ -6656,7 +6699,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MRKB&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MRKB"
       },
       "geometry": {
         "type": "Point",
@@ -6676,7 +6721,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FLCB&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FLCB"
       },
       "geometry": {
         "type": "Point",
@@ -6696,7 +6743,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=KWST&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=KWST"
       },
       "geometry": {
         "type": "Point",
@@ -6716,7 +6765,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=PCLA&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=PCLA"
       },
       "geometry": {
         "type": "Point",
@@ -6736,7 +6787,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ZEFR&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ZEFR"
       },
       "geometry": {
         "type": "Point",
@@ -6756,7 +6809,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MKEY&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MKEY"
       },
       "geometry": {
         "type": "Point",
@@ -6776,7 +6831,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FMYR&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FMYR"
       },
       "geometry": {
         "type": "Point",
@@ -6796,7 +6853,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MTNT&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MTNT"
       },
       "geometry": {
         "type": "Point",
@@ -6816,7 +6875,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=DUNN&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=DUNN"
       },
       "geometry": {
         "type": "Point",
@@ -6836,7 +6897,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MTHN&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MTHN"
       },
       "geometry": {
         "type": "Point",
@@ -6856,7 +6919,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=NAPL&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=NAPL"
       },
       "geometry": {
         "type": "Point",
@@ -6876,7 +6941,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=XCTY&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=XCTY"
       },
       "geometry": {
         "type": "Point",
@@ -6896,7 +6963,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=PLTK&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=PLTK"
       },
       "geometry": {
         "type": "Point",
@@ -6916,7 +6985,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FLKW&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FLKW"
       },
       "geometry": {
         "type": "Point",
@@ -6936,7 +7007,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=BKVL&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=BKVL"
       },
       "geometry": {
         "type": "Point",
@@ -6956,7 +7029,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=LEES&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=LEES"
       },
       "geometry": {
         "type": "Point",
@@ -6976,7 +7051,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=PBCH&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=PBCH"
       },
       "geometry": {
         "type": "Point",
@@ -6996,7 +7073,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=KSME&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=KSME"
       },
       "geometry": {
         "type": "Point",
@@ -7016,7 +7095,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TALH&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TALH"
       },
       "geometry": {
         "type": "Point",
@@ -7036,7 +7117,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=JXVL&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=JXVL"
       },
       "geometry": {
         "type": "Point",
@@ -7056,7 +7139,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=PNCY&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=PNCY"
       },
       "geometry": {
         "type": "Point",
@@ -7076,7 +7161,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=RMND&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=RMND"
       },
       "geometry": {
         "type": "Point",
@@ -7096,7 +7183,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=CRLT&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=CRLT"
       },
       "geometry": {
         "type": "Point",
@@ -7116,7 +7205,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=DLND&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=DLND"
       },
       "geometry": {
         "type": "Point",
@@ -7136,7 +7227,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=GNVL&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=GNVL"
       },
       "geometry": {
         "type": "Point",
@@ -7156,7 +7249,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=BNFY&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=BNFY"
       },
       "geometry": {
         "type": "Point",
@@ -7176,7 +7271,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=OKCB&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=OKCB"
       },
       "geometry": {
         "type": "Point",
@@ -7196,7 +7293,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=WACH&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=WACH"
       },
       "geometry": {
         "type": "Point",
@@ -7216,7 +7315,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=CRST&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=CRST"
       },
       "geometry": {
         "type": "Point",
@@ -7236,7 +7337,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=LAUD&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=LAUD"
       },
       "geometry": {
         "type": "Point",
@@ -7256,7 +7359,9 @@
         "STATUS": "Operational",
         "ABBR": "FLDT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=PRRY&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=PRRY"
       },
       "geometry": {
         "type": "Point",
@@ -7276,7 +7381,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=STRT&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=STRT"
       },
       "geometry": {
         "type": "Point",
@@ -7296,7 +7403,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=COKO&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=COKO"
       },
       "geometry": {
         "type": "Point",
@@ -7316,7 +7425,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "FLDT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=DFNK&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=DFNK"
       },
       "geometry": {
         "type": "Point",
@@ -7336,7 +7447,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "SMRTNT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=HOT1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=HOT1"
       },
       "geometry": {
         "type": "Point",
@@ -7356,7 +7469,9 @@
         "STATUS": "Operational",
         "ABBR": "FAA",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ZFW1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ZFW1"
       },
       "geometry": {
         "type": "Point",
@@ -7376,7 +7491,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "EDISI",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=GNRS&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=GNRS"
       },
       "geometry": {
         "type": "Point",
@@ -7396,7 +7513,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "JBDI",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=JBD1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=JBD1"
       },
       "geometry": {
         "type": "Point",
@@ -7416,7 +7535,9 @@
         "STATUS": "Operational",
         "ABBR": "SAMINC",
         "GNSS": "GPS+GAL+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=SAM2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=SAM2"
       },
       "geometry": {
         "type": "Point",
@@ -7436,7 +7557,9 @@
         "STATUS": "Operational",
         "ABBR": "LCRA",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=LCSM&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=LCSM"
       },
       "geometry": {
         "type": "Point",
@@ -7456,7 +7579,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "SAMINC",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=SAM1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=SAM1"
       },
       "geometry": {
         "type": "Point",
@@ -7476,7 +7601,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "LEIGEO",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=EZAU&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=EZAU"
       },
       "geometry": {
         "type": "Point",
@@ -7496,7 +7623,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=VIC1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=VIC1"
       },
       "geometry": {
         "type": "Point",
@@ -7516,7 +7645,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=VIC6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=VIC6"
       },
       "geometry": {
         "type": "Point",
@@ -7536,7 +7667,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=VIC5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=VIC5"
       },
       "geometry": {
         "type": "Point",
@@ -7556,7 +7689,9 @@
         "STATUS": "Operational",
         "ABBR": "SMRTNT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FLWE&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FLWE"
       },
       "geometry": {
         "type": "Point",
@@ -7576,7 +7711,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "SMRTNT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FEI1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FEI1"
       },
       "geometry": {
         "type": "Point",
@@ -7596,7 +7733,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "SMRTNT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=SGI1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=SGI1"
       },
       "geometry": {
         "type": "Point",
@@ -7616,7 +7755,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=GAL1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=GAL1"
       },
       "geometry": {
         "type": "Point",
@@ -7636,7 +7777,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=GAL2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=GAL2"
       },
       "geometry": {
         "type": "Point",
@@ -7656,7 +7799,9 @@
         "STATUS": "Operational",
         "ABBR": "SMRTNT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=DWI1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=DWI1"
       },
       "geometry": {
         "type": "Point",
@@ -7676,7 +7821,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "DAWENG",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=PDE1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=PDE1"
       },
       "geometry": {
         "type": "Point",
@@ -7696,7 +7843,9 @@
         "STATUS": "Operational",
         "ABBR": "FAA",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ZHU1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ZHU1"
       },
       "geometry": {
         "type": "Point",
@@ -7716,7 +7865,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ANG5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ANG5"
       },
       "geometry": {
         "type": "Point",
@@ -7736,7 +7887,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ANG6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ANG6"
       },
       "geometry": {
         "type": "Point",
@@ -7756,7 +7909,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ANG1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ANG1"
       },
       "geometry": {
         "type": "Point",
@@ -7776,7 +7931,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ANG2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ANG2"
       },
       "geometry": {
         "type": "Point",
@@ -7796,7 +7953,9 @@
         "STATUS": "Operational",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ENG5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ENG5"
       },
       "geometry": {
         "type": "Point",
@@ -7816,7 +7975,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "EDISI",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=RJSA&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=RJSA"
       },
       "geometry": {
         "type": "Point",
@@ -7836,7 +7997,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ENG1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ENG1"
       },
       "geometry": {
         "type": "Point",
@@ -7856,7 +8019,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ENG2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ENG2"
       },
       "geometry": {
         "type": "Point",
@@ -7876,7 +8041,9 @@
         "STATUS": "Operational",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ENG6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ENG6"
       },
       "geometry": {
         "type": "Point",
@@ -7896,7 +8063,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "SMRTNT",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=EZSA&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=EZSA"
       },
       "geometry": {
         "type": "Point",
@@ -7916,7 +8085,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "CORMEA",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TSI1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TSI1"
       },
       "geometry": {
         "type": "Point",
@@ -7936,7 +8107,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "CORMEA",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=CMS1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=CMS1"
       },
       "geometry": {
         "type": "Point",
@@ -7956,7 +8129,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "CADNR",
         "GNSS": "GPS",
-        "AVAIL": "Half-hourly"
+        "AVAIL": "Half-hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSSC&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSSC"
       },
       "geometry": {
         "type": "Point",
@@ -7976,7 +8151,9 @@
         "STATUS": "Non-Operational",
         "ABBR": "JPL",
         "GNSS": "GPS+GAL+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MDO1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MDO1"
       },
       "geometry": {
         "type": "Point",
@@ -7996,7 +8173,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MOB2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MOB2"
       },
       "geometry": {
         "type": "Point",
@@ -8016,7 +8195,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MOB1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MOB1"
       },
       "geometry": {
         "type": "Point",
@@ -8036,7 +8217,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MOB6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MOB6"
       },
       "geometry": {
         "type": "Point",
@@ -8056,7 +8239,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MOB5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MOB5"
       },
       "geometry": {
         "type": "Point",
@@ -8076,7 +8261,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "ESRL",
         "GNSS": "GPS",
-        "AVAIL": "Half-hourly"
+        "AVAIL": "Half-hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=NDBC&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=NDBC"
       },
       "geometry": {
         "type": "Point",
@@ -8096,7 +8283,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "LCRA",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=LCBU&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=LCBU"
       },
       "geometry": {
         "type": "Point",
@@ -8116,7 +8305,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "CORMEA",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=WLA1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=WLA1"
       },
       "geometry": {
         "type": "Point",
@@ -8136,7 +8327,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "CORMEA",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=JGS1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=JGS1"
       },
       "geometry": {
         "type": "Point",
@@ -8156,7 +8349,9 @@
         "STATUS": "Operational",
         "ABBR": "SMRTNT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=JGS2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=JGS2"
       },
       "geometry": {
         "type": "Point",
@@ -8176,7 +8371,9 @@
         "STATUS": "Operational",
         "ABBR": "RODS",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ROD1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ROD1"
       },
       "geometry": {
         "type": "Point",
@@ -8196,7 +8393,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "UNAVPB",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=JCT1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=JCT1"
       },
       "geometry": {
         "type": "Point",
@@ -8216,7 +8415,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FLE5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FLE5"
       },
       "geometry": {
         "type": "Point",
@@ -8236,7 +8437,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=FLE6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=FLE6"
       },
       "geometry": {
         "type": "Point",
@@ -8256,7 +8459,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "ESRL",
         "GNSS": "GPS",
-        "AVAIL": "Half-hourly"
+        "AVAIL": "Half-hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=LDBT&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=LDBT"
       },
       "geometry": {
         "type": "Point",
@@ -8276,7 +8481,9 @@
         "STATUS": "Operational",
         "ABBR": "SMRTNT",
         "GNSS": "GPS+GLO",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=SJB1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=SJB1"
       },
       "geometry": {
         "type": "Point",
@@ -8297,8 +8504,8 @@
         "ABBR": "UNAVPB",
         "GNSS": "GPS+GLO",
         "AVAIL": "Daily",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=P807&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=P807"
       },
       "geometry": {
         "type": "Point",
@@ -8846,7 +9053,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "NGS",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=RCM5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=RCM5"
       },
       "geometry": {
         "type": "Point",
@@ -8866,7 +9075,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=EKY2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=EKY2"
       },
       "geometry": {
         "type": "Point",
@@ -8886,7 +9097,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=EKY1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=EKY1"
       },
       "geometry": {
         "type": "Point",
@@ -8907,8 +9120,8 @@
         "ABBR": "USCG",
         "GNSS": "GPS",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MCD1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MCD1"
       },
       "geometry": {
         "type": "Point",
@@ -8929,8 +9142,8 @@
         "ABBR": "USCG",
         "GNSS": "GPS",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=CCV4&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=CCV4"
       },
       "geometry": {
         "type": "Point",
@@ -8951,8 +9164,8 @@
         "ABBR": "USCG",
         "GNSS": "GPS",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=CCV5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=CCV5"
       },
       "geometry": {
         "type": "Point",
@@ -9215,8 +9428,8 @@
         "ABBR": "USCG",
         "GNSS": "GPS",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MCD6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MCD6"
       },
       "geometry": {
         "type": "Point",
@@ -9236,7 +9449,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MCD2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MCD2"
       },
       "geometry": {
         "type": "Point",
@@ -9257,8 +9472,8 @@
         "ABBR": "ESRL",
         "GNSS": "GPS",
         "AVAIL": "Half-hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=PATT&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=PATT"
       },
       "geometry": {
         "type": "Point",
@@ -9279,8 +9494,8 @@
         "ABBR": "ESRL",
         "GNSS": "GPS",
         "AVAIL": "Half-hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=WNFL&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=WNFL"
       },
       "geometry": {
         "type": "Point",
@@ -9301,8 +9516,8 @@
         "ABBR": "SMRTNT",
         "GNSS": "GPS+GLO",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSBN&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSBN"
       },
       "geometry": {
         "type": "Point",
@@ -9323,8 +9538,8 @@
         "ABBR": "EDA",
         "GNSS": "GPS",
         "AVAIL": "Daily",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ALAU&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ALAU"
       },
       "geometry": {
         "type": "Point",
@@ -9345,8 +9560,8 @@
         "ABBR": "USCG",
         "GNSS": "GPS",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MLF1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MLF1"
       },
       "geometry": {
         "type": "Point",
@@ -9367,8 +9582,8 @@
         "ABBR": "USCG",
         "GNSS": "GPS",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MLF2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MLF2"
       },
       "geometry": {
         "type": "Point",
@@ -9388,7 +9603,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MLF5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MLF5"
       },
       "geometry": {
         "type": "Point",
@@ -9409,8 +9626,8 @@
         "ABBR": "USCG",
         "GNSS": "GPS",
         "AVAIL": "Hourly",
-        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=TXVE&option=Logfile",
-        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=TXVE"
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MLF6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MLF6"
       },
       "geometry": {
         "type": "Point",
@@ -9430,7 +9647,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "LEIGEO",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=JBD2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=JBD2"
       },
       "geometry": {
         "type": "Point",
@@ -9450,7 +9669,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "EDA",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=EDKW&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=EDKW"
       },
       "geometry": {
         "type": "Point",
@@ -9470,7 +9691,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=VIC2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=VIC2"
       },
       "geometry": {
         "type": "Point",
@@ -9490,7 +9713,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "EDA",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=ALCA&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=ALCA"
       },
       "geometry": {
         "type": "Point",
@@ -9510,7 +9735,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "ESRL",
         "GNSS": "GPS",
-        "AVAIL": "Half-hourly"
+        "AVAIL": "Half-hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=JTNT&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=JTNT"
       },
       "geometry": {
         "type": "Point",
@@ -9530,7 +9757,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=SUM6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=SUM6"
       },
       "geometry": {
         "type": "Point",
@@ -9550,7 +9779,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=SUM5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=SUM5"
       },
       "geometry": {
         "type": "Point",
@@ -9570,7 +9801,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=SUM2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=SUM2"
       },
       "geometry": {
         "type": "Point",
@@ -9590,7 +9823,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=SUM1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=SUM1"
       },
       "geometry": {
         "type": "Point",
@@ -9610,7 +9845,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSB1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSB1"
       },
       "geometry": {
         "type": "Point",
@@ -9630,7 +9867,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSB6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSB6"
       },
       "geometry": {
         "type": "Point",
@@ -9650,7 +9889,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSB5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSB5"
       },
       "geometry": {
         "type": "Point",
@@ -9670,7 +9911,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=MSB2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=MSB2"
       },
       "geometry": {
         "type": "Point",
@@ -9690,7 +9933,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "ESRL",
         "GNSS": "GPS",
-        "AVAIL": "Half-hourly"
+        "AVAIL": "Half-hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=OKOM&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=OKOM"
       },
       "geometry": {
         "type": "Point",
@@ -9710,7 +9955,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "EDA",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=EDAA&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=EDAA"
       },
       "geometry": {
         "type": "Point",
@@ -9730,7 +9977,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "EDA",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=EDFF&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=EDFF"
       },
       "geometry": {
         "type": "Point",
@@ -9750,7 +9999,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "EDA",
         "GNSS": "GPS",
-        "AVAIL": "Daily"
+        "AVAIL": "Daily",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=DRUM&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=DRUM"
       },
       "geometry": {
         "type": "Point",
@@ -9770,7 +10021,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=HAC1&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=HAC1"
       },
       "geometry": {
         "type": "Point",
@@ -9790,7 +10043,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=HAC2&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=HAC2"
       },
       "geometry": {
         "type": "Point",
@@ -9810,7 +10065,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=HAC5&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=HAC5"
       },
       "geometry": {
         "type": "Point",
@@ -9830,7 +10087,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "USCG",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=HAC6&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=HAC6"
       },
       "geometry": {
         "type": "Point",
@@ -9850,7 +10109,9 @@
         "STATUS": "Decommissioned",
         "ABBR": "EDA",
         "GNSS": "GPS",
-        "AVAIL": "Hourly"
+        "AVAIL": "Hourly",
+        "METADATA": "https://www.ngs.noaa.gov/cgi-cors/CorsSidebarSelect.prl?site=WMEL&option=Logfile",
+        "MORE": "https://www.ngs.noaa.gov/cgi-cors/corsage.prl?site=WMEL"
       },
       "geometry": {
         "type": "Point",
