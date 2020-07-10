@@ -34,13 +34,7 @@ Data availability/sources/links
 		This tool was used to convert UNAVCO stations data into GeoJSON. There might exist other 
 		tools that can be used for the same purpose. One can also use the JSON beautify tools 
 		found online to make the code look consistent.	
-
-	- Aquifers:
-		- United States Geological Survey: https://water.usgs.gov/ogw/aquifer/map.html
-		- The GIS data comes in the format of a tar.gz, which you will have to unpack. There are many tools online for this purpose (i.e. https://extract.me/)
-		- The original dataset contains information for the entire U.S. ArcPro was used to clip this data to cover only the study area. The resulting clipped dataset was then imported into
-			ArcGIS online as a hosted layer, so that it could be used in the "Additional Features" map
-
+		
 	- Gulf of Mexico states: https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national
 		- Imported into ArcGIS Online as zip file and used only in the query and additional features map. This is a different dataset than that in the "Layers" folder in GIT. This is a
 			shapefile, and not a Geojson. And was not used in any of the other maps on the webpage
