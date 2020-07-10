@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Head properties of document -->
+<head>
+    <meta charset='utf-8' />
+    <title>GNSS Stations & Tide Gauges</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    
+        html, body{
+            overflow-y: hidden;
+            overflow-x: hidden;
+            text-align: center;
+            background-color: rgba(0,0,0,0);
+        }
+
+        #warningText {
+            position: absolute;            
+            text-align: center;
+            font-size: 20px;            
+            z-index: 1;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+                
+        .close {
+            color: #000000;
+            opacity: 1;
+        }
+
+        #extentSelection {
+            position: absolute;           
+            background-color: rgb(63,133,190);
+        }
+                
+    </style>
+</head>
+
+<!-- Body properties of document -->
+<body>
+
+    <!-- Warning Text -->
+    <div class="alert alert-success alert-dismissible" id="warningText" style="background-color: rgba(159,191,223,0.9); border-color:#000000;">
+        <a href="#" class="close" data-dismiss="alert" label="close">&times;</a>
+        <p style="color: black; font-size: 18px;">GNSS Stations and Tide Gauges in the Gulf of Mexico vicinity</p>
+        <p style="color: black; font-size: 18px;">Clusters are NSRS/NOAA Stations. All other stations are initially turned off</p>
+        <p style="color: black; font-size: 18px;">Use layers widget on right-handside to see legend and turn features on and off</p>
+        <p style="color: black; font-size: 18px;">Stations with <img src="https://img.icons8.com/ios/20/000000/circled-u.png" /> symbol are UNAVCO stations</p>
+    </div>
+</body>
+</html>

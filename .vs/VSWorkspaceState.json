@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Oline_Mapping"
   ],
-  "SelectedNode": "\\gnss_stations_and_tide_gauges.html",
+  "SelectedNode": "\\Oline_Mapping\\CORS_Stations.geojson",
   "PreviewInSolutionExplorer": false
 }
