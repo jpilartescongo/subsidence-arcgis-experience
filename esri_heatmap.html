@@ -1,0 +1,172 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css" />
+
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .esri-legend__service{            
+            height: 150px;            
+        }
+    </style>
+
+    <script src="https://js.arcgis.com/4.16/"></script>
+
+    <script>
+        require(["esri/Map", "esri/views/MapView", "esri/widgets/Legend", "esri/layers/FeatureLayer", "esri/widgets/ScaleBar", "esri/widgets/Compass"], function (Map, MapView, Legend, FeatureLayer, ScaleBar, Compass) {
+            const url_cbi = "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/CBI/FeatureServer";
+            const url_unavco = "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/UNAVCO/FeatureServer";
+            const url_txdot_rrps = "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/TxDOT/FeatureServer";
+            const url_cors = "https://services1.arcgis.com/BSnEnFfEn54YLVeq/arcgis/rest/services/CORS/FeatureServer";
+
+            const template = {
+                title: "{place}",
+                content: "Magnitude {mag} {type} hit {place} on {time}."
+            };
+
+            /****************************************** UNAVCO Stations Heatmap ******************************************/
+
+            const unavco_renderer = {
+                type: "heatmap",
+                colorStops: [
+                    { color: "rgba(33,102,172,0)", ratio: 0.2 },
+                    { color: "rgba(255,255,204, 0.1)", ratio: 0.3 },
+                    { color: "rgba(255,255,204, 0.2)", ratio: 0.4 },
+                    { color: "rgb(255,255,102)", ratio: 0.6 },
+                    { color: "rgb(255,255,0)", ratio: 0.8 },
+                    { color: "rgb(255,255,0)", ratio: 1 }
+                ],
+                maxPixelIntensity: 10,
+                minPixelIntensity: 0
+            };
+
+            const unavco_layer = new FeatureLayer({
+                url: url_unavco,
+                title: "UNAVCO Stations",
+                popupTemplate: template,
+                renderer: unavco_renderer
+            });
+
+            /******************************************** TxDOT RRPs Heatmap ********************************************/
+
+            const txdot_rrps_renderer = {
+                type: "heatmap",
+                colorStops: [
+                    { color: "rgba(33,102,172,0)", ratio: 0.2 },
+                    { color: "rgba(255,0,0, 0.1)", ratio: 0.3 },
+                    { color: "rgba(255,0,0, 0.2)", ratio: 0.4 },
+                    { color: "rgb(179,0,0)", ratio: 0.6 },
+                    { color: "rgb(170,1,20)", ratio: 0.8 },
+                    { color: "rgb(170,1,20)", ratio: 1 }
+                ],
+                maxPixelIntensity: 10,
+                minPixelIntensity: 0
+            };
+
+            const txdot_rrps_layer = new FeatureLayer({
+                url: url_txdot_rrps,
+                title: "TxDOT RRPs",
+                popupTemplate: template,
+                renderer: txdot_rrps_renderer
+            });
+
+
+            /*********************************************** CORS Heatmap ***********************************************/
+
+            const cors_renderer = {
+                type: "heatmap",
+                colorStops: [
+                    { color: "rgba(33,102,172,0)", ratio: 0.2 },
+                    { color: "rgba(152,251,152, 0.1)", ratio: 0.3 },
+                    { color: "rgba(152,251,152, 0.2)", ratio: 0.4 },
+                    { color: "rgb(50,205,50)", ratio: 0.6 },
+                    { color: "rgb(0,100,0)", ratio: 0.8 },
+                    { color: "rgb(0,100,0)", ratio: 1 }
+                ],
+                maxPixelIntensity: 20,
+                minPixelIntensity: 0
+            };
+
+            const cors_layer = new FeatureLayer({
+                url: url_cors,
+                title: "CORS/NSRS",
+                popupTemplate: template,
+                renderer: cors_renderer
+            });
+
+            /********************************************* CBI cGPS Heatmap *********************************************/
+
+            const cbi_renderer = {
+                type: "heatmap",
+                colorStops: [
+                    { color: "rgba(33,102,172,0)", ratio: 0.2 },
+                    { color: "rgba(106,90,205, 0.1)", ratio: 0.3 },
+                    { color: "rgba(106,90,205, 0.2)", ratio: 0.4 },
+                    { color: "rgb(0,0,205)", ratio: 0.6 },
+                    { color: "rgb(0,0,139)", ratio: 0.8 },
+                    { color: "rgb(0,0,139)", ratio: 1 }
+                ],
+                maxPixelIntensity: 10,
+                minPixelIntensity: 0
+            };
+
+            const cbi_layer = new FeatureLayer({
+                url: url_cbi,
+                title: "CBI cGPS",
+                copyright: "Conrad Blucher Institute",
+                popupTemplate: template,
+                renderer: cbi_renderer
+            });
+
+            /************************************************************************************************************/
+
+            const map = new Map({
+                basemap: "dark-gray",
+                layers: [unavco_layer, txdot_rrps_layer, cors_layer, cbi_layer]
+            });
+
+            const view = new MapView({
+                container: "viewDiv",
+                center: [-92, 31],
+                zoom: 6,
+                map: map
+            });
+
+            view.ui.add(
+                new Legend({
+                    view: view
+                }),
+                "top-right"
+            );
+
+            var scaleBar = new ScaleBar({
+                view: view
+            });
+            // Add widget to the bottom left corner of the view
+            view.ui.add(scaleBar, {
+                position: "bottom-left"
+            });
+
+            var compass = new Compass({
+                view: view
+            });
+
+            // adds the compass to the top left corner of the MapView
+            view.ui.add(compass, "top-left");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="viewDiv"></div>
+</body>
+</html>

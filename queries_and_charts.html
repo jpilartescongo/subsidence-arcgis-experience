@@ -52,9 +52,9 @@
 
     <script>
         require(["esri/widgets/Sketch/SketchViewModel", "esri/geometry/Polyline", "esri/geometry/Point", "esri/Graphic", "esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/layers/GraphicsLayer",
-            "esri/geometry/geometryEngine", "esri/widgets/Expand", "esri/widgets/Legend", "esri/widgets/Search", "esri/core/watchUtils", "esri/widgets/Compass"],
+            "esri/geometry/geometryEngine", "esri/widgets/Expand", "esri/widgets/Legend", "esri/widgets/Search", "esri/core/watchUtils", "esri/widgets/Compass", "esri/widgets/ScaleBar"],
 
-            function (SketchViewModel, Polyline, Point, Graphic, Map, MapView, FeatureLayer, GraphicsLayer, geometryEngine, Expand, Legend, Search, watchUtils, Compass) {
+            function (SketchViewModel, Polyline, Point, Graphic, Map, MapView, FeatureLayer, GraphicsLayer, geometryEngine, Expand, Legend, Search, watchUtils, Compass, ScaleBar) {
 
                 // App "globals"
                 let sketchViewModel, featureLayerView, pausableWatchHandle, chartExpand, centerGraphic, edgeGraphic, polylineGraphic, bufferGraphic, centerGeometryAtStart, labelGraphic;
@@ -138,6 +138,11 @@
                             popupEnabled: false
                         });
 
+                        var scaleBar = new ScaleBar({
+                            view: view
+                        });
+           
+
                         // Resume drawBufferPolygon() function; user searched for a new location. Must update the buffer polygon and re-run the stats query
                         search.on("search-complete", function () {
                             pausableWatchHandle.resume();
@@ -167,6 +172,7 @@
                         view.ui.add(search, "top-right");
                         view.ui.add(legendExpand, "bottom-right");
                         view.ui.add(compass, "top-left");
+                        view.ui.add(scaleBar, "top-right");
                     });
 
                     // Close the 'help' popup when view is focused
