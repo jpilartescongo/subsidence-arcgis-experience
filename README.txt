@@ -76,7 +76,7 @@ Page information:
 
 ******************************************************************************************************************************************************************************************
 
-YouTube instructions link: https://youtu.be/f_ETn4gHbnM
+** Instructions have been recorded and are in mp4 format saved under the MANTIS/Subsidence_Project folder. Can be shared if requested. **
 
 All warnings on the map are Boostrap (https://www.w3schools.com/bootstrap/bootstrap_alerts.asp)
 
